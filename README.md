@@ -18,6 +18,8 @@
 
 [![ProcrastinaNão](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=ProcrastinaNão)](https://github.com/IgorRoc/ProcrastinaNao)
 
+[![Escape From UESC](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=escape-from-uesc)](https://github.com/IgorRoc/escape-from-uesc)
+
 
 ## 📬 Get in touch
 
