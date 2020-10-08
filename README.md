@@ -1,7 +1,7 @@
 
 # Hi! I'm Igor. 👋🏻
 
-## I am a programmer that learns about everything
+## I am a programmer that tries to learns about everything!
 
 * Python
 * JavaScript
