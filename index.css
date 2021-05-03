@@ -149,35 +149,53 @@ header .contato ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--cl-barra);
+    background-color: var(--cl-principal);
     -webkit-transition: .4s;
     transition: .4s;
 }
-
-.slider:before {
+.moon{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 6px;
+    background: url("./img/moon.svg") no-repeat;
+}
+.sun{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 34px;
+    bottom: 6px;
+    background: url("./img/sun.svg") no-repeat;
+}
+.slider:after {
     position: absolute;
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
+    left: 30px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--cl-text);
     -webkit-transition: .2s;
     transition: .2s;
 }
 
 input:checked+.slider {
-    background-color: var(--cl-principal);
+    background-color: var(--cl-barra);
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px var(--cl-principal);
+    box-shadow: 0 0 1px var(--cl-barra);
 }
 
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+input:checked+.slider:after {
+    -webkit-transform: translateX(-26px);
+    -ms-transform: translateX(-26px);
+    transform: translateX(-26px);
+    background-color: var(--cl-principal);
 }
 
 
@@ -248,6 +266,10 @@ input:checked+.slider:before {
 
 .svg-white {
     filter: invert(100%);
+}
+
+.svg-gray {
+    filter: invert(70%);
 }
 
 .cl-principal {
