@@ -7,7 +7,8 @@
     --cl-text: #000;
     --cl-title: #fff;
     --cl-barra: #ebebeb;
-    --cl-scroll-bg: rgb(90, 90, 90);
+    --cl-scroll-bg: #cecece;
+    --cl-rodape: #131313;
 }
 
 body {
@@ -17,14 +18,6 @@ body {
     background-color: var(--cl-background);
     color: var(--cl-text);
     transition: .4s;
-}
-
-.dark-mode-bg {
-    background-color: rgb(12, 12, 12);
-}
-
-.dark-mode-txt {
-    color: var(--cl-background);
 }
 
 h2 {
@@ -78,6 +71,7 @@ header .contato ul {
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    margin: 50px 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -129,6 +123,10 @@ header .contato ul {
     background-color: var(--cl-principal);
 }
 
+.rodape{
+    padding: 10px 10%;
+    background-color: var(--cl-rodape);
+}
 
 /* DARK MODE */
 .switch {
@@ -277,6 +275,22 @@ input:checked+.slider:after {
 
 .cl-principal {
     color: var(--cl-principal);
+}
+
+.dark-mode-bg {
+    background-color: rgb(12, 12, 12);
+}
+
+.dark-mode-txt {
+    color: var(--cl-background);
+}
+
+.dark-bar{
+    background-color: #cecece;
+}
+
+.white-rodape{
+    background-color: #cecece;
 }
 
 /* RESPONSIVE */
