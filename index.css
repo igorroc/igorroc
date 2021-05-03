@@ -16,11 +16,11 @@ body {
     transition: .4s;
 }
 
-.dark-mode-bg{
+.dark-mode-bg {
     background-color: rgb(12, 12, 12);
 }
 
-.dark-mode-txt{
+.dark-mode-txt {
     color: var(--cl-background);
 }
 
@@ -48,7 +48,7 @@ header {
     align-items: center;
 }
 
-header img {
+#logo {
     width: 200px;
 }
 
@@ -75,6 +75,8 @@ header .contato ul {
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .topico {
@@ -180,7 +182,7 @@ input:checked+.slider:before {
 
 
 /* OPCOES */
-.transi{
+.transi {
     transition: .4s;
 }
 
@@ -250,4 +252,22 @@ input:checked+.slider:before {
 
 .cl-principal {
     color: var(--cl-principal);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800) {
+
+    /* For tablets: */
+    #logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100) {
+
+    /* For smartphones: */
+    #logo {
+        width: 300px;
+    }
 }
