@@ -11,6 +11,10 @@
     --cl-rodape: #131313;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
