@@ -108,7 +108,7 @@ header .contato ul {
 .divisao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .separador {
