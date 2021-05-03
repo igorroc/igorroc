@@ -11,6 +11,7 @@
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     background-color: var(--cl-background);
     color: var(--cl-text);
     transition: .4s;
@@ -87,7 +88,7 @@ header .contato ul {
     background-color: var(--cl-principal);
     color: var(--cl-title);
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: 700;
     justify-content: center;
     align-items: center;
     padding: 10px 10%;
