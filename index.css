@@ -16,12 +16,13 @@ html{
 }
 
 body {
+    width: 100%;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     background-color: var(--cl-background);
     color: var(--cl-text);
-    transition: .4s;
+    transition: .4s background-color;
 }
 
 h2 {
@@ -31,29 +32,40 @@ h2 {
 ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 a {
     color: var(--cl-text);
     text-decoration: none;
-    transition: .4s;
+    transition: .4s color;
 }
 
 header {
     margin: 30px auto;
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid: 'logo logo'
+          'buttons contact';
+    gap: 10px;
     justify-content: center;
     align-items: center;
+    transition: .4s;
+}
+
+.logo{
+    text-align: center;
+    grid-area: logo;
+    margin-bottom: 20px;
 }
 
 #logo {
-    width: 200px;
+    width: 80px;
 }
 
 header .contato {
     text-align: right;
+    grid-area: contact;
 }
 
 header .contato h2 {
@@ -64,7 +76,6 @@ header .contato h2 {
 
 header .contato ul {
     font-size: 1rem;
-
 }
 
 .igorroc {
@@ -80,6 +91,10 @@ header .contato ul {
     grid-template-columns: 1fr 2fr;
 }
 
+.igorroc > div{
+    margin-left: 20px;
+}
+
 .topico {
     margin: 50px 0;
 }
@@ -91,8 +106,9 @@ header .contato ul {
     font-weight: 700;
     justify-content: center;
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px 5%;
     margin-bottom: 20px;
+    transition: .4s;
 }
 
 .titulo img {
@@ -100,15 +116,19 @@ header .contato ul {
 }
 
 .descricao {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .divisao {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
     margin: 15px 0;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
 }
 
 .separador {
@@ -116,7 +136,7 @@ header .contato ul {
 }
 
 .barra {
-    width: 300px;
+    width: 150px;
     height: 20px;
     background-color: var(--cl-barra);
 }
@@ -174,6 +194,7 @@ header .contato ul {
 
 /* SWITCH */
 .buttons{
+    grid-area: buttons;
     display: grid;
 }
 
@@ -252,13 +273,13 @@ destaque{
     height: 10px;
     width: 10px;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
     background-image: url("./img/external-link.svg");
-    transition: .2s;
+    transition: .4s;
 }
 
 .transi {
-    transition: .2s;
+    transition: .4s;
 }
 
 .wd-10px {
@@ -358,21 +379,78 @@ destaque{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 800) {
+/* For tablets: */
+@media screen and (min-width: 1000px) {
 
-    /* For tablets: */
-    #logo {
-        width: 100%;
+    header {
+        width: 90%;
+        grid: 'logo buttons contact';
+        gap: 80px;
     }
-}
-
-@media screen and (max-width: 1100) {
-
-    /* For smartphones: */
+    
+    .logo{
+        margin: 0 auto;
+    }
+    
     #logo {
+        width: 150px;
+    }
+    
+    header .contato h2 {
+        font-size: 1.7rem;
+    }
+    
+    header .contato ul {
+        font-size: 1.2rem;
+    }
+
+    .titulo{
+        padding: 10px 10%;
+    }
+
+    .descricao{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .link:after{
+        height: 12px;
+        width: 12px;
+        margin-left: 5px;
+        margin-top: 7px;
+    }
+
+    .barra{
         width: 300px;
     }
 }
+
+@media screen and (min-width: 1700px) {
+    
+    /* For PC */
+    header {
+        width: 100%;
+        grid: 'logo buttons contact';
+        gap: 300px;
+    }
+
+    .igorroc{
+        font-size: 3.5rem;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+
+    .descricao{
+        font-size: 1.7rem;
+    }
+
+    .barra{
+        width: 400px;
+    }
+}
+
 
 /* SCROLL BAR */
 *::-webkit-scrollbar {
