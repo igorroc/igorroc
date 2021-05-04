@@ -14,7 +14,6 @@ function darkMode() {
     body.classList.toggle("dark-mode-bg")
     body.classList.toggle("dark-mode-txt")
     logo.classList.toggle("svg-white")
-    rodape.classList.toggle("white-rodape")
 
     for (const link of links) {
         link.classList.toggle("dark-mode-txt")
