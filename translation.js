@@ -20,20 +20,25 @@ function translation() {
                     if(topic.children[1].children[0].localName == 'ul'){
                         j = 0
                         for (const list of topic.children[1].children[0].children) {
-                            console.log(list.className)
                             if (list.className == "divisao") {
                                 if (list.children[0].children.length > 0) {
-                                    list.children[0].children[1].innerHTML = data.topics[i].itens[j].key[`${isPortuguese ? "br" : "us"}`]
-                                    list.children[1].innerHTML = data.topics[i].itens[j].value[`${isPortuguese ? "br" : "us"}`]
+                                    if(list.children[0].children[1]){
+                                        list.children[0].children[1].innerHTML = data.topics[i].itens[j].key[`${isPortuguese ? "br" : "us"}`]
+                                    }else{
+                                        list.children[0].children[0].innerHTML = data.topics[i].itens[j].key[`${isPortuguese ? "br" : "us"}`]
+                                    }
+                                    if(data.topics[i].itens[j].value){
+                                        list.children[1].innerHTML = data.topics[i].itens[j].value[`${isPortuguese ? "br" : "us"}`]
+                                    }
                                 }else{
-                                    console.log(list.children[0])
                                     list.children[0].innerHTML = data.topics[i].itens[j].key[`${isPortuguese ? "br" : "us"}`]
+                                    if(data.topics[i].itens[j].value){
+                                        list.children[1].innerHTML = data.topics[i].itens[j].value[`${isPortuguese ? "br" : "us"}`]
+                                    }
                                 }
-                                
                             }
                             j++
                         }
-                        console.log('------')
                     }else if (topic.children[1].children[0].localName == 'destaque') {
                         topic.children[1].innerHTML = data.topics[i].itens[0].key[`${isPortuguese ? "br" : "us"}`]
                     }
@@ -43,5 +48,4 @@ function translation() {
             
             
         })
-    
 }

@@ -69,46 +69,26 @@
                     "key":{
                         "br": "LinkedIn",
                         "us": "LinkedIn"
-                    },
-                    "value":{
-                        "br": "<a class=\"dark-mode-txt link\" href=\"http://linkedin.com/in/igorroc\" target=\"_blank\">Igor Rocha</a>",
-                        "us": "<a class=\"dark-mode-txt link\" href=\"http://linkedin.com/in/igorroc\" target=\"_blank\">Igor Rocha</a>"
                     }
                 },{
                     "key":{
                         "br": "WebSite",
                         "us": "WebSite"
-                    },
-                    "value":{
-                        "br": "<a class=\"dark-mode-txt link\" href=\"http://linktr.ee/igorroc\" target=\"_blank\">LinkTree</a>",
-                        "us": "<a class=\"dark-mode-txt link\" href=\"http://linktr.ee/igorroc\" target=\"_blank\">LinkTree</a>"
                     }
                 },{
                     "key":{
                         "br": "Portfólio",
                         "us": "Portfolio"
-                    },
-                    "value":{
-                        "br": "<a class=\"dark-mode-txt link\" href=\"http://behance.net/igorrocha\" target=\"_blank\">Igor Rocha</a>",
-                        "us": "<a class=\"dark-mode-txt link\" href=\"http://behance.net/igorrocha\" target=\"_blank\">Igor Rocha</a>"
                     }
                 },{
                     "key":{
                         "br": "GitHub",
                         "us": "GitHub"
-                    },
-                    "value":{
-                        "br": "<a class=\"dark-mode-txt link\" href=\"http://github.com/igorroc\" target=\"_blank\">IgorRoc</a>",
-                        "us": "<a class=\"dark-mode-txt link\" href=\"http://github.com/igorroc\" target=\"_blank\">IgorRoc</a>"
                     }
                 },{
                     "key":{
                         "br": "Lattes",
                         "us": "Curriculum Lattes"
-                    },
-                    "value":{
-                        "br": "<a class=\"dark-mode-txt link\" href=\"http://lattes.cnpq.br/7540968923476666\" target=\"_blank\">Igor Lima Rocha</a>",
-                        "us": "<a class=\"dark-mode-txt link\" href=\"http://lattes.cnpq.br/7540968923476666\" target=\"_blank\">Igor Lima Rocha</a>"
                     }
                 }
             ]
@@ -263,17 +243,6 @@
                         "br": "Espanhol",
                         "us": "Spanish"
                     }
-                }
-            ]
-        },{
-            "title":{
-                "br": "Aptidões e Habilidades",
-                "us": "Skills and Abilities"
-            },
-            "itens":[
-                {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
                 }
             ]
         },{

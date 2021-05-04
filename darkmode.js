@@ -1,3 +1,5 @@
+var isDark = true
+
 var body = document.body
 var links = document.links
 var iconLinks = document.getElementsByClassName("link")
@@ -7,6 +9,8 @@ var rodape = document.getElementsByClassName('rodape')[0]
 
 
 function darkMode() {
+    isDark = isDark ? false : true
+
     body.classList.toggle("dark-mode-bg")
     body.classList.toggle("dark-mode-txt")
     logo.classList.toggle("svg-white")
