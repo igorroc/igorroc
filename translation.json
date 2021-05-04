@@ -107,6 +107,50 @@
             ]
         },{
             "title":{
+                "br": "Projetos Próprios",
+                "us": "Own Projects"
+            },
+            "itens":[
+                {
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://discord.gg/RvtHp7V\" target=\"_blank\"><destaque>ProcrastinaNão</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://discord.gg/RvtHp7V\" target=\"_blank\"><destaque>ProcrastinaNão</destaque></a>"
+                    },
+                    "value":{
+                        "br": "Servidor de estudos no Discord",
+                        "us": "Discord Study Server"
+                    }
+                },{
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/ProcrastinaNao#-bot-anti-procrastinador\" target=\"_blank\"><destaque>Anti-Procrastinador</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/ProcrastinaNao#-bot-anti-procrastinador\" target=\"_blank\"><destaque>Anti-Procrastinator</destaque></a>"
+                    },
+                    "value":{
+                        "br": "Automação gerenciadora do servidor acima",
+                        "us": "Automation server management above"
+                    }
+                },{
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/DisCalculus\" target=\"_blank\"><destaque>DisCalculus</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/DisCalculus\" target=\"_blank\"><destaque>DisCalculus</destaque></a>"
+                    },
+                    "value":{
+                        "br": "Bot para Discord",
+                        "us": "Discord Bot"
+                    }
+                },{
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://imaltes.com.br\" target=\"_blank\"><destaque>iMaltes</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://imaltes.com.br\" target=\"_blank\"><destaque>iMaltes</destaque></a>"
+                    },
+                    "value":{
+                        "br": "E-Commerce de insumos cervejeiros",
+                        "us": "E-Commerce of brewing supplies"
+                    }
+                }
+            ]
+        },{
+            "title":{
                 "br": "Experiência Profissional",
                 "us": "Professional Experience"
             },
@@ -285,50 +329,6 @@
                     "key":{
                         "br": "Identidade Visual",
                         "us": "Visual Identity"
-                    }
-                }
-            ]
-        },{
-            "title":{
-                "br": "Projetos Próprios",
-                "us": "Own Projects"
-            },
-            "itens":[
-                {
-                    "key":{
-                        "br": "<a class=\"link dark-mode-txt\" href=\"https://discord.gg/RvtHp7V\" target=\"_blank\"><destaque>ProcrastinaNão</destaque></a>",
-                        "us": "<a class=\"link dark-mode-txt\" href=\"https://discord.gg/RvtHp7V\" target=\"_blank\"><destaque>ProcrastinaNão</destaque></a>"
-                    },
-                    "value":{
-                        "br": "Servidor de estudos no Discord",
-                        "us": "Discord Study Server"
-                    }
-                },{
-                    "key":{
-                        "br": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/ProcrastinaNao#-bot-anti-procrastinador\" target=\"_blank\"><destaque>Anti-Procrastinador</destaque></a>",
-                        "us": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/ProcrastinaNao#-bot-anti-procrastinador\" target=\"_blank\"><destaque>Anti-Procrastinator</destaque></a>"
-                    },
-                    "value":{
-                        "br": "Automação gerenciadora do servidor acima",
-                        "us": "Automation server management above"
-                    }
-                },{
-                    "key":{
-                        "br": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/DisCalculus\" target=\"_blank\"><destaque>DisCalculus</destaque></a>",
-                        "us": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/DisCalculus\" target=\"_blank\"><destaque>DisCalculus</destaque></a>"
-                    },
-                    "value":{
-                        "br": "Bot para Discord",
-                        "us": "Discord Bot"
-                    }
-                },{
-                    "key":{
-                        "br": "<a class=\"link dark-mode-txt\" href=\"https://imaltes.com.br\" target=\"_blank\"><destaque>iMaltes</destaque></a>",
-                        "us": "<a class=\"link dark-mode-txt\" href=\"https://imaltes.com.br\" target=\"_blank\"><destaque>iMaltes</destaque></a>"
-                    },
-                    "value":{
-                        "br": "E-Commerce de insumos cervejeiros",
-                        "us": "E-Commerce of brewing supplies"
                     }
                 }
             ]
