@@ -162,8 +162,8 @@
                         "us": "2015 → 2018"
                     },
                     "value":{
-                        "br": "Ensino Médio (2º grau)</destaque><br>Colégio Social de Valença, CSV, Brasil",
-                        "us": "High School (2nd grade)</destaque><br>Valença Social College, CSV, Brazil"
+                        "br": "<destaque>Ensino Médio (2º grau)</destaque><br>Colégio Social de Valença, CSV, Brasil",
+                        "us": "<destaque>High School (2nd grade)</destaque><br>Valença Social College, CSV, Brazil"
                     }
                 },
                 {
