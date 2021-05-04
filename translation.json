@@ -11,72 +11,261 @@
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "Endereço",
+                        "us": "Adress"
+                    },
+                    "value":{
+                        "br": "Ilhéus - BA",
+                        "us": "Ilhéus - BA"
+                    }
+                },{
+                    "key":{
+                        "br": "Data de Nascimento",
+                        "us": "Birthday"
+                    },
+                    "value":{
+                        "br": "07/04/2001",
+                        "us": "04/07/2001"
+                    }
+                },{
+                    "key":{
+                        "br": "Local de Nascimento",
+                        "us": "Birthplace"
+                    },
+                    "value":{
+                        "br": "Ilhéus - BA",
+                        "us": "Ilhéus - BA"
+                    }
+                },{
+                    "key":{
+                        "br": "Nacionalidade",
+                        "us": "Nationality"
+                    },
+                    "value":{
+                        "br": "Brasileiro",
+                        "us": "Brazillian"
+                    }
+                },{
+                    "key":{
+                        "br": "Sexo",
+                        "us": "Gender"
+                    },
+                    "value":{
+                        "br": "Masculino",
+                        "us": "Male"
+                    }
+                },{
+                    "key":{
+                        "br": "Estado Civil",
+                        "us": "Marital Status"
+                    },
+                    "value":{
+                        "br": "Solteiro",
+                        "us": "Single"
+                    }
+                },
+                {
+                    "key":{
+                        "br": "LinkedIn",
+                        "us": "LinkedIn"
+                    },
+                    "value":{
+                        "br": "<a class=\"dark-mode-txt link\" href=\"http://linkedin.com/in/igorroc\" target=\"_blank\">Igor Rocha</a>",
+                        "us": "<a class=\"dark-mode-txt link\" href=\"http://linkedin.com/in/igorroc\" target=\"_blank\">Igor Rocha</a>"
+                    }
+                },{
+                    "key":{
+                        "br": "WebSite",
+                        "us": "WebSite"
+                    },
+                    "value":{
+                        "br": "<a class=\"dark-mode-txt link\" href=\"http://linktr.ee/igorroc\" target=\"_blank\">LinkTree</a>",
+                        "us": "<a class=\"dark-mode-txt link\" href=\"http://linktr.ee/igorroc\" target=\"_blank\">LinkTree</a>"
+                    }
+                },{
+                    "key":{
+                        "br": "Portfólio",
+                        "us": "Portfolio"
+                    },
+                    "value":{
+                        "br": "<a class=\"dark-mode-txt link\" href=\"http://behance.net/igorrocha\" target=\"_blank\">Igor Rocha</a>",
+                        "us": "<a class=\"dark-mode-txt link\" href=\"http://behance.net/igorrocha\" target=\"_blank\">Igor Rocha</a>"
+                    }
+                },{
+                    "key":{
+                        "br": "GitHub",
+                        "us": "GitHub"
+                    },
+                    "value":{
+                        "br": "<a class=\"dark-mode-txt link\" href=\"http://github.com/igorroc\" target=\"_blank\">IgorRoc</a>",
+                        "us": "<a class=\"dark-mode-txt link\" href=\"http://github.com/igorroc\" target=\"_blank\">IgorRoc</a>"
+                    }
+                },{
+                    "key":{
+                        "br": "Lattes",
+                        "us": "Curriculum Lattes"
+                    },
+                    "value":{
+                        "br": "<a class=\"dark-mode-txt link\" href=\"http://lattes.cnpq.br/7540968923476666\" target=\"_blank\">Igor Lima Rocha</a>",
+                        "us": "<a class=\"dark-mode-txt link\" href=\"http://lattes.cnpq.br/7540968923476666\" target=\"_blank\">Igor Lima Rocha</a>"
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Declaração Pessoal",
                 "us": "Personal Statement"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "Estudante de Ciência da Computação com foco maior em <destaque>Programação Web</destaque> e de <destaque>Aplicativos</destaque>. Boa experiência <destaque>trabalhando em equipe</destaque>. Sempre a procura de aprender <destaque>novas tecnologias</destaque>. Interessado em <destaque>Design, UI & UX</destaque>.",
+                        "us": "Computer Science student with a greater focus on <destaque>Web Programming</destaque> and <destaque>Applications</destaque>. Good experience <destaque>working in a team</destaque>. Always looking to learn <destaque>new technologies</destaque>. Interested in <destaque>Design, UI & UX</destaque>."
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Experiência Profissional",
                 "us": "Professional Experience"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "Jan 2019 → Presente",
+                        "us": "Jan 2019 → Now"
+                    },
+                    "value":{
+                        "br": "<destaque>Desenvolvedor Web</destaque><br>i-Maltes",
+                        "us": "<destaque>Web Developer</destaque><br>i-Maltes"
+                    }
+                },{
+                    "key":{
+                        "br": "Jan 2019 → Presente",
+                        "us": "Jan 2019 → Now"
+                    },
+                    "value":{
+                        "br": "<destaque>Designer</destaque><br>i-Maltes",
+                        "us": "<destaque>Designer</destaque><br>i-Maltes"
+                    }
+                },{
+                    "key":{
+                        "br": "Dez 2020 → Presente",
+                        "us": "Dec 2020 → Now"
+                    },
+                    "value":{
+                        "br": "<destaque>Freelancer</destaque><br>Fiverr",
+                        "us": "<destaque>Freelancer</destaque><br>Fiverr"
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Formação e Qualificações",
                 "us": "Personal Information"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "2019 → 2023",
+                        "us": "2019 → 2023"
+                    },
+                    "value":{
+                        "br": "<destaque>Bacharelado em Ciência da Computação</destaque><br>Universidade Estadual de Santa Cruz",
+                        "us": "<destaque>Bachelor of Computer Science</destaque><br>Santa Cruz State University"
+                    }
+                },
+                {
+                    "key":{
+                        "br": "2015 → 2018",
+                        "us": "2015 → 2018"
+                    },
+                    "value":{
+                        "br": "Ensino Médio (2º grau)</destaque><br>Colégio Social de Valença, CSV, Brasil",
+                        "us": "High School (2nd grade)</destaque><br>Valença Social College, CSV, Brazil"
+                    }
+                },
+                {
+                    "key":{
+                        "br": "2019",
+                        "us": "2019"
+                    },
+                    "value":{
+                        "br": "<destaque>HTML Fundamentals course</destaque><br>Solo Learn",
+                        "us": "<destaque>HTML Fundamentals course</destaque><br>Solo Learn"
+                    }
+                },{
+                    "key":{
+                        "br": "2019",
+                        "us": "2019"
+                    },
+                    "value":{
+                        "br": "<destaque>JavaScript Tutorial course</destaque><br>Solo Learn",
+                        "us": "<destaque>JavaScript Tutorial course</destaque><br>Solo Learn"
+                    }
+                },{
+                    "key":{
+                        "br": "2021",
+                        "us": "2021"
+                    },
+                    "value":{
+                        "br": "<destaque>Artes para Mídias Sociais</destaque><br>LojaPhotoshop.com.br",
+                        "us": "<destaque>Arts for Social Media</destaque><br>LojaPhotoshop.com.br"
+                    }
+                },{
+                    "key":{
+                        "br": "2021",
+                        "us": "2021"
+                    },
+                    "value":{
+                        "br": "<destaque>MiniCurso Social Mídia</destaque><br>Designer de Qualidade",
+                        "us": "<destaque>MiniCurso Social Mídia</destaque><br>Designer de Qualidade"
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Eventos",
                 "us": "Events"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "ERBASE, 2019",
+                        "us": "ERBASE, 2019"
+                    }
+                },{
+                    "key":{
+                        "br": "SINFORM, 2019",
+                        "us": "SINFORM, 2019"
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Idiomas",
                 "us": "Languages"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "Português",
+                        "us": "Portuguese"
+                    }
+                },{
+                    "key":{
+                        "br": "Inglês",
+                        "us": "English"
+                    }
+                },{
+                    "key":{
+                        "br": "Espanhol",
+                        "us": "Spanish"
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Aptidões e Habilidades",
                 "us": "Skills and Abilities"
@@ -87,30 +276,97 @@
                     "value": "Ilhéus - BA"
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Interesses",
                 "us": "Interests"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "Programação Web",
+                        "us": "Web Development"
+                    }
+                },{
+                    "key":{
+                        "br": "Programação de Aplicativos",
+                        "us": "App Development"
+                    }
+                },{
+                    "key":{
+                        "br": "Programação de E-Commerce",
+                        "us": "E-Commerce Development"
+                    }
+                },{
+                    "key":{
+                        "br": "UI & UX",
+                        "us": "UI & UX"
+                    }
+                },{
+                    "key":{
+                        "br": "Design para Mídias Sociais",
+                        "us": "Social Media Design"
+                    }
+                },{
+                    "key":{
+                        "br": "Design de Produtos",
+                        "us": "Product Design"
+                    }
+                },{
+                    "key":{
+                        "br": "Identidade Visual",
+                        "us": "Visual Identity"
+                    }
                 }
             ]
-        },
-        {
+        },{
             "title":{
                 "br": "Projetos Próprios",
                 "us": "Own Projects"
             },
             "itens":[
                 {
-                    "key": "Endereço",
-                    "value": "Ilhéus - BA"
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://discord.gg/RvtHp7V\" target=\"_blank\"><destaque>ProcrastinaNão</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://discord.gg/RvtHp7V\" target=\"_blank\"><destaque>ProcrastinaNão</destaque></a>"
+                    },
+                    "value":{
+                        "br": "Servidor de estudos no Discord",
+                        "us": "Discord Study Server"
+                    }
+                },{
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/ProcrastinaNao#-bot-anti-procrastinador\" target=\"_blank\"><destaque>Anti-Procrastinador</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/ProcrastinaNao#-bot-anti-procrastinador\" target=\"_blank\"><destaque>Anti-Procrastinator</destaque></a>"
+                    },
+                    "value":{
+                        "br": "Automação gerenciadora do servidor acima",
+                        "us": "Automation server management above"
+                    }
+                },{
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/DisCalculus\" target=\"_blank\"><destaque>DisCalculus</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://github.com/IgorRoc/DisCalculus\" target=\"_blank\"><destaque>DisCalculus</destaque></a>"
+                    },
+                    "value":{
+                        "br": "Bot para Discord",
+                        "us": "Discord Bot"
+                    }
+                },{
+                    "key":{
+                        "br": "<a class=\"link dark-mode-txt\" href=\"https://imaltes.com.br\" target=\"_blank\"><destaque>iMaltes</destaque></a>",
+                        "us": "<a class=\"link dark-mode-txt\" href=\"https://imaltes.com.br\" target=\"_blank\"><destaque>iMaltes</destaque></a>"
+                    },
+                    "value":{
+                        "br": "E-Commerce de insumos cervejeiros",
+                        "us": "E-Commerce of brewing supplies"
+                    }
                 }
             ]
         }
-    ]
+    ],
+    "footer": {
+        "br": "© 2021 Todos os direitos reservados. Desenvolvido por <a style=\"color: var(--cl-principal);\" href=\"#main\">Igor Lima Rocha</a>",
+        "us": "© 2021 All rights reserved. Developed by <a style=\"color: var(--cl-principal);\" href=\"#main\">Igor Lima Rocha</a>"
+    }
 }
