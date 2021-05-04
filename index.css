@@ -133,12 +133,56 @@ header .contato ul {
 }
 
 /* DARK MODE */
+.moon{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 6px;
+    background: url("./img/moon.svg") no-repeat;
+}
+.sun{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 34px;
+    bottom: 6px;
+    background: url("./img/sun.svg") no-repeat;
+}
+
+/* TRANSLATION */
+.brasil{
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 8px;
+    top: 5px;
+    background: url("./img/brasil.svg") no-repeat;
+}
+.eua{
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 62px;
+    top: 5px;
+    background: url("./img/eua.svg") no-repeat;
+}
+
+/* SWITCH */
+.buttons{
+    display: grid;
+}
+
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .switch input {
@@ -157,24 +201,6 @@ header .contato ul {
     background-color: var(--cl-principal);
     -webkit-transition: .4s;
     transition: .4s;
-}
-.moon{
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 4px;
-    bottom: 6px;
-    background: url("./img/moon.svg") no-repeat;
-}
-.sun{
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 34px;
-    bottom: 6px;
-    background: url("./img/sun.svg") no-repeat;
 }
 .slider:after {
     position: absolute;
@@ -203,6 +229,16 @@ input:checked+.slider:after {
     background-color: var(--cl-principal);
 }
 
+.sl-large:after{
+    width: 42px;
+    left: 52px;
+}
+input:checked+.sl-large:after {
+    -webkit-transform: translateX(-48px);
+    -ms-transform: translateX(-48px);
+    transform: translateX(-48px);
+}
+
 
 /* OPCOES */
 .transi {
@@ -223,6 +259,10 @@ input:checked+.slider:after {
 
 .wd-50px {
     width: 50px;
+}
+
+.wd-100px {
+    width: 100px;
 }
 
 .wd-200px {
