@@ -254,14 +254,11 @@ destaque{
     margin-left: 5px;
     margin-top: 10px;
     background-image: url("./img/external-link.svg");
-}
-
-.af-white:after{
-    filter: invert(100%);    
+    transition: .2s;
 }
 
 .transi {
-    transition: .4s;
+    transition: .2s;
 }
 
 .wd-10px {
@@ -346,6 +343,9 @@ destaque{
 
 .dark-mode-txt {
     color: var(--cl-background);
+}
+.dark-mode-txt:after{
+    filter: invert(100%);
 }
 
 .dark-bar{
