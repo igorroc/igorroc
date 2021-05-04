@@ -15,9 +15,6 @@ function darkMode() {
     for (const link of links) {
         link.classList.toggle("dark-mode-txt")
     }
-    for (const icon of iconLinks) {
-        link.classList.toggle("svg-white")
-    }
     for (const topico of topicos) {
         var icons = topico.getElementsByTagName('img')
         var bars = topico.getElementsByClassName('barra')
