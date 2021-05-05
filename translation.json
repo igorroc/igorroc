@@ -127,7 +127,7 @@
                     },
                     "value":{
                         "br": "Automação gerenciadora do servidor acima",
-                        "us": "Automation server management above"
+                        "us": "Manager automation for the above server"
                     }
                 },{
                     "key":{
@@ -187,7 +187,7 @@
         },{
             "title":{
                 "br": "Formação e Qualificações",
-                "us": "Personal Information"
+                "us": "Training and Qualifications"
             },
             "itens":[
                 {
