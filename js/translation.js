@@ -5,7 +5,7 @@ var footer = document.getElementsByClassName('rodape')[0]
 
 
 function translation() {
-    fetch("./translation.json")
+    fetch("../translation.json")
         .then(Response => Response.json())
         .then(data => {
             let i = 0
