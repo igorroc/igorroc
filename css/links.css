@@ -42,6 +42,7 @@ footer{
 
 #info h1{
     font-size: 1.75em;
+    text-align: center;
 }
 
 .section{
@@ -73,9 +74,9 @@ footer{
 
     border-radius: 4px;
 
-    background: linear-gradient(90deg, #ffffff, #e1e4e3);
-    box-shadow: 5px 5px 10px #000a, -5px -5px 10px #fff3;
-    color: #1a1a1a;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 10px #000a, -5px -5px 10px rgba(255, 255, 255, 0.103);
+    color: #ffffff;
 
     transition: color 100ms ease, background-color 100ms ease;
 }
@@ -85,8 +86,7 @@ footer{
 }
 
 .social .wrapper{
-    /* width: 100%; */
-    height: 100px;
+    /* padding: 10px; */
 
     display: flex;
     align-items: center;
@@ -94,12 +94,11 @@ footer{
     gap: 20px;
 
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .section.social a{
-    /* width: auto; */
-
-    flex-grow: 1;
+    flex: 1;
     background: none;
     border:none;
     box-shadow: none;
