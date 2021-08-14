@@ -111,7 +111,8 @@ a {
 	background-size: 200%;
 	background-position: 0%;
 
-	animation: textGradientAnimation 1s infinite cubic-bezier(0.52, 0.18, 0.49, 0.84);
+	animation: textGradientAnimation 1s infinite
+		cubic-bezier(0.52, 0.18, 0.49, 0.84);
 
 	opacity: 0;
 	transition: all 500ms ease;

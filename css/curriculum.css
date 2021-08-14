@@ -79,7 +79,7 @@ header .contato ul {
 	font-size: 1rem;
 }
 
-header .contato li a{
+header .contato li a {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
