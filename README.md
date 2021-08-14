@@ -41,6 +41,8 @@
 
 [![Netflix](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=netflix-clone)](https://github.com/IgorRoc/netflix-clone)
 
-[![Netflix](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=discord-clone)](https://github.com/IgorRoc/discord-clone)
+[![Discord](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=discord-clone)](https://github.com/IgorRoc/discord-clone)
+
+[![WhatsApp](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=whatsapp-clone)](https://github.com/IgorRoc/whatsapp-clone)
 
 </div>
