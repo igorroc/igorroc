@@ -32,7 +32,7 @@ h1 {
 }
 
 #mainImage {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 50%;
 
@@ -49,12 +49,12 @@ h1 {
 	top: 0;
 	left: 50%;
 
-	transform: translateX(-160%);
+	transform: translateX(50%);
 
 	height: 100vh;
 	filter: invert(1);
 
-	opacity: 0.01;
+	opacity: 0;
 
 	animation: moveLeftRight 5s infinite;
 }
@@ -111,7 +111,7 @@ a {
 	background-size: 200%;
 	background-position: 0%;
 
-	animation: textGradientAnimation 1s infinite;
+	animation: textGradientAnimation 1s infinite cubic-bezier(0.52, 0.18, 0.49, 0.84);
 
 	opacity: 0;
 	transition: all 500ms ease;
@@ -138,9 +138,16 @@ a {
 
 @keyframes moveLeftRight {
 	from {
-		transform: translateX(60%);
+		transform: translateX(50%);
+	}
+	10% {
+		/* opacity: 0; */
+	}
+	50% {
+		opacity: 0.01;
 	}
 	to {
-		transform: translateX(-160%);
+		transform: translateX(-140%);
+		opacity: 0;
 	}
 }
