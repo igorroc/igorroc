@@ -335,7 +335,7 @@
         }
     ],
     "footer": {
-        "br": "© 2021 Todos os direitos reservados. Desenvolvido por <a style=\"color: var(--cl-principal);\" href=\"#main\">Igor Lima Rocha</a>",
-        "us": "© 2021 All rights reserved. Developed by <a style=\"color: var(--cl-principal);\" href=\"#main\">Igor Lima Rocha</a>"
+        "br": "© 2021 Todos os direitos reservados. Desenvolvido por <a style=\"color: var(--cl-principal);\" href=\"./index.html\">Igor Lima Rocha</a>",
+        "us": "© 2021 All rights reserved. Developed by <a style=\"color: var(--cl-principal);\" href=\"./index.html\">Igor Lima Rocha</a>"
     }
 }
