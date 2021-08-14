@@ -31,47 +31,80 @@ h1 {
 	color: transparent;
 }
 
+#mainImage {
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	width: 100%;
+	height: 100%;
+
+	transform: translateX(-50%);
+
+	z-index: -1;
+}
+
+#mainImage img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	transform: translateX(-160%);
+
+	height: 100vh;
+	filter: invert(1);
+
+	opacity: 0.01;
+
+	animation: moveLeftRight 5s infinite;
+}
+
+#mainImage img:nth-child(2) {
+	animation-delay: calc(5s / 2);
+}
+
 .wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: 50px;
 }
 
 a {
-    width: 100%;
-    height: 100%;
-    color: #fff;
+	width: 100%;
+	height: 100%;
+	color: #fff;
 	text-decoration: none;
-    z-index: 10;
+	z-index: 10;
 }
 
 .container {
-    padding: 15px 30px;
+	padding: 15px 30px;
 
-    border-radius: 10px;
-    
+	border: 1px solid #4ad8853f;
+	border-radius: 10px;
+
 	background-color: rgba(255, 255, 255, 0.05);
 	backdrop-filter: blur(5px);
 	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
-    
+
 	transform: scale(1);
 	transition: all 300ms ease;
 }
 
-.container::after{
-    content: "";
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
-    z-index: -1;
+.container::after {
+	content: "";
 
-    border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	z-index: -1;
+
+	border-radius: 10px;
 
 	background-image: linear-gradient(90deg, #08acae, #13974a, #08acae);
 
@@ -80,18 +113,18 @@ a {
 
 	animation: textGradientAnimation 1s infinite;
 
-    opacity: 0;
-    transition: all 500ms ease;
+	opacity: 0;
+	transition: all 500ms ease;
 }
 
 .container:hover {
 	background: rgba(105, 240, 188, 0.2);
-    
+
 	transform: scale(1.3);
 }
 
-.container:hover::after{
-    opacity: 1;
+.container:hover::after {
+	opacity: 1;
 }
 
 @keyframes textGradientAnimation {
@@ -100,5 +133,14 @@ a {
 	}
 	to {
 		background-position: -100%;
+	}
+}
+
+@keyframes moveLeftRight {
+	from {
+		transform: translateX(60%);
+	}
+	to {
+		transform: translateX(-160%);
 	}
 }
