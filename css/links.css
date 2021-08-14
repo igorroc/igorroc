@@ -40,6 +40,14 @@ footer {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
+	border: 1px solid #05d4626e;
+
+	transition: width 300ms ease, height 300ms ease;
+}
+
+#info img:hover {
+	width: 170px;
+	height: 170px;
 }
 
 #info h1 {
@@ -119,11 +127,12 @@ footer {
 	box-shadow: 5px 5px 10px #000a, -5px -5px 10px rgba(255, 255, 255, 0.103);
 	color: #ffffff;
 
-	transition: color 100ms ease, background-color 100ms ease;
+	transition: letter-spacing 200ms ease;
 }
 
 .section a:hover {
 	box-shadow: inset 5px 5px 10px #0007, inset -5px -5px 10px #fff1;
+	letter-spacing: 0.2em;
 }
 
 .wrapper {
@@ -157,10 +166,13 @@ footer {
 
 	padding: 0;
 	margin: 0;
+
+	transition: all 300ms ease;
 }
 
 .section.social a:hover {
 	color: #05d462;
+	margin: 0 10px;
 }
 
 #mainImage {
