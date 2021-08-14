@@ -68,8 +68,39 @@ footer {
 
 .section h2 {
 	margin-bottom: 10px;
+
 	font-size: 1.5em;
+	font-weight: bold;
+
 	color: #05d462;
+	
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	background-image: linear-gradient(90deg, #08acae, #05d462, #08acae);
+
+	background-size: 200%;
+	background-position: 0%;
+
+	animation: textGradientAnimation 2s infinite;
+
+	color: transparent;
+}
+
+.section:nth-child(2) h2{
+	animation-delay: .5s;
+}
+
+.section:nth-child(3) h2{
+	animation-delay: 1s;
+}
+
+.section:nth-child(4) h2{
+	animation-delay: 1.5s;
+}
+
+.section:nth-child(5) h2{
+	animation-delay: 2s;
 }
 
 .section a {
@@ -174,5 +205,14 @@ footer {
 	to {
 		transform: translateX(-140%);
 		opacity: 0;
+	}
+}
+
+@keyframes textGradientAnimation {
+	from {
+		background-position: 100%;
+	}
+	to {
+		background-position: -100%;
 	}
 }
