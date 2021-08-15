@@ -1,0 +1,122 @@
+:root {
+	--gradient-rosa-azul: linear-gradient(
+		90deg,
+		rgba(255, 0, 224, 1) 0%,
+		rgba(20, 255, 233, 1) 100%
+	);
+}
+
+.show-mob {
+	display: block;
+}
+
+/* BACKGROUND PARTICULAS RETANGULARES SUBINDO */
+.particles {
+	position: absolute;
+	z-index: -10;
+	top: 0;
+	right: 0;
+	left: 0;
+	top: 700px;
+}
+
+.particles li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: var(--gradient-rosa-azul);
+	animation: animate 25s linear infinite;
+	opacity: 0;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.1;
+	}
+
+	100% {
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+	}
+}
+
+/* PARTIGULAS CIRCULARES SCALE-DOWN-UP */
+.ripple {
+	position: absolute;
+    top: 50%;
+	left: 65%;
+    
+    opacity: 0.1;
+    
+	z-index: -10;
+}
+
+.circle {
+	position: absolute;
+	border-radius: 50%;
+	background: white;
+	animation: ripple 6s infinite ease-in-out;
+	transition: 0.3s;
+
+	width: calc(200px * var(--tam));
+	height: calc(200px * var(--tam));
+	left: calc(-100px * var(--tam));
+	bottom: calc(-100px * var(--tam));
+
+	opacity: calc(0.1 * (6 - var(--tam)));
+
+	box-shadow: 10px 0px 10px 0px rgb(0, 0, 0, 0.2);
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(0.8);
+	}
+}
+
+@keyframes ripple-mob {
+	0% {
+		transform: scale(0.6);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(0.6);
+	}
+}
+
+@media (max-width: 700px) {
+	.circle {
+		animation: ripple-mob 6s infinite ease-in-out;
+	}
+}
+
+@media (min-width: 850px) {
+	.show-mob {
+		display: none;
+	}
+}
+
+@media (min-width: 1270px) {
+	.show-tablet {
+		display: none;
+	}
+}

@@ -1,0 +1,48 @@
+:root {
+	--custom-bezier-curve: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.gradientOverText {
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	background-image: linear-gradient(90deg, #08acae, #13974a, #08acae);
+
+	background-size: 200%;
+	background-position: 0%;
+
+	animation: textGradientAnimation 2s infinite;
+
+	color: transparent;
+}
+
+.mainDivision {
+	position: relative;
+
+	width: 50%;
+	height: 30px;
+
+	transition: width 300ms var(--custom-bezier-curve), margin-left 300ms var(--custom-bezier-curve);
+}
+
+.mainDivision:after {
+	content: "";
+	position: absolute;
+
+	width: 100%;
+	height: 3px;
+
+	top: 50%;
+	left: 0;
+
+	background-color: #21d69a;
+}
+
+@keyframes textGradientAnimation {
+	from {
+		background-position: 100%;
+	}
+	to {
+		background-position: -100%;
+	}
+}

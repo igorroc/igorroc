@@ -1,0 +1,90 @@
+header {
+	position: fixed;
+	width: calc(100% - 40px);
+
+	padding: 20px 30px;
+
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+#headerLogo {
+	margin-right: auto;
+}
+
+#headerLogo img {
+	height: 40px;
+	filter: invert(1);
+	opacity: 0.5;
+
+	transition: opacity 0.2s var(--custom-bezier-curve);
+}
+
+#headerLogo:hover img {
+	opacity: 1;
+}
+
+#headerCTA a {
+	padding: 10px 20px;
+
+	border-radius: 5px;
+	border: 1px solid #13974a;
+
+	background-color: #13974a1a;
+	color: white;
+
+	font-weight: bold;
+	text-decoration: none;
+
+	transition: all 500ms var(--custom-bezier-curve);
+}
+
+#headerCTA:hover a {
+	letter-spacing: 0.1em;
+	background-color: #13974a56;
+}
+
+#hamburguerMenu {
+	width: 50px;
+	height: 22px;
+
+	padding: 15px;
+
+	position: relative;
+}
+
+#hamburguerMenu:after,
+#hamburguerMenu:before {
+	content: "";
+	position: absolute;
+
+	width: 70%;
+	height: 3px;
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	transform-origin: 30%;
+	margin: 0 auto;
+
+	background-color: white;
+
+	transition: transform 0.4s var(--custom-bezier-curve);
+}
+
+#hamburguerMenu:after {
+	bottom: 30%;
+}
+
+#hamburguerMenu:before {
+	top: 30%;
+}
+
+#hamburguerMenu.headerMenuActive::after {
+	transform: translateX(-45%) rotate(-45deg);
+}
+
+#hamburguerMenu.headerMenuActive::before {
+	transform: translateX(-45%) rotate(45deg);
+}
