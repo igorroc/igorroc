@@ -125,13 +125,14 @@
 					>
 						<div class="question">
 							<label for="name">1. First name:</label>
-							<input type="text" id="name" min="3" required />
+							<input type="text" id="name" name="name" min="3" required />
 						</div>
 						<div class="question">
 							<label for="email">2. Your email:</label>
-							<input type="email" id="email" required />
+							<input type="email" id="email" name="name" required />
 						</div>
-						<!-- <div class="question">
+						<input type="hidden" name="_next" value="https://igorroc.github.io/igorroc/#">
+						<div class="question">
 							<label for="message">3. Type your message:</label>
 							<textarea
 								name="message"
@@ -139,7 +140,7 @@
 								cols="30"
 								rows="5"
 							></textarea>
-						</div> -->
+						</div>
 						<button type="submit" id="submit">
 							<i class="fas fa-envelope"></i> Let's go!
 						</button>
