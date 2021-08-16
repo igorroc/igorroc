@@ -16,13 +16,17 @@
 	color: transparent;
 }
 
+.hiddenText{
+	color: #0A1516;
+}
 .mainDivision {
 	position: relative;
 
 	width: 50%;
 	height: 30px;
 
-	transition: width 300ms var(--custom-bezier-curve), margin-left 300ms var(--custom-bezier-curve);
+	transform: translateX(-150%);
+	transition: transform 1s 500ms var(--custom-bezier-curve), width 300ms var(--custom-bezier-curve), margin-left 300ms var(--custom-bezier-curve);
 }
 
 .mainDivision:after {
@@ -37,7 +41,9 @@
 
 	background-color: #21d69a;
 }
-
+.pageActive .mainDivision{
+	transform: translateX(0%);
+}
 
 .parallaxMouse{
 	transform-style: preserve-3d;

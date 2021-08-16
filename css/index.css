@@ -14,14 +14,15 @@ body {
 	flex-direction: column;
 
 	overflow: hidden;
-
 }
 
-#wrapperPages{
+#wrapperPages {
+	position: absolute;
 	transition: transform 1000ms var(--custom-bezier-curve);
 }
 
 main {
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 
@@ -36,14 +37,21 @@ main > div {
 
 .title {
 	color: white;
+	z-index: 2;
+
+	overflow: hidden;
 }
 
 .title h1 {
 	font-size: 5em;
+	transform: translateX(-100%);
+	transition: transform 1s 250ms var(--custom-bezier-curve);
 }
 
 .title h2 {
 	margin-top: 10px;
+	transform: translateX(-100%);
+	transition: transform 1s 750ms var(--custom-bezier-curve);
 }
 
 .title h1:hover ~ .mainDivision {
@@ -55,25 +63,71 @@ main > div {
 	margin-left: 50%;
 }
 
-.card{
+.pageActive .title h1,
+.pageActive .title h2 {
+	transform: translateX(0%);
+}
+.card {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	z-index: -1;
-	
-	width: 50vw;
+	z-index: 0;
+
+	width: 45vw;
 	height: 80vh;
 
 	display: flex;
 	overflow: hidden;
 
-	opacity: .5;
-
+	opacity: 0;
+	
 	border: 2px solid #21d69a;
-
+	
 	/* transform-style: preserve-3d; */
-	transform: translate(30%, -50%);
-	transform: translate(30%, -50%) perspective(500px);
+	transform: translate(100%, -50%) scale(.7);
+	
+	transition: opacity 1s ease, transform 2s ease;
+}
+
+.pageActive .card{
+	opacity: 0.5;
+	transform: translate(60%, -50%) scale(1);
+}
+
+.card:hover {
+	opacity: 1;
+}
+
+.card > img {
+	width: 100%;
+	/* height: 100%; */
+	object-fit: cover;
+}
+
+.card:before,
+.card:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.card:before {
+	background-color: #299299;
+
+	transition: all 750ms 750ms var(--custom-bezier-curve);
+}
+
+.card:after {
+	background-color: #1fc575;
+
+	transition: all 750ms 500ms var(--custom-bezier-curve);
+}
+
+.pageActive .card:before,
+.pageActive .card:after {
+	margin-left: 100%;
+	width: 0%;
 }
 
 #scrollMore {
@@ -90,15 +144,16 @@ main > div {
 
 	animation: floating 2s infinite ease;
 
-	transition: animation-duration 2s ease-in, bottom 500ms var(--custom-bezier-curve);
+	transition: animation-duration 2s ease-in,
+		bottom 500ms var(--custom-bezier-curve);
 }
 
 #scrollMore:hover {
 	animation-duration: 1s;
 }
 
-#scrollMore.scrollMoreHidden{
-	bottom: -50%
+#scrollMore.scrollMoreHidden {
+	bottom: -50%;
 }
 
 #timeline {
@@ -111,15 +166,14 @@ main > div {
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
-
 }
 
 #timeline span {
 	width: 30px;
 	height: 3px;
-	
+
 	border-radius: 0 2px 2px 0;
-	
+
 	background-color: rgba(255, 255, 255, 0.473);
 
 	transition: width 200ms var(--custom-bezier-curve),
@@ -130,7 +184,6 @@ main > div {
 	width: 60px;
 	background-color: white;
 }
-
 
 #formID {
 	height: 100vh;
@@ -143,7 +196,7 @@ main > div {
 
 	z-index: 8;
 
-	transform: translateY(-100%);
+	transform: translateX(-100%);
 
 	font-size: 1.5em;
 	padding: 0 50px;
@@ -157,8 +210,8 @@ main > div {
 	transition: transform 750ms var(--custom-bezier-curve);
 }
 
-#formID.formShow{
-	transform: translateY(0%);
+#formID.formShow {
+	transform: translateY(0%) translateX(0%);
 }
 
 #formID > div {
@@ -172,18 +225,19 @@ main > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+
 	transform: scale(0);
 	transition: transform 500ms 500ms var(--custom-bezier-curve);
 }
 
-#formID.formShow > div{
-	transform: scale(1)
+#formID.formShow > div {
+	transform: scale(1);
 }
 
 #formTitle h3 {
 	color: #ffffff;
 	font-size: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 #formTitle h3 b {
@@ -224,7 +278,7 @@ main > div {
 .question textarea {
 	font-family: "Montserrat", sans-serif;
 
-	font-size: .8em;
+	font-size: 0.8em;
 	padding: 10px;
 
 	border: none;
@@ -271,7 +325,6 @@ button[type="submit"]:hover {
 	box-shadow: 0px 0px 10px #5af97c;
 	transform: scale(1.02);
 }
-
 
 @keyframes floating {
 	0% {
