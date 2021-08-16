@@ -4,8 +4,15 @@
 	cursor: var(--cursor);
 }
 
+html,
 body {
+	overflow: hidden;
+}
+
+body {
+	position: relative;
 	width: 100vw;
+	height: 100vh;
 
 	background-color: #090e11;
 
@@ -18,6 +25,10 @@ body {
 
 #wrapperPages {
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	transition: transform 1000ms var(--custom-bezier-curve);
 }
 
@@ -94,7 +105,7 @@ main > div {
 	transform: translate(60%, -50%) scale(1);
 }
 
-.card:hover {
+.pageActive .card:hover {
 	opacity: 1;
 	transform: translate(60%, -50%) scale(1.05);
 }
@@ -143,7 +154,7 @@ main > div {
 	font-size: 2em;
 	color: white;
 
-	animation: floating 2s infinite ease;
+	animation: floatingVertical 2s infinite ease;
 
 	transition: animation-duration 2s ease-in,
 		bottom 500ms var(--custom-bezier-curve);
@@ -239,6 +250,7 @@ main > div {
 	color: #ffffff;
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
+	max-width: 100px;
 }
 
 #formTitle h3 b {
@@ -248,6 +260,8 @@ main > div {
 #formTitle p {
 	color: #97999b;
 	font-size: 1em;
+
+	max-width: 470px;
 }
 
 #formContent {
@@ -327,7 +341,7 @@ button[type="submit"]:hover {
 	transform: scale(1.02);
 }
 
-@keyframes floating {
+@keyframes floatingVertical {
 	0% {
 		transform: translateY(-10px);
 	}
@@ -336,5 +350,119 @@ button[type="submit"]:hover {
 	}
 	100% {
 		transform: translateY(-10px);
+	}
+}
+
+@keyframes floatingHorizontal {
+	0% {
+		transform: rotate(-90deg) translateY(-10px);
+	}
+	50% {
+		transform: rotate(-90deg) translateY(10px);
+	}
+	100% {
+		transform: rotate(-90deg) translateY(-10px);
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		font-size: 12px;
+	}
+
+	#menu .menuItem {
+		font-size: 3em;
+	}
+
+	#menu .menuItem:after {
+		height: 2px;
+	}
+
+	main {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(calc(100vw * var(--page)));
+	}
+
+	#timeline {
+		bottom: 10px;
+		top: auto;
+		left: 50%;
+		transform: translateX(-50%);
+
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	#timeline span {
+		width: 3px;
+		height: 30px;
+		transition: height 200ms var(--custom-bezier-curve),
+			background-color 200ms var(--custom-bezier-curve);
+	}
+
+	#timeline span.timelineActive {
+		width: 3px;
+		height: 60px;
+	}
+
+	.title {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#scrollMore {
+		left: auto;
+		bottom: 50%;
+		right: 10px;
+		animation: floatingHorizontal 2s infinite ease;
+		transition: animation-duration 2s ease-in,
+			right 500ms var(--custom-bezier-curve);
+	}
+
+	#scrollMore.scrollMoreHidden {
+		bottom: 50%;
+		right: -50%;
+	}
+
+	#formID {
+		padding: 0 2px;
+	}
+
+	#formID > div {
+		padding: 20px;
+	}
+
+	#formTitle h3 {
+		max-width: max-content;
+	}
+}
+
+@media (max-width: 800px) {
+	.title {
+		margin: 0 10vw;
+		margin-top: 55vh;
+		font-size: 0.9em;
+	}
+	
+	.title h1 {
+		hyphens: auto;
+		max-width: 70vw;
+	}
+
+	.card {
+		margin-left: 0;
+		width: 80vw;
+		height: 40vh;
+		transform: translate(10vw, -160%) scale(0.7);
+	}
+
+	.pageActive .card:hover {
+		transform: translate(10vw, -90%) scale(1.05);
+	}
+
+	.pageActive .card {
+		transform: translate(10vw, -95%) scale(1);
 	}
 }

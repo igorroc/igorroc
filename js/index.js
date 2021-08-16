@@ -11,6 +11,8 @@ var formClose = document.querySelector("#closeForm")
 
 let currentPage = page || 0
 let transitioning = false
+let isMobile = isMobileDevice()
+
 
 window.scrollTo(0, 0)
 nextPage()
@@ -38,10 +40,18 @@ document.addEventListener("wheel", (event) => {
 
 function nextPage() {
 	window.history.pushState("", `page ${currentPage}`, `?page=${currentPage}`)
-	wrapperPages.setAttribute(
-		"style",
-		`transform: translateY(${-100 * currentPage}vh)`
-	)
+
+	if(!isMobile){
+		wrapperPages.setAttribute(
+			"style",
+			`transform: translateY(${-100 * currentPage}vh)`
+		)
+	}else{
+		wrapperPages.setAttribute(
+			"style",
+			`transform: translateX(${-100 * currentPage}vw)`
+		)
+	}
 	timeline.querySelector(".timelineActive").classList.remove("timelineActive")
 
 	timeline.children[currentPage].classList.add("timelineActive")
@@ -64,6 +74,11 @@ document.addEventListener("mousemove", (event) => {
 	})
 })
 
+window.addEventListener("resize", ()=> {
+	isMobile = isMobileDevice()
+	nextPage()
+})
+
 // Custom form
 link.addEventListener("click", () => {
 	form.classList.add("formShow")
@@ -72,3 +87,13 @@ link.addEventListener("click", () => {
 formClose.addEventListener("click", () => {
 	form.classList.remove("formShow")
 })
+
+
+function isMobileDevice() {
+    var check = false;
+    if(window.innerWidth <= 1200){
+		check = true;
+	}
+	console.log(check)
+    return check;
+};

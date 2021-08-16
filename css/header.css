@@ -1,6 +1,8 @@
 header {
 	position: fixed;
 	z-index: 10;
+	left: 0;
+	right: 0;
 	width: calc(100% - 40px);
 
 	padding: 20px 30px;
