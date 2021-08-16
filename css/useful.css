@@ -38,6 +38,12 @@
 	background-color: #21d69a;
 }
 
+
+.parallaxMouse{
+	transform-style: preserve-3d;
+	transform: perspective(500px);
+}
+
 @keyframes textGradientAnimation {
 	from {
 		background-position: 100%;

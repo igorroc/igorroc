@@ -32,11 +32,22 @@ document.addEventListener("wheel", (event) => {
 	}, 2000)
 })
 
-function nextPage(){
-	wrapperPages.setAttribute("style", `transform: translateY(${-100*currentPage}vh)`)
-	if(currentPage == 0){
+function nextPage() {
+	wrapperPages.setAttribute(
+		"style",
+		`transform: translateY(${-100 * currentPage}vh)`
+	)
+	if (currentPage == 0) {
 		scrollMore.classList.remove("scrollMoreHidden")
-	}else{
+	} else {
 		scrollMore.classList.add("scrollMoreHidden")
 	}
 }
+
+document.addEventListener("mousemove", (event) => {
+	document.querySelectorAll(".parallaxMouse").forEach((element) => {
+		element.style.transform = `rotateY(${event.clientX / 90}deg) rotateX(${
+			event.clientY / 50
+		}deg)`
+	})
+})

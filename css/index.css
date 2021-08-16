@@ -29,7 +29,8 @@ main {
 }
 
 main > div {
-	margin-top: 20%;
+	position: relative;
+	margin: auto;
 	margin-left: 20%;
 }
 
@@ -52,6 +53,27 @@ main > div {
 .title h2:hover ~ .mainDivision {
 	width: 50%;
 	margin-left: 50%;
+}
+
+.card{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: -1;
+	
+	width: 50vw;
+	height: 80vh;
+
+	display: flex;
+	overflow: hidden;
+
+	opacity: .5;
+
+	border: 2px solid #21d69a;
+
+	/* transform-style: preserve-3d; */
+	transform: translate(30%, -50%);
+	transform: translate(30%, -50%) perspective(500px);
 }
 
 #scrollMore {
