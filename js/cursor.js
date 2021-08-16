@@ -4,6 +4,8 @@ let cursor = document.querySelector("#cursor")
 let links = document.querySelectorAll("a")
 let buttons = document.querySelectorAll("button")
 
+let mouseHold = false
+
 if (isMobile) {
 	cursor.classList.add("cursorMobile")
 }else{
@@ -34,8 +36,14 @@ buttons.forEach((button) => {
 })
 
 window.addEventListener("mousedown", () => {
+	console.log("mousedown")
 	cursor.classList.add("cursorClick")
+})
+
+window.addEventListener("mouseup", () => {
+	console.log("mouseup")
 	setTimeout(() => {
+
 		cursor.classList.remove("cursorClick")
 	}, 200)
 })
