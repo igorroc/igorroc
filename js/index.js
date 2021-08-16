@@ -69,8 +69,10 @@ function nextPage() {
 
 document.addEventListener("mousemove", (event) => {
 	document.querySelectorAll(".parallaxMouse").forEach((element) => {
-		element.style.transform = `rotateY(${event.clientX / 60}deg) rotateX(${
-			event.clientY / 50
+		element.style.transform = `rotateY(${
+			(event.clientX - document.body.clientWidth / 2) / 30
+		}deg) rotateX(${
+			(event.clientY - document.body.clientHeight / 2) / 30
 		}deg)`
 	})
 })
