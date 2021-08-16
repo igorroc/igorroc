@@ -58,6 +58,7 @@ main > div {
 	font-size: 5em;
 	transform: translateX(-100%);
 	transition: transform 1s 250ms var(--custom-bezier-curve);
+	filter: drop-shadow(0 0 5px #000);
 }
 
 .title h2 {
@@ -181,10 +182,6 @@ main > div {
 	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
 	
 	transition: opacity 300ms var(--custom-bezier-curve), transform 300ms var(--custom-bezier-curve);
-}
-
-#scrollMore:hover {
-	animation-duration: 1s;
 }
 
 #scrollMore:hover span{
