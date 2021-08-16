@@ -1,6 +1,11 @@
 let wrapperPages = document.querySelector("#wrapperPages")
 let scrollMore = document.querySelector("#scrollMore")
 let timeline = document.querySelector("#timeline")
+
+var link = document.querySelector("#headerCTA")
+var form = document.querySelector("#formID")
+var formClose = document.querySelector("#closeForm")
+
 let currentPage = 0
 let transitioning = false
 
@@ -29,7 +34,7 @@ document.addEventListener("wheel", (event) => {
 
 	setTimeout(() => {
 		transitioning = false
-	}, 2000)
+	}, 1000)
 })
 
 function nextPage() {
@@ -50,4 +55,15 @@ document.addEventListener("mousemove", (event) => {
 			event.clientY / 50
 		}deg)`
 	})
+})
+
+
+// Custom form
+link.addEventListener("click", () => {
+	console.log("click")
+	form.classList.add("formShow")
+})
+
+formClose.addEventListener("click", () => {
+	form.classList.remove("formShow")
 })

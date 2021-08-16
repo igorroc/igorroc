@@ -52,11 +52,12 @@
     top: 50%;
 	left: 65%;
     
-    opacity: 0.1;
+		transform: scale(1);
+		opacity: 0.1;
     
 	z-index: -10;
 
-	animation: startRipple 6s forwards cubic-bezier(0.61, 0.04, 0.46, 1.49);
+	/* animation: startRipple 6s forwards cubic-bezier(0.61, 0.04, 0.46, 1.49); */
 }
 
 .circle {

@@ -22,11 +22,12 @@ header {
 	transition: opacity 0.2s var(--custom-bezier-curve);
 }
 
-#headerLogo:hover img {
+#headerLogo:hover img,
+#headerLogo:focus img {
 	opacity: 1;
 }
 
-#headerCTA a {
+#headerCTA button {
 	padding: 10px 20px;
 
 	border-radius: 5px;
@@ -41,7 +42,8 @@ header {
 	transition: all 500ms var(--custom-bezier-curve);
 }
 
-#headerCTA:hover a {
+#headerCTA:hover button,
+#headerCTA button:focus {
 	letter-spacing: 0.1em;
 	background-color: #13974a56;
 }
@@ -52,7 +54,15 @@ header {
 
 	padding: 15px;
 
+	transform: scale(1);
+
 	position: relative;
+
+	transition: transform 300ms var(--custom-bezier-curve);
+}
+
+#hamburguerMenu:hover {
+	transform: scale(1.2);
 }
 
 #hamburguerMenu:after,
@@ -60,7 +70,7 @@ header {
 	content: "";
 	position: absolute;
 
-	width: 70%;
+	width: 75%;
 	height: 3px;
 
 	left: 50%;
@@ -69,9 +79,15 @@ header {
 	transform-origin: 30%;
 	margin: 0 auto;
 
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.5);
 
-	transition: transform 0.4s var(--custom-bezier-curve);
+	transition: transform 0.4s var(--custom-bezier-curve),
+		background-color 0.4s var(--custom-bezier-curve);
+}
+
+#hamburguerMenu:hover:after,
+#hamburguerMenu:hover:before {
+	background-color: white;
 }
 
 #hamburguerMenu:after {
@@ -84,10 +100,12 @@ header {
 
 #hamburguerMenu.headerMenuActive::after {
 	transform: translateX(-45%) rotate(-45deg);
+	background-color: #f85969;
 }
 
 #hamburguerMenu.headerMenuActive::before {
 	transform: translateX(-45%) rotate(45deg);
+	background-color: #f85969;
 }
 
 #menu {
@@ -109,7 +127,7 @@ header {
 	transition: transform 750ms var(--custom-bezier-curve);
 }
 
-#menu.menuShow{
+#menu.menuShow {
 	transform: translateY(0%);
 }
 
@@ -117,7 +135,7 @@ header {
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content:center;
+	justify-content: center;
 	gap: 20px;
 
 	opacity: 0;
@@ -131,42 +149,46 @@ header {
 	background-clip: text;
 
 	background-image: linear-gradient(90deg, #08acae, #13974a, #08acae);
-	
+
 	background-size: 200%;
 	background-position: 0%;
-	
+
 	animation: textGradientAnimation 1s infinite;
-	transition: color 300ms ease, letter-spacing 300ms ease, opacity 300ms 650ms var(--custom-bezier-curve);
+	transition: color 300ms ease, letter-spacing 300ms ease,
+		opacity 300ms 650ms var(--custom-bezier-curve);
 }
 
-.menuItem:nth-child(2){
-	transition: color 300ms ease, letter-spacing 300ms ease, opacity 300ms 750ms var(--custom-bezier-curve);
+.menuItem:nth-child(2) {
+	transition: color 300ms ease, letter-spacing 300ms ease,
+		opacity 300ms 750ms var(--custom-bezier-curve);
 }
 
-.menuItem:nth-child(3){
-	transition: color 300ms ease, letter-spacing 300ms ease, opacity 300ms 850ms var(--custom-bezier-curve);
+.menuItem:nth-child(3) {
+	transition: color 300ms ease, letter-spacing 300ms ease,
+		opacity 300ms 850ms var(--custom-bezier-curve);
 }
 
-.menuItem:nth-child(4){
-	transition: color 300ms ease, letter-spacing 300ms ease, opacity 300ms 950ms var(--custom-bezier-curve);
+.menuItem:nth-child(4) {
+	transition: color 300ms ease, letter-spacing 300ms ease,
+		opacity 300ms 950ms var(--custom-bezier-curve);
 }
 
-#menu.menuShow .menuItem{
+#menu.menuShow .menuItem {
 	opacity: 1;
 }
 
 .menuItem::after {
 	content: "";
-	
+
 	width: 100%;
 	height: 4px;
-	
+
 	position: absolute;
 	left: 0;
 	top: 0;
-	
+
 	background-color: white;
-	
+
 	transform: translateY(0px);
 	transition: transform 300ms ease;
 }
@@ -175,13 +197,15 @@ header {
 	font-size: 0.7em;
 }
 
-.menuItem:hover {
+.menuItem:hover,
+.menuItem:focus {
 	color: rgba(255, 255, 255, 0);
 	letter-spacing: 0.1em;
-	padding-left: .1em;
+	padding-left: 0.1em;
 }
 
-.menuItem:hover::after{
+.menuItem:hover::after,
+.menuItem:focus::after {
 	transform: translateY(1em);
 	background-image: linear-gradient(90deg, #08acae, #13974a, #08acae);
 }

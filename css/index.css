@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	cursor: none;
+	cursor: var(--cursor);
 }
 
 body {
@@ -130,6 +130,148 @@ main > div {
 	width: 60px;
 	background-color: white;
 }
+
+
+#formID {
+	height: 100vh;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	z-index: 8;
+
+	transform: translateY(-100%);
+
+	font-size: 1.5em;
+	padding: 0 50px;
+	overflow: hidden;
+	background: linear-gradient(to right, #141414, #252525);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: transform 750ms var(--custom-bezier-curve);
+}
+
+#formID.formShow{
+	transform: translateY(0%);
+}
+
+#formID > div {
+	padding: 60px 40px;
+	border-radius: 3px;
+
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	transform: scale(0);
+	transition: transform 500ms 500ms var(--custom-bezier-curve);
+}
+
+#formID.formShow > div{
+	transform: scale(1)
+}
+
+#formTitle h3 {
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+#formTitle h3 b {
+	color: #5cff77;
+}
+
+#formTitle p {
+	color: #97999b;
+	font-size: 1em;
+}
+
+#formContent {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.question {
+	width: 100%;
+
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	color: #727d91;
+}
+
+.checkQuestion {
+	flex-direction: row;
+}
+
+.checkQuestion a {
+	color: #5cb0ff;
+}
+
+.question input,
+.question textarea {
+	font-family: "Montserrat", sans-serif;
+
+	font-size: .8em;
+	padding: 10px;
+
+	border: none;
+	border: 1px solid #fff2;
+	outline: none;
+
+	color: white;
+	background-color: #252525;
+}
+
+#closeForm {
+	font-size: 2em;
+
+	color: white;
+	opacity: 0.5;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	transition: all 100ms ease;
+}
+
+#closeForm:hover {
+	opacity: 0.8;
+}
+
+button[type="submit"] {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+
+	margin-top: 40px;
+	padding: 10px 20px;
+
+	background: linear-gradient(90deg, #2f8649, #39a17e);
+	color: white;
+	border: none;
+	border-radius: 3px;
+
+	transition: all 100ms ease;
+}
+
+button[type="submit"]:hover {
+	box-shadow: 0px 0px 10px #5af97c;
+	transform: scale(1.02);
+}
+
 
 @keyframes floating {
 	0% {

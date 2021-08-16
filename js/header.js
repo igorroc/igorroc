@@ -2,7 +2,6 @@ let hambMenu = document.querySelector("#hamburguerMenu")
 let menu = document.querySelector("#menu")
 
 hambMenu.addEventListener("click", () =>{
-    console.log("click")
     hambMenu.classList.toggle("headerMenuActive")
     menu.classList.toggle("menuShow")
 })
