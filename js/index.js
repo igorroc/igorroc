@@ -129,7 +129,8 @@ function handleTouchMove(evt) {
 	var yDiff = yDown - yUp
 
 	if (Math.abs(xDiff) > Math.abs(yDiff)) {
-		/*most significant*/
+		alert("Swipe")
+		console.log("Swipe")
 		if (!transitioning) {
 			transitioning = true
 
