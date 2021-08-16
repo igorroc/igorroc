@@ -87,3 +87,46 @@ code {
 		background-position: -100%;
 	}
 }
+
+#noScript {
+	position: absolute;
+	z-index: 100;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+
+	background-color: rgb(240, 83, 83);
+	color: white;
+
+	filter: drop-shadow(0 0 5px #000);
+}
+
+#noScript > *{
+	animation: floatingVertical 2s infinite ease;
+}
+
+#noScript > *:nth-child(2){
+	animation-delay: .2s;
+}
+
+#noScript > *:nth-child(3){
+	animation-delay: .4s;
+}
+
+#noScript img {
+	width: 5em;
+	filter: invert(1) drop-shadow(0 0 5px #000);
+}
+
+#noScript h1 {
+	text-align: center;
+	max-width: 300px;
+	font-size: 3em;
+	filter: drop-shadow(0 0 5px #000);
+}
