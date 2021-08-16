@@ -2,6 +2,12 @@
 	--custom-bezier-curve: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+code {
+	background-color: #fff5;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
 .gradientOverText {
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -16,8 +22,8 @@
 	color: transparent;
 }
 
-.hiddenText{
-	color: #0A1516;
+.hiddenText {
+	color: #0a1516;
 }
 .mainDivision {
 	position: relative;
@@ -26,7 +32,9 @@
 	height: 30px;
 
 	transform: translateX(-150%);
-	transition: transform 1s 500ms var(--custom-bezier-curve), width 300ms var(--custom-bezier-curve), margin-left 300ms var(--custom-bezier-curve);
+	transition: transform 1s 500ms var(--custom-bezier-curve),
+		width 300ms var(--custom-bezier-curve),
+		margin-left 300ms var(--custom-bezier-curve);
 }
 
 .mainDivision:after {
@@ -41,13 +49,34 @@
 
 	background-color: #21d69a;
 }
-.pageActive .mainDivision{
+.pageActive .mainDivision {
 	transform: translateX(0%);
 }
 
-.parallaxMouse{
+.parallaxMouse {
 	transform-style: preserve-3d;
 	transform: perspective(500px);
+}
+
+.greenTransparentButton {
+	padding: 10px 20px;
+
+	border-radius: 5px;
+	border: 1px solid #13974a;
+
+	background-color: #13974a1a;
+	color: white;
+
+	font-weight: bold;
+	text-decoration: none;
+
+	transition: all 500ms var(--custom-bezier-curve);
+}
+
+.greenTransparentButton:hover,
+.greenTransparentButton:focus {
+	letter-spacing: 0.1em;
+	background-color: #13974a56;
 }
 
 @keyframes textGradientAnimation {
