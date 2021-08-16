@@ -80,16 +80,16 @@ main > div {
 	overflow: hidden;
 
 	opacity: 0;
-	
+
 	border: 2px solid #21d69a;
-	
+
 	/* transform-style: preserve-3d; */
-	transform: translate(100%, -50%) scale(.7);
-	
+	transform: translate(100%, -50%) scale(0.7);
+
 	transition: opacity 1s ease, transform 2s ease;
 }
 
-.pageActive .card{
+.pageActive .card {
 	opacity: 0.5;
 	transform: translate(60%, -50%) scale(1);
 }

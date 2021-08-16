@@ -43,11 +43,10 @@ function nextPage() {
 		`transform: translateY(${-100 * currentPage}vh)`
 	)
 	timeline.querySelector(".timelineActive").classList.remove("timelineActive")
-	
+
 	timeline.children[currentPage].classList.add("timelineActive")
-	
+
 	wrapperPages.querySelector(".pageActive")?.classList.remove("pageActive")
-	console.log(wrapperPages)
 	wrapperPages.children[currentPage].classList.add("pageActive")
 
 	if (currentPage == 0) {

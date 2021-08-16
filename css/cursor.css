@@ -1,7 +1,7 @@
 #cursor {
 	position: absolute;
 	display: none;
-	
+
 	pointer-events: none;
 
 	width: 80px;
@@ -14,7 +14,7 @@
 	background-color: hsla(160, 73%, 48%, 0.2);
 	border: 2px solid #21d69a;
 
-	opacity: .2;
+	opacity: 0.2;
 
 	z-index: 10;
 
@@ -29,10 +29,9 @@
 	border-radius: 50%;
 }
 
-
-#cursor.cursorClick{
+#cursor.cursorClick {
 	transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
-	opacity: .7;
+	opacity: 0.7;
 	border-radius: 50%;
 	background-color: hsla(354, 92%, 66%, 0.2);
 	border: 2px solid #f85969;

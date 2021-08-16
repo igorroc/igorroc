@@ -49,15 +49,13 @@
 /* PARTIGULAS CIRCULARES SCALE-DOWN-UP */
 .ripple {
 	position: absolute;
-    top: 50%;
+	top: 50%;
 	left: 65%;
-    
-		transform: scale(1);
-		opacity: 0.1;
-    
-	z-index: -10;
 
-	/* animation: startRipple 6s forwards cubic-bezier(0.61, 0.04, 0.46, 1.49); */
+	transform: scale(1);
+	opacity: 0.1;
+
+	z-index: -10;
 }
 
 .circle {
@@ -71,10 +69,10 @@
 	box-shadow: 10px 0px 10px 0px rgb(0, 0, 0, 0.2);
 	border-radius: 50%;
 	opacity: calc(0.1 * (6 - var(--tam)));
-	
+
 	animation: ripple 6s infinite ease-in-out;
-	animation-delay: calc(.5s * var(--tam));
-	
+	animation-delay: calc(0.5s * var(--tam));
+
 	transform: scale(0);
 	transition: transform 300ms ease;
 }
@@ -94,9 +92,10 @@
 }
 
 @keyframes startRipple {
-	0%{
-		transform: scale(0)
-	}100%{
+	0% {
+		transform: scale(0);
+	}
+	100% {
 		transform: scale(1);
 	}
 }
