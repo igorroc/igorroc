@@ -83,6 +83,8 @@ window.addEventListener("resize", () => {
 // Custom form
 link.addEventListener("click", () => {
 	form.classList.add("formShow")
+	menu.classList.remove("menuShow")
+	hambMenu.classList.remove("headerMenuActive")
 })
 
 formClose.addEventListener("click", () => {

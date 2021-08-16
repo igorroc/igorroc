@@ -112,7 +112,7 @@ header {
 
 #menu {
 	position: fixed;
-	z-index: 8;
+	z-index: 9;
 
 	width: 100vw;
 	height: 100vh;
@@ -210,4 +210,15 @@ header {
 .menuItem:focus::after {
 	transform: translateY(1em);
 	background-image: linear-gradient(90deg, #08acae, #13974a, #08acae);
+}
+
+
+@media (min-width: 1200px) {
+	#menu .menuItem {
+		font-size: 3em;
+	}
+
+	#menu .menuItem:after {
+		height: 2px;
+	}
 }

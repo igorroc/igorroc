@@ -6,6 +6,8 @@ let buttons = document.querySelectorAll("button")
 
 if (isMobile) {
 	cursor.classList.add("cursorMobile")
+}else{
+	root.style.setProperty("cursor", "none")
 }
 
 window.addEventListener("mousemove", (event) => {

@@ -209,7 +209,7 @@ main > div {
 
 	z-index: 8;
 
-	transform: translateX(-100%);
+	transform: translateY(100%);
 
 	font-size: 1.5em;
 	padding: 0 50px;
@@ -369,14 +369,6 @@ button[type="submit"]:hover {
 @media (max-width: 1200px) {
 	body {
 		font-size: 12px;
-	}
-
-	#menu .menuItem {
-		font-size: 3em;
-	}
-
-	#menu .menuItem:after {
-		height: 2px;
 	}
 
 	main {
