@@ -140,8 +140,11 @@ main > div {
 
 .pageActive .card:before,
 .pageActive .card:after {
-	margin-left: 100%;
 	width: 0%;
+}
+
+.pageActive .card:before {
+	margin-left: 100%;
 }
 
 #scrollMore {
