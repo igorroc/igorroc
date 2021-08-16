@@ -161,8 +161,35 @@ main > div {
 		bottom 500ms var(--custom-bezier-curve);
 }
 
+#scrollMore span {
+	position: absolute;
+	top: -1em;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	transform-origin: bottom center;
+	
+	padding: 5px 10px;
+	border-radius: 3px;
+	
+	font-size: 1em;
+	
+	color: white;
+	opacity: 0;
+	
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+	
+	transition: opacity 300ms var(--custom-bezier-curve), transform 300ms var(--custom-bezier-curve);
+}
+
 #scrollMore:hover {
 	animation-duration: 1s;
+}
+
+#scrollMore:hover span{
+	opacity: .8;
+	transform: translateX(-50%) scale(1);
 }
 
 #scrollMore.scrollMoreHidden {
@@ -406,6 +433,7 @@ button[type="submit"]:hover {
 	}
 
 	#scrollMore {
+		/* position: relative; */
 		left: auto;
 		bottom: 50%;
 		right: 10px;
@@ -413,6 +441,7 @@ button[type="submit"]:hover {
 		transition: animation-duration 2s ease-in,
 			right 500ms var(--custom-bezier-curve);
 	}
+
 
 	#scrollMore.scrollMoreHidden {
 		bottom: 50%;

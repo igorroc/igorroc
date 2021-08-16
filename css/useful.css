@@ -79,6 +79,22 @@ code {
 	background-color: #13974a56;
 }
 
+.mobileOnly{
+	display: none;
+}
+.descktopOnly{
+	display: block;
+}
+
+@media (max-width: 1200px){
+	.mobileOnly{
+		display: block;
+	}
+	.descktopOnly{
+		display: none;
+	}
+}
+
 @keyframes textGradientAnimation {
 	from {
 		background-position: 100%;
