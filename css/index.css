@@ -51,10 +51,12 @@ main > div {
 	z-index: 2;
 
 	overflow: hidden;
+	max-width: 600px;
 }
 
 .title h1 {
-	max-width: 500px;
+    font-family: 'Merriweather', serif;
+
 	font-size: 5em;
 	transform: translateX(-100%);
 	transition: transform 1s 250ms var(--custom-bezier-curve);
@@ -62,6 +64,7 @@ main > div {
 }
 
 .title h2 {
+	font-size: 2em;
 	margin-top: 10px;
 	transform: translateX(-100%);
 	transition: transform 1s 750ms var(--custom-bezier-curve);
@@ -275,10 +278,12 @@ main > div {
 }
 
 #formTitle h3 {
+	font-family: 'Merriweather', serif;
+
 	color: #ffffff;
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
-	max-width: 100px;
+	max-width: 120px;
 }
 
 #formTitle h3 b {
@@ -319,8 +324,6 @@ main > div {
 
 .question input,
 .question textarea {
-	font-family: "Montserrat", sans-serif;
-
 	font-size: 0.8em;
 	padding: 10px;
 
@@ -349,7 +352,8 @@ main > div {
 }
 
 button[type="submit"] {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Merriweather', serif;
+
 	font-size: 1em;
 	font-weight: 500;
 
