@@ -417,13 +417,13 @@ button[type="submit"]:hover {
 	}
 
 	#timeline {
-		bottom: 10px;
-		top: auto;
+		top: 10px;
+		bottom: auto;
 		left: 50%;
 		transform: translateX(-50%);
 
 		flex-direction: row;
-		align-items: flex-end;
+		align-items: flex-start;
 	}
 
 	#timeline span {

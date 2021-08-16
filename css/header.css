@@ -213,7 +213,11 @@ header {
 }
 
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
+	header{
+		bottom: 0;
+		top: auto;	
+	}
 	#menu .menuItem {
 		font-size: 3em;
 	}
