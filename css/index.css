@@ -14,6 +14,11 @@ body {
 	flex-direction: column;
 
 	overflow: hidden;
+
+}
+
+#wrapperPages{
+	transition: transform 1000ms var(--custom-bezier-curve);
 }
 
 main {
@@ -49,35 +54,69 @@ main > div {
 	margin-left: 50%;
 }
 
-
-#scrollMore{
-	position: absolute;
+#scrollMore {
+	position: fixed;
 
 	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 
 	padding: 20px;
-	
+
 	font-size: 2em;
 	color: white;
 
-	animation: floating 4s infinite ease;
+	animation: floating 2s infinite ease;
 
-	transition: animation-duration 2s ease-in;
+	transition: animation-duration 2s ease-in, bottom 500ms var(--custom-bezier-curve);
 }
 
-#scrollMore:hover{
+#scrollMore:hover {
 	animation-duration: 1s;
 }
 
+#scrollMore.scrollMoreHidden{
+	bottom: -50%
+}
+
+#timeline {
+	position: fixed;
+
+	left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+
+}
+
+#timeline span {
+	width: 30px;
+	height: 3px;
+	
+	border-radius: 0 2px 2px 0;
+	
+	background-color: rgba(255, 255, 255, 0.473);
+
+	transition: width 200ms var(--custom-bezier-curve),
+		background-color 200ms var(--custom-bezier-curve);
+}
+
+#timeline .timelineActive {
+	width: 60px;
+	background-color: white;
+}
 
 @keyframes floating {
-	0%{
+	0% {
 		transform: translateY(-10px);
-	}50%{
+	}
+	50% {
 		transform: translateY(10px);
-	}100%{
+	}
+	100% {
 		transform: translateY(-10px);
 	}
 }

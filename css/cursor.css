@@ -10,9 +10,10 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	background-color: #21d69a;
+	background-color: hsla(160, 73%, 48%, 0.2);
+	border: 2px solid #21d69a;
 
-	opacity: 0.05;
+	opacity: .2;
 
 	z-index: 10;
 
@@ -22,7 +23,7 @@
 }
 
 #cursor.cursorOnLink {
-	transform: translate(-50%, -50%) scale(0.7);
-	opacity: 0.4;
+	transform: translate(-50%, -50%) scale(0.7) rotate(90deg);
+	opacity: 1;
 	border-radius: 50%;
 }

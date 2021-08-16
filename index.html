@@ -13,7 +13,10 @@
 		<link rel="stylesheet" href="./css/particles.css" />
 
 		<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-		<script src="https://kit.fontawesome.com/e07fba0c03.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/e07fba0c03.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<header>
@@ -26,22 +29,79 @@
 			<div id="hamburguerMenu"></div>
 		</header>
 
-		<main>
-			<div>
-				<div class="title">
-					<h1>
-						Igor<br />
-						Rocha
-					</h1>
-					<div class="mainDivision"></div>
-					<h2>
-						frontend developer & <br />
-						web designer
-					</h2>
-				</div>
-			</div>
-		</main>
+		<div id="menu">
+			<a class="menuItem" href="./index.html">HOME</a>
+			<a class="menuItem" href="./projects">PROJECTS</a>
+			<a class="menuItem" href="./links.html">LINKS</a>
+			<a class="menuItem" href="./curriculum.pdf">
+				CURRICULUM <i class="fas fa-file-download"></i>
+			</a>
+		</div>
 
+		<div id="wrapperPages">
+			<main id="introduction" page="0">
+				<div>
+					<div class="title">
+						<h1>
+							Igor<br />
+							Rocha
+						</h1>
+						<div class="mainDivision"></div>
+						<h2>
+							frontend developer & <br />
+							web designer
+						</h2>
+					</div>
+				</div>
+			</main>
+
+			<main id="info" page="1">
+				<div>
+					<div class="title">
+						<h1>
+							Pagina 2<br />
+							teste
+						</h1>
+						<div class="mainDivision"></div>
+						<h2>
+							aaaaa aaaaa & <br />
+							ccccc ss
+						</h2>
+					</div>
+				</div>
+			</main>
+
+			<main id="about" page="2">
+				<div>
+					<div class="title">
+						<h1>
+							Pagina 3<br />
+							asdasdkasasd
+						</h1>
+						<div class="mainDivision"></div>
+						<h2>sd ccccc ss</h2>
+					</div>
+				</div>
+			</main>
+
+			<main id="funny" page="3">
+				<div>
+					<div class="title">
+						<h1>
+							Pagina 4<br />
+							qqqqq
+						</h1>
+						<div class="mainDivision"></div>
+						<h2>
+							aaaaa aaaaa & <br />
+							ccccc ss
+						</h2>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- PARTICLES -->
 		<div class="ripple">
 			<div style="--tam: 5" class="circle"></div>
 			<div style="--tam: 3" class="circle"></div>
@@ -49,7 +109,26 @@
 			<div style="--tam: 4" class="circle"></div>
 			<div style="--tam: 1" class="circle"></div>
 		</div>
+		<ul class="particles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 
+		<!-- HUD -->
+		<div id="timeline">
+			<span class="timelineActive"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 		<div id="scrollMore">
 			<i class="fas fa-chevron-down"></i>
 		</div>
@@ -57,6 +136,8 @@
 
 		<script src="./js/header.js"></script>
 		<script src="./js/cursor.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/particles.js"></script>
 
 		<noscript> </noscript>
 	</body>
