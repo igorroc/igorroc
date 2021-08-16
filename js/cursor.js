@@ -4,10 +4,8 @@ let cursor = document.querySelector("#cursor")
 let links = document.querySelectorAll("a")
 let buttons = document.querySelectorAll("button")
 
-
-if(!isMobile){
-	root.style.setProperty("--cursor", "none")
-	cursor.style.setProperty("display", "block")
+if (isMobile) {
+	cursor.classList.add("cursorMobile")
 }
 
 window.addEventListener("mousemove", (event) => {
