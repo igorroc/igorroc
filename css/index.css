@@ -96,6 +96,7 @@ main > div {
 
 .card:hover {
 	opacity: 1;
+	transform: translate(60%, -50%) scale(1.05);
 }
 
 .card > img {
