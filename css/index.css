@@ -209,11 +209,11 @@ main > div {
 		transform: translate(10vw, -160%) scale(0.7);
 	}
 
-	.pageActive .card:hover {
-		transform: translate(10vw, -90%) scale(1.05);
-	}
-
 	.pageActive .card {
 		transform: translate(10vw, -95%) scale(1);
+	}
+
+	.pageActive .card.isClickable:hover {
+		transform: translate(10vw, -90%) scale(1.05);
 	}
 }
