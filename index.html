@@ -52,7 +52,9 @@
 					<img src="./img/logo.png" />
 				</a>
 			</div>
-			<div id="headerCTA"><button>HIRE ME</button></div>
+			<div id="headerCTA">
+				<button class="semiTransparentButton">HIRE ME</button>
+			</div>
 			<div id="hamburguerMenu"></div>
 		</header>
 
@@ -83,11 +85,11 @@
 
 			<main id="info" style="--page: 1" page="1">
 				<div class="title">
-					<h1>Ainda to desenvolvendo</h1>
+					<h1>Aqui vai ter uma página</h1>
 					<div class="mainDivision"></div>
-					<h2>tenha paciencia</h2>
+					<h2>Provavelmente o meu projeto mais recente</h2>
 				</div>
-				<div class="card">
+				<div class="card isClickable">
 					<div class="parallaxMouse">
 						<img src="./img/page2.jfif" />
 					</div>
@@ -96,11 +98,11 @@
 
 			<main id="about" style="--page: 2" page="2">
 				<div class="title">
-					<h1>Finge que tem uma página muito legal aqui.</h1>
+					<h1>More about me</h1>
 					<div class="mainDivision"></div>
 					<h2>Um dia vai ter mesmo!</h2>
 				</div>
-				<div class="card">
+				<div class="card isClickable">
 					<div class="parallaxMouse">
 						<img src="./img/page3.jfif" />
 					</div>
@@ -110,8 +112,7 @@
 			<main id="funny" style="--page: 3" page="3">
 				<div class="title">
 					<h1>
-						CSS + HTML + JS<br />
-						PURO
+						My projects
 					</h1>
 					<div class="mainDivision"></div>
 					<h2>
@@ -119,9 +120,27 @@
 						<span class="hiddenText">texto escondido</span>
 					</h2>
 				</div>
-				<div class="card">
+				<div class="card isClickable">
 					<div class="parallaxMouse">
 						<img src="./img/page4.jfif" />
+					</div>
+				</div>
+			</main>
+
+			<main id="contact" style="--page: 4" page="4">
+				<div class="title">
+					<h1>Contact me</h1>
+					<div class="mainDivision"></div>
+					<h2>
+						<button id="sendEmail" class="semiTransparentButton">
+							<i class="fa fa-envelope"></i>
+							Send an email
+						</button>
+					</h2>
+				</div>
+				<div class="card">
+					<div class="parallaxMouse">
+						<img src="./img/contact.png" />
 					</div>
 				</div>
 			</main>
@@ -175,7 +194,7 @@
 								rows="5"
 							></textarea>
 						</div>
-						<button type="submit" id="submit">
+						<button class="semiTransparentButton"type="submit" id="submit">
 							<i class="fas fa-envelope"></i> Let's go!
 						</button>
 					</form>
@@ -210,6 +229,7 @@
 		<!-- HUD -->
 		<div id="timeline">
 			<span class="timelineActive"></span>
+			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
