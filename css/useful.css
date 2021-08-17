@@ -53,7 +53,8 @@ code {
 	transform: translateX(0%);
 }
 
-.parallaxMouse {
+.parallaxMouse,
+.parallaxMouse2d {
 	transform-style: preserve-3d;
 	transform: perspective(500px);
 }
@@ -79,18 +80,18 @@ code {
 	background-color: #13974a56;
 }
 
-.mobileOnly{
+.mobileOnly {
 	display: none;
 }
-.descktopOnly{
+.desktopOnly {
 	display: block;
 }
 
-@media (max-width: 1200px){
-	.mobileOnly{
+@media (max-width: 1200px) {
+	.mobileOnly {
 		display: block;
 	}
-	.descktopOnly{
+	.desktopOnly {
 		display: none;
 	}
 }
