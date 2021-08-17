@@ -5,12 +5,6 @@ let wrapperPages = document.querySelector("#wrapperPages")
 let scrollMore = document.querySelector("#scrollMore")
 let timeline = document.querySelector("#timeline")
 
-var link = document.querySelector("#headerCTA")
-let sendEmail = document.querySelector("#sendEmail")
-
-var form = document.querySelector("#formID")
-var formClose = document.querySelector("#closeForm")
-
 let currentPage = page || 0
 let transitioning = false
 let isMobile = isMobileDevice()
@@ -69,40 +63,9 @@ function nextPage() {
 	}
 }
 
-document.addEventListener("mousemove", (event) => {
-	document.querySelectorAll(".parallaxMouse").forEach((element) => {
-		element.style.transform = `rotateY(${
-			(event.clientX - document.body.clientWidth / 2) / 30
-		}deg) rotateX(${
-			(event.clientY - document.body.clientHeight / 2) / 30
-		}deg)`
-	})
-	document.querySelectorAll(".parallaxMouse2d").forEach((element) => {
-		element.style.transform = `translateX(${
-			event.clientX / 30
-		}px) translateY(${event.clientY / 30}px)`
-	})
-})
-
 window.addEventListener("resize", () => {
 	isMobile = isMobileDevice()
 	nextPage()
-})
-
-// Custom form
-link.addEventListener("click", () => {
-	form.classList.add("formShow")
-	menu.classList.remove("menuShow")
-	hambMenu.classList.remove("headerMenuActive")
-})
-sendEmail.addEventListener("click", () => {
-	form.classList.add("formShow")
-	menu.classList.remove("menuShow")
-	hambMenu.classList.remove("headerMenuActive")
-})
-
-formClose.addEventListener("click", () => {
-	form.classList.remove("formShow")
 })
 
 function isMobileDevice() {
