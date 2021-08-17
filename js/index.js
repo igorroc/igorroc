@@ -6,6 +6,8 @@ let scrollMore = document.querySelector("#scrollMore")
 let timeline = document.querySelector("#timeline")
 
 var link = document.querySelector("#headerCTA")
+let sendEmail = document.querySelector("#sendEmail")
+
 var form = document.querySelector("#formID")
 var formClose = document.querySelector("#closeForm")
 
@@ -89,6 +91,11 @@ window.addEventListener("resize", () => {
 
 // Custom form
 link.addEventListener("click", () => {
+	form.classList.add("formShow")
+	menu.classList.remove("menuShow")
+	hambMenu.classList.remove("headerMenuActive")
+})
+sendEmail.addEventListener("click", () => {
 	form.classList.add("formShow")
 	menu.classList.remove("menuShow")
 	hambMenu.classList.remove("headerMenuActive")
