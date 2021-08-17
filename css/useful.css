@@ -9,7 +9,7 @@ code {
 	border-radius: 5px;
 }
 
-i{
+i {
 	pointer-events: none;
 }
 
@@ -197,14 +197,14 @@ i{
 		display: none;
 	}
 
-	.wrapperHiddenText{
+	.wrapperHiddenText {
 		left: 5%;
 		bottom: 35%;
 	}
 }
 
-@media (max-width: 800px){
-	.wrapperHiddenText{
+@media (max-width: 800px) {
+	.wrapperHiddenText {
 		left: 10%;
 		bottom: 25%;
 	}

@@ -72,7 +72,7 @@
 	margin-top: 40px;
 }
 
-#formContent form{
+#formContent form {
 	display: flex;
 	flex-direction: column;
 }

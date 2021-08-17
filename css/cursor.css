@@ -40,7 +40,7 @@
 #cursor.cursorOnHidden {
 	opacity: 1;
 
-	animation: blink 1s .5s infinite var(--custom-bezier-curve);
+	animation: blink 1s 0.5s infinite var(--custom-bezier-curve);
 }
 
 #cursor.cursorClick {
