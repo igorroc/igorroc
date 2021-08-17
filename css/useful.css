@@ -123,16 +123,16 @@ code {
 	filter: drop-shadow(0 0 5px #000);
 }
 
-#noScript > *{
+#noScript > * {
 	animation: floatingVertical 2s infinite ease;
 }
 
-#noScript > *:nth-child(2){
-	animation-delay: .2s;
+#noScript > *:nth-child(2) {
+	animation-delay: 0.2s;
 }
 
-#noScript > *:nth-child(3){
-	animation-delay: .4s;
+#noScript > *:nth-child(3) {
+	animation-delay: 0.4s;
 }
 
 #noScript img {
