@@ -7,7 +7,6 @@ let textInputs = document.querySelectorAll("input")
 let textAreas = document.querySelectorAll("textarea")
 let cards = document.querySelectorAll(".card")
 
-console.log(cards)
 let mouseHold = false
 
 if (isMobile) {
@@ -72,12 +71,10 @@ textAreas.forEach((textArea) => {
 })
 
 window.addEventListener("mousedown", () => {
-	console.log("mousedown")
 	cursor.classList.add("cursorClick")
 })
 
 window.addEventListener("mouseup", () => {
-	console.log("mouseup")
 	setTimeout(() => {
 
 		cursor.classList.remove("cursorClick")

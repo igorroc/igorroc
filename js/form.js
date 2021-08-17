@@ -16,5 +16,6 @@ sendEmail.addEventListener("click", () => {
 })
 
 formClose.addEventListener("click", () => {
+    console.log("close form")
 	form.classList.remove("formShow")
 })
