@@ -23,6 +23,11 @@
 	transition: transform 750ms var(--custom-bezier-curve);
 }
 
+.headerDark ~ #formID {
+	height: calc(100vh - 100px);
+	padding: 50px;
+}
+
 #formID.formShow {
 	transform: translateY(0%) translateX(0%);
 }

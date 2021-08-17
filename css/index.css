@@ -56,12 +56,6 @@ main > div {
 
 	overflow: hidden;
 	max-width: 600px;
-
-	transition: margin-top 2s var(--custom-bezier-curve),
-		margin-bottom 2s var(--custom-bezier-curve),
-		margin-left 2s var(--custom-bezier-curve),
-		margin-right 2s var(--custom-bezier-curve),
-		font-size 1s var(--custom-bezier-curve);
 }
 
 .noTransition .title {
@@ -73,8 +67,7 @@ main > div {
 
 	font-size: 5em;
 	transform: translateX(-100%);
-	transition: transform 1s var(--custom-bezier-curve),
-		font-size 1s var(--custom-bezier-curve);
+	
 	filter: drop-shadow(0 0 5px #000);
 }
 
@@ -85,8 +78,7 @@ main > div {
 	font-size: 2em;
 	margin-top: 10px;
 	transform: translateX(-100%);
-	transition: transform 1s 750ms var(--custom-bezier-curve),
-		font-size 1s var(--custom-bezier-curve);
+	
 }
 .noTransition .title h2 {
 	transition: none;
@@ -197,6 +189,10 @@ main > div {
 	margin-left: 100%;
 }
 
+.accessPage .title {
+    margin-left: 7%;
+}
+
 @media (max-width: 1200px) {
 	body {
 		font-size: 12px;
@@ -228,12 +224,13 @@ main > div {
 
 	.accessPage .title {
 		font-size: 1em;
-		margin: auto;
-		margin-left: 7%;
+		margin-top: 37vh;
+		margin-bottom: auto;
+		margin-left: 5%;
 		margin-right: 5%;
 	}
 
-	.accessPage .title h1 {
+	.accessPage .title h1{
 		font-size: 5em;
 	}
 

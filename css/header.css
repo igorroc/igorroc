@@ -32,7 +32,7 @@ header.headerTop{
 }
 
 header.headerBottom{
-	transform: translateY(calc(100vh - 92px));
+	transform: translateY(0);
 }
 
 #headerLogo {
@@ -219,6 +219,10 @@ header.headerBottom{
 		transform: translateY(calc(100vh - 92px));
 	}
 	
+	header.headerBottom{
+		transform: translateY(calc(100vh - 92px));
+	}
+
 	#menu .menuItem {
 		font-size: 3em;
 	}

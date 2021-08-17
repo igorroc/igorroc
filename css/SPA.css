@@ -1,5 +1,20 @@
-.accessPage .title {
-	margin-left: 7%;
+.title {
+	transition: margin-top 2s var(--custom-bezier-curve),
+		margin-bottom 2s var(--custom-bezier-curve),
+		margin-left 2s var(--custom-bezier-curve),
+		margin-right 2s var(--custom-bezier-curve),
+		transform 2s var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
+}
+
+.title h1 {
+	transition: transform 1s var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
+}
+
+.title h2 {
+	transition: transform 1s var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
 }
 
 .accessPage .card {
@@ -20,7 +35,7 @@
 		height: 40vh;
 		transform: translate(10vw, -95%) scale(1);
 	}
-	
+
 	.accessPage .card {
 		margin-left: 0;
 		width: 100vw;
