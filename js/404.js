@@ -1,4 +1,4 @@
-let h2 = document.querySelector(".pageActive h2")
+let h2 = document.querySelector("#pageNotFound")
 
 let url = document.location
 

@@ -6,10 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>404 - Page not found</title>
 
-		<link
-			rel="stylesheet"
-			href="https://igorroc.github.io/igorroc/css/index.css"
-		/>
+		<link rel="stylesheet" href="./css/404.css" />
 		<link
 			rel="stylesheet"
 			href="https://igorroc.github.io/igorroc/css/header.css"
@@ -50,6 +47,14 @@
 		></script>
 	</head>
 	<body>
+		<noscript>
+			<div id="noScript">
+				<img src="./img/warning.svg" alt="" />
+				<h1>This page requires JavaScript</h1>
+				<img src="./img/warning.svg" alt="" />
+			</div>
+		</noscript>
+		
 		<header>
 			<div id="headerLogo">
 				<a href="https://igorroc.github.io/igorroc/index.html">
@@ -84,27 +89,25 @@
 			</a>
 		</div>
 
-		<div id="wrapperPages">
-			<main class="pageActive">
-				<div style="margin-left: 60%">
-					<div class="title" style="overflow: visible">
-						<h1>Error 404</h1>
-						<div class="mainDivision"></div>
-						<h2>Page not found</h2>
-						<div style="margin-top: 30px">
-							<a
-								id="returnHome"
-								class="semiTransparentButton"
-								href="https://igorroc.github.io/igorroc"
-								style="margin-top: 1em; font-size: 1.5em"
-							>
-								<i class="fas fa-home"></i> Return home
-							</a>
-						</div>
+		<main id="wrapperMessage">
+			<div>
+				<div class="title" style="overflow: visible">
+					<h1>Error 404</h1>
+					<div class="mainDivision"></div>
+					<h2 id="pageNotFound">Page not found</h2>
+					<div style="margin-top: 30px">
+						<a
+							id="returnHome"
+							class="semiTransparentButton"
+							href="https://igorroc.github.io/igorroc"
+							style="margin-top: 1em; font-size: 1.5em"
+						>
+							<i class="fas fa-home"></i> Return home
+						</a>
 					</div>
 				</div>
-			</main>
-		</div>
+			</div>
+		</main>
 
 		<div id="formID">
 			<div>
