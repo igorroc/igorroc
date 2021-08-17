@@ -309,6 +309,10 @@ main > div {
 	margin-top: 40px;
 }
 
+#formContent form{
+	display: flex;
+	flex-direction: column;
+}
 .question {
 	width: 100%;
 
@@ -338,6 +342,8 @@ main > div {
 	border: 1px solid #fff2;
 	outline: none;
 
+	resize: none;
+
 	color: white;
 	background-color: #252525;
 }
@@ -346,6 +352,8 @@ main > div {
 	font-size: 2em;
 
 	color: white;
+	background: none;
+	border: none;
 	opacity: 0.5;
 	position: absolute;
 	top: 20px;
@@ -356,6 +364,7 @@ main > div {
 
 #closeForm:hover {
 	opacity: 0.8;
+	transform: rotate(90deg);
 }
 
 button[type="submit"] {
@@ -444,7 +453,6 @@ button[type="submit"]:hover {
 	}
 
 	#scrollMore {
-		/* position: relative; */
 		left: auto;
 		bottom: 50%;
 		right: 10px;
@@ -459,11 +467,12 @@ button[type="submit"]:hover {
 	}
 
 	#formID {
-		padding: 0 2px;
+		padding: 0 5px;
 	}
 
 	#formID > div {
-		padding: 20px;
+		padding: 50px;
+		margin-bottom: 100px;
 	}
 
 	#formTitle h3 {
