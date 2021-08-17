@@ -30,7 +30,7 @@ links.forEach((link) => {
 
 			setTimeout(() => {
 				console.log("MUDANDO")
-				window.location = `../${
+				window.location = `/${
 					link.parentNode.id
 				}.html?page=${link.parentNode.getAttribute("page")}`
 			}, 2000)
@@ -69,6 +69,6 @@ returnButton?.addEventListener("click", () => {
 
 	setTimeout(() => {
 		console.log("MUDANDO")
-		window.location = `../index.html?page=${page}`
+		window.location = `/index.html?page=${page}`
 	}, 2000)
 })
