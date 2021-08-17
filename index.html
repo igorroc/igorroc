@@ -49,22 +49,22 @@
 		</noscript>
 
 		<header>
-			<div id="headerLogo">
+			<div id="headerLogo" class="isClickable">
 				<a href="./index.html">
 					<img src="./img/logo.png" />
 				</a>
 			</div>
-			<div id="headerCTA">
+			<div id="headerCTA" class="isClickable">
 				<button class="semiTransparentButton">HIRE ME</button>
 			</div>
-			<div id="hamburguerMenu"></div>
+			<div id="hamburguerMenu" class="isClickable"></div>
 		</header>
 
 		<div id="menu">
-			<a class="menuItem" href="./">HOME</a>
-			<a class="menuItem" href="./projects">PROJECTS</a>
-			<a class="menuItem" href="./links.html">LINKS</a>
-			<a class="menuItem" href="./curriculum.pdf">
+			<a class="menuItem isClickable" href="./">HOME</a>
+			<a class="menuItem isClickable" href="./projects">PROJECTS</a>
+			<a class="menuItem isClickable" href="./links.html">LINKS</a>
+			<a class="menuItem isClickable" href="./curriculum.pdf">
 				CURRICULUM <i class="fas fa-file-download"></i>
 			</a>
 		</div>
@@ -115,15 +115,18 @@
 				<div class="title">
 					<h1>My projects</h1>
 					<div class="mainDivision"></div>
-					<h2>
-						Sim, eu fiz isso tudo por nada<br />
-						<span class="hiddenText">texto escondido</span>
-					</h2>
+					<h2>Sim, eu fiz isso tudo por nada</h2>
 				</div>
 				<div class="card isClickable">
 					<div class="parallaxMouse">
 						<img src="./img/page4.jfif" />
 					</div>
+				</div>
+
+				<div class="wrapperHiddenText">
+					<span class="hiddenText">
+						Eu fiz isso tudo com CSS e JS puro...
+					</span>
 				</div>
 			</main>
 
@@ -132,7 +135,10 @@
 					<h1>Contact me</h1>
 					<div class="mainDivision"></div>
 					<h2>
-						<button id="sendEmail" class="semiTransparentButton">
+						<button
+							id="sendEmail"
+							class="semiTransparentButton isClickable"
+						>
 							<i class="fa fa-envelope"></i>
 							Send an email
 						</button>
@@ -148,7 +154,9 @@
 
 		<div id="formID">
 			<div>
-				<button id="closeForm"><i class="fas fa-times"></i></button>
+				<button id="closeForm">
+					<i class="fas fa-times isClickable"></i>
+				</button>
 				<div id="formTitle">
 					<h3>Get in <b>touch</b></h3>
 					<p>
@@ -168,6 +176,7 @@
 								id="name"
 								name="name"
 								min="3"
+								class="isTextInput"
 								required
 							/>
 						</div>
@@ -177,6 +186,7 @@
 								type="email"
 								id="email"
 								name="name"
+								class="isTextInput"
 								required
 							/>
 						</div>
@@ -192,10 +202,11 @@
 								id="message"
 								cols="30"
 								rows="5"
+								class="isTextInput"
 							></textarea>
 						</div>
 						<button
-							class="semiTransparentButton"
+							class="semiTransparentButton isClickable"
 							type="submit"
 							id="submit"
 						>

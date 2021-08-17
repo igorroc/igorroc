@@ -1,5 +1,6 @@
 :root {
 	--custom-bezier-curve: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	--cursor-size: 80px;
 }
 
 code {
@@ -22,9 +23,6 @@ code {
 	color: transparent;
 }
 
-.hiddenText {
-	color: transparent;
-}
 .mainDivision {
 	position: relative;
 
@@ -128,6 +126,29 @@ code {
 	max-width: 300px;
 	font-size: 3em;
 	filter: drop-shadow(0 0 5px #000);
+}
+
+.wrapperHiddenText {
+	position: absolute;
+	margin: 0;
+	left: 20%;
+	bottom: 20%;
+	width: max-content;
+	height: max-content;
+
+	max-width: 300px;
+
+	opacity: 0;
+
+	transition: opacity 300ms var(--custom-bezier-curve);
+}
+
+.wrapperHiddenText:hover {
+	opacity: 1;
+}
+.hiddenText {
+	color: white;
+	font-size: 2em;
 }
 
 @keyframes floatingVertical {

@@ -3,8 +3,8 @@
 
 	pointer-events: none;
 
-	width: 80px;
-	height: 80px;
+	width: var(--cursor-size);
+	height: var(--cursor-size);
 
 	top: 50%;
 	left: 50%;
@@ -34,7 +34,7 @@
 	opacity: 1;
 	width: 2px;
 
-	animation: blink .5s 300ms infinite var(--custom-bezier-curve);
+	animation: blink 0.5s 300ms infinite var(--custom-bezier-curve);
 }
 
 #cursor.cursorClick {
@@ -45,7 +45,7 @@
 	border: 2px solid #f85969;
 }
 
-#cursor.cursorOnInput.cursorClick{
+#cursor.cursorOnInput.cursorClick {
 	transform: translate(-50%, -50%) scale(0.7);
 	opacity: 0.7;
 	background-color: hsla(354, 92%, 66%, 0.2);
@@ -64,9 +64,11 @@
 @keyframes blink {
 	0% {
 		opacity: 1;
-	}50%{
+	}
+	50% {
 		opacity: 0;
-	}100%{
+	}
+	100% {
 		opacity: 1;
 	}
 }
