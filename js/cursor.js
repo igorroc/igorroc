@@ -3,7 +3,11 @@ let root = document.documentElement
 let cursor = document.querySelector("#cursor")
 let links = document.querySelectorAll("a")
 let buttons = document.querySelectorAll("button")
+let textInputs = document.querySelectorAll("input")
+let textAreas = document.querySelectorAll("textarea")
+let cards = document.querySelectorAll(".card > div > img")
 
+console.log(cards)
 let mouseHold = false
 
 if (isMobile) {
@@ -32,6 +36,35 @@ buttons.forEach((button) => {
 	})
 	button.addEventListener("mouseout", () => {
 		cursor.classList.remove("cursorOnLink")
+	})
+})
+
+cards.forEach((card) => {
+	card.addEventListener("mouseenter", () => {
+		console.log("enter")
+		cursor.classList.add("cursorOnLink")
+	})
+	card.addEventListener("mouseout", () => {
+		console.log("leave")
+		cursor.classList.remove("cursorOnLink")
+	})
+})
+
+textInputs.forEach((input) => {
+	input.addEventListener("mouseenter", () => {
+		cursor.classList.add("cursorOnInput")
+	})
+	input.addEventListener("mouseout", () => {
+		cursor.classList.remove("cursorOnInput")
+	})
+})
+
+textAreas.forEach((textArea) => {
+	textArea.addEventListener("mouseenter", () => {
+		cursor.classList.add("cursorOnInput")
+	})
+	textArea.addEventListener("mouseout", () => {
+		cursor.classList.remove("cursorOnInput")
 	})
 })
 

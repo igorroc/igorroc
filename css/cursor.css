@@ -19,13 +19,22 @@
 
 	transition: opacity 200ms var(--custom-bezier-curve),
 		transform 200ms var(--custom-bezier-curve),
-		border-radius 200ms var(--custom-bezier-curve);
+		border-radius 200ms var(--custom-bezier-curve),
+		width 200ms var(--custom-bezier-curve);
 }
 
 #cursor.cursorOnLink {
 	transform: translate(-50%, -50%) scale(0.7) rotate(90deg);
 	opacity: 1;
 	border-radius: 50%;
+}
+
+#cursor.cursorOnInput {
+	transform: translate(-50%, -50%) scale(0.5);
+	opacity: 1;
+	width: 2px;
+
+	animation: blink .5s 300ms infinite var(--custom-bezier-curve);
 }
 
 #cursor.cursorClick {
@@ -36,9 +45,28 @@
 	border: 2px solid #f85969;
 }
 
-#cursor.cursorMobile{
+#cursor.cursorOnInput.cursorClick{
+	transform: translate(-50%, -50%) scale(0.7);
+	opacity: 0.7;
+	background-color: hsla(354, 92%, 66%, 0.2);
+	border: 2px solid #f85969;
+	border-radius: 0;
+	animation: none;
+}
+
+#cursor.cursorMobile {
 	opacity: 0;
 }
 #cursor.cursorMobile.cursorClick {
 	opacity: 1;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}50%{
+		opacity: 0;
+	}100%{
+		opacity: 1;
+	}
 }
