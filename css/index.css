@@ -79,6 +79,14 @@ main > div {
 	margin-left: 50%;
 }
 
+#sendEmail{
+	width: max-content;
+	font-size: .8em;
+	display: flex;
+	align-items: center;
+	gap: .5em;
+}
+
 .pageActive .title h1,
 .pageActive .title h2 {
 	transform: translateX(0%);
@@ -116,7 +124,7 @@ main > div {
 	transform: translate(60%, -50%) scale(1);
 }
 
-.pageActive .card:hover {
+.pageActive .card.isClickable:hover {
 	opacity: 1;
 	transform: translate(60%, -50%) scale(1.05);
 }
@@ -359,7 +367,7 @@ main > div {
 	top: 20px;
 	right: 20px;
 
-	transition: all 100ms ease;
+	transition: all 300ms var(--custom-bezier-curve);
 }
 
 #closeForm:hover {
@@ -369,24 +377,7 @@ main > div {
 
 button[type="submit"] {
 	font-family: "Merriweather", serif;
-
-	font-size: 1em;
-	font-weight: 500;
-
-	margin-top: 40px;
-	padding: 10px 20px;
-
-	background: linear-gradient(90deg, #2f8649, #39a17e);
-	color: white;
-	border: none;
-	border-radius: 3px;
-
-	transition: all 100ms ease;
-}
-
-button[type="submit"]:hover {
-	box-shadow: 0px 0px 10px #5af97c;
-	transform: scale(1.02);
+	font-size: 1.2em;
 }
 
 @keyframes floatingVertical {
@@ -489,6 +480,15 @@ button[type="submit"]:hover {
 
 	.title h1 {
 		font-size: 4em;
+	}
+	
+	#introduction .title{
+		margin: auto 5%;
+		font-size: 1em;
+	}
+
+	#introduction .title h1{
+		font-size: 5em;
 	}
 
 	.card {
