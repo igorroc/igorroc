@@ -4,9 +4,7 @@ window.addEventListener("resize", () => {
 	isMobile = isMobileDevice()
 	try {
 		nextPage()
-	} catch (error) {
-		
-	}	
+	} catch (error) {}
 })
 
 function isMobileDevice() {

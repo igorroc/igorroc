@@ -6,8 +6,8 @@ let transitioningPages = false
 links.forEach((link) => {
 	if (link.classList.contains("card")) {
 		link.addEventListener("click", () => {
-			if(transitioningPages){
-				return 
+			if (transitioningPages) {
+				return
 			}
 			transitioningPages = true
 
@@ -39,13 +39,17 @@ links.forEach((link) => {
 })
 
 returnButton?.addEventListener("click", () => {
-	if(transitioningPages){
-		return 
+	if (transitioningPages) {
+		return
 	}
 	transitioningPages = true
 
 	let top = document.querySelector("#top")
-	top.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+	top.scrollIntoView({
+		behavior: "smooth",
+		block: "start",
+		inline: "nearest",
+	})
 
 	header.classList.remove("headerDark")
 	header.classList.add("headerBottom")

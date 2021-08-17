@@ -21,7 +21,7 @@
 	transition: opacity 2s var(--custom-bezier-curve);
 }
 
-.particles.hideParticle{
+.particles.hideParticle {
 	opacity: 0;
 }
 

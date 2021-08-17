@@ -27,11 +27,11 @@ header.headerDark {
 	backdrop-filter: blur(10px);
 }
 
-header.headerTop{
+header.headerTop {
 	transform: translateY(0);
 }
 
-header.headerBottom{
+header.headerBottom {
 	transform: translateY(0);
 }
 
@@ -215,11 +215,11 @@ header.headerBottom{
 }
 
 @media (max-width: 1200px) {
-	header{
+	header {
 		transform: translateY(calc(100vh - 92px));
 	}
-	
-	header.headerBottom{
+
+	header.headerBottom {
 		transform: translateY(calc(100vh - 92px));
 	}
 

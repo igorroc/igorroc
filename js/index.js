@@ -48,7 +48,7 @@ function nextPage(first) {
 		)
 	}
 
-	if(first){
+	if (first) {
 		console.log("first")
 		wrapperPages.classList.add("noTransition")
 		setTimeout(() => {

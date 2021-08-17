@@ -54,7 +54,7 @@ main > div {
 
 	font-size: 5em;
 	transform: translateX(-100%);
-	
+
 	filter: drop-shadow(0 0 5px #000);
 }
 
@@ -62,7 +62,6 @@ main > div {
 	font-size: 2em;
 	margin-top: 10px;
 	transform: translateX(-100%);
-	
 }
 
 .title h1:hover ~ .mainDivision {
@@ -166,7 +165,19 @@ main > div {
 .content {
 	width: 100%;
 	height: 1000px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	background-color: #0a1516;
+	color: white;
+
+	font-size: 3em;
+}
+
+.content p {
+	line-height: 3em;
 }
 
 body #formID {
@@ -182,7 +193,7 @@ body #formID {
 		transform: translateY(0);
 	}
 
-	.title{
+	.title {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
@@ -191,7 +202,7 @@ body #formID {
 		margin: 0;
 	}
 
-	main > .card{
+	main > .card {
 		margin-left: 20%;
 	}
 
@@ -239,7 +250,7 @@ body #formID {
 		margin-right: 5%;
 	}
 
-	.accessPage .title h1{
+	.accessPage .title h1 {
 		font-size: 5em;
 	}
 

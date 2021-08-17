@@ -67,7 +67,7 @@ main > div {
 
 	font-size: 5em;
 	transform: translateX(-100%);
-	
+
 	filter: drop-shadow(0 0 5px #000);
 }
 
@@ -78,7 +78,6 @@ main > div {
 	font-size: 2em;
 	margin-top: 10px;
 	transform: translateX(-100%);
-	
 }
 .noTransition .title h2 {
 	transition: none;
@@ -190,7 +189,7 @@ main > div {
 }
 
 .accessPage .title {
-    margin-left: 7%;
+	margin-left: 7%;
 }
 
 @media (max-width: 1200px) {
@@ -230,7 +229,7 @@ main > div {
 		margin-right: 5%;
 	}
 
-	.accessPage .title h1{
+	.accessPage .title h1 {
 		font-size: 5em;
 	}
 

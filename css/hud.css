@@ -77,10 +77,10 @@
 	font-size: 3em;
 	color: #fff;
 
-	transition: left .5s .5s var(--custom-bezier-curve);
+	transition: left 0.5s 0.5s var(--custom-bezier-curve);
 }
 
-#goBack.goBackHidden{
+#goBack.goBackHidden {
 	left: -50%;
 }
 
@@ -91,8 +91,8 @@
 	transform: translateY(-50%) translateX(-10%) scale(0);
 	transform-origin: left center;
 
-	transition: opacity .5s var(--custom-bezier-curve),
-		transform .5s var(--custom-bezier-curve);
+	transition: opacity 0.5s var(--custom-bezier-curve),
+		transform 0.5s var(--custom-bezier-curve);
 }
 
 #goBack:hover span {
