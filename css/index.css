@@ -32,7 +32,7 @@ body {
 	transition: transform 1000ms var(--custom-bezier-curve);
 }
 
-main {
+#wrapperPages main {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -40,7 +40,7 @@ main {
 	display: flex;
 }
 
-main > div {
+#wrapperPages main > div {
 	position: relative;
 	margin: auto;
 	margin-left: 20%;

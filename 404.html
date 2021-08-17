@@ -32,6 +32,10 @@
 		/>
 		<link
 			rel="stylesheet"
+			href="https://igorroc.github.io/igorroc/css/font.css"
+		/>
+		<link
+			rel="stylesheet"
 			href="https://igorroc.github.io/igorroc/css/particles.css"
 		/>
 
@@ -48,11 +52,13 @@
 	<body>
 		<header>
 			<div id="headerLogo">
-				<a href="https://igorroc.github.io/igorroc/index.html">
-					<img src="https://igorroc.github.io/igorroc/img/logo.png" />
+				<a href="./index.html">
+					<img src="./img/logo.png" />
 				</a>
 			</div>
-			<div id="headerCTA"><button>HIRE ME</button></div>
+			<div id="headerCTA">
+				<button class="semiTransparentButton">HIRE ME</button>
+			</div>
 			<div id="hamburguerMenu"></div>
 		</header>
 
@@ -88,7 +94,7 @@
 						<div style="margin-top: 30px">
 							<a
 								id="returnHome"
-								class="greenTransparentButton"
+								class="semiTransparentButton"
 								href="https://igorroc.github.io/igorroc"
 								style="margin-top: 1em; font-size: 1.5em"
 							>
@@ -102,15 +108,12 @@
 
 		<div id="formID">
 			<div>
-				<div id="closeForm"><i class="fas fa-times"></i></div>
+				<button id="closeForm"><i class="fas fa-times"></i></button>
 				<div id="formTitle">
-					<h3>
-						Get in<br />
-						<b>touch</b>
-					</h3>
+					<h3>Get in <b>touch</b></h3>
 					<p>
-						Send me a message on email, so we can make<br />
-						your <b>dream project</b> come true!
+						Send me a message on email, so we can make your
+						<b>dream project</b> come true!
 					</p>
 				</div>
 				<div id="formContent">
@@ -151,7 +154,11 @@
 								rows="5"
 							></textarea>
 						</div>
-						<button type="submit" id="submit">
+						<button
+							class="semiTransparentButton"
+							type="submit"
+							id="submit"
+						>
 							<i class="fas fa-envelope"></i> Let's go!
 						</button>
 					</form>
@@ -160,14 +167,16 @@
 		</div>
 
 		<!-- PARTICLES -->
-		<div class="ripple" style="left: 30%">
+		<div class="ripple parallaxMouse2d" style="left: 30%">
+			<div style="--tam: 7" class="circle"></div>
+			<div style="--tam: 6" class="circle"></div>
 			<div style="--tam: 5" class="circle"></div>
 			<div style="--tam: 3" class="circle"></div>
 			<div style="--tam: 2" class="circle"></div>
 			<div style="--tam: 4" class="circle"></div>
 			<div style="--tam: 1" class="circle"></div>
 		</div>
-		<ul class="particles">
+		<ul class="particles parallaxMouse">
 			<li></li>
 			<li></li>
 			<li></li>
