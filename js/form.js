@@ -11,17 +11,14 @@ link.addEventListener("click", () => {
 })
 
 formClose.addEventListener("click", () => {
-    console.log("close form")
-    form.classList.remove("formShow")
+	console.log("close form")
+	form.classList.remove("formShow")
 })
 
-try {
+if (sendEmail) {
 	sendEmail.addEventListener("click", () => {
 		form.classList.add("formShow")
 		menu.classList.remove("menuShow")
 		hambMenu.classList.remove("headerMenuActive")
 	})
-} catch (error) {
-    console.error(error)
 }
-
