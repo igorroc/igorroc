@@ -1,0 +1,19 @@
+.accessPage .title {
+	margin-left: 7%;
+}
+
+.accessPage .card {
+	width: 50vw;
+	height: 100vh;
+	margin-left: 0;
+	opacity: 1;
+	transform: translate(100%, -50%);
+}
+.accessPage .card.isClickable:hover {
+	opacity: 1;
+	transform: translate(100%, -50%);
+}
+
+.accessPage .card > div {
+	border: none;
+}

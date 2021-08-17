@@ -7,10 +7,9 @@ const max_size = 150
 const min_position = 0
 const max_position = 90
 
-var particles = document.getElementsByClassName("particles")
-var i = 0
+var particles = document.querySelectorAll(".particles")
 
-for (const particle of particles) {
+particles.forEach((particle) => {
 	for (const box of particle.children) {
 		var size =
 			Math.floor(Math.random() * (max_size - min_size) + min_size) + "px"
@@ -32,4 +31,4 @@ for (const particle of particles) {
 		box.style.animationDuration = duration
 		box.style.right = position
 	}
-}
+})

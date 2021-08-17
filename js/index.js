@@ -1,6 +1,3 @@
-let params = new URL(document.location).searchParams
-let page = params.get("page")
-
 let wrapperPages = document.querySelector("#wrapperPages")
 let scrollMore = document.querySelector("#scrollMore")
 let timeline = document.querySelector("#timeline")
@@ -8,11 +5,10 @@ let timeline = document.querySelector("#timeline")
 let currentPage = page || 0
 let transitioning = false
 
-window.scrollTo(0, 0)
 nextPage()
 
 document.addEventListener("wheel", (event) => {
-	if (!transitioning) {
+	if (!transitioning && !transitioningPages) {
 		transitioning = true
 
 		event.deltaY >= 0 ? currentPage++ : currentPage--
@@ -36,6 +32,10 @@ document.addEventListener("wheel", (event) => {
 function nextPage() {
 	window.history.pushState("", `page ${currentPage}`, `?page=${currentPage}`)
 
+	if (!timeline.children[currentPage]) {
+		currentPage = 0
+	}
+
 	if (!isMobile) {
 		wrapperPages.setAttribute(
 			"style",
@@ -48,7 +48,9 @@ function nextPage() {
 		)
 	}
 
-	timeline.querySelector(".timelineActive").classList.remove("timelineActive")
+	timeline
+		.querySelector(".timelineActive")
+		?.classList.remove("timelineActive")
 
 	timeline.children[currentPage].classList.add("timelineActive")
 

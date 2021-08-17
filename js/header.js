@@ -1,3 +1,4 @@
+let header = document.querySelector("header")
 let hambMenu = document.querySelector("#hamburguerMenu")
 let menu = document.querySelector("#menu")
 

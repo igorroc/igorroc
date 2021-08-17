@@ -2,25 +2,24 @@ let root = document.documentElement
 
 let cursor = document.querySelector("#cursor")
 
-const cursorSize = cursor.offsetWidth
+let cursorSize = cursor.offsetWidth
 
 let links = document.querySelectorAll(".isClickable")
 let textInputs = document.querySelectorAll(".isTextInput")
 let wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
-let isHoveringHiddenText = false
 
 let mouseHold = false
 
 if (isMobile) {
 	cursor.classList.add("cursorMobile")
 } else {
-	root.style.setProperty("cursor", "none")
+	// root.style.setProperty("cursor", "none")
 }
 
 // ! FOLLOW CURSOR
 window.addEventListener("mousemove", (event) => {
-	cursor.style.left = event.pageX + "px"
-	cursor.style.top = event.pageY + "px"
+	cursor.style.left = event.clientX + "px"
+	cursor.style.top = event.clientY + "px"
 })
 
 // ! CURSOR HOVER EFFECTS
@@ -53,20 +52,25 @@ wrapperHiddenTexts.forEach((wrapper) => {
 })
 
 // ! MOUSE CLICK
-window.addEventListener("mousedown", () => {
+window.addEventListener("mousedown", (event) => {
+	console.log(event.clientY)
+	console.log(event.pageY)
+
 	cursor.classList.add("cursorClick")
+	cursorClicking = true
 })
 
 window.addEventListener("mouseup", () => {
 	setTimeout(() => {
 		cursor.classList.remove("cursorClick")
+		cursorClicking = false
 	}, 200)
 })
 
 // ! REVEAL HIDDEN TEXTS
 wrapperHiddenTexts.forEach((wrapperHiddenText) => {
 	wrapperHiddenText.addEventListener("mousemove", (e) => {
-		isHoveringHiddenText = true
+		console.log("in")
 		wrapperHiddenText.style.clipPath = `inset(${
 			e.offsetY - cursorSize / 2
 		}px ${wrapperHiddenText.offsetWidth - e.offsetX - cursorSize / 2}px ${
@@ -74,11 +78,7 @@ wrapperHiddenTexts.forEach((wrapperHiddenText) => {
 		}px ${e.offsetX - cursorSize / 2}px)`
 	})
 	wrapperHiddenText.addEventListener("mouseout", () => {
-		setTimeout(() => {
-			if (!isHoveringHiddenText) {
-				wrapperHiddenText.style.clipPath = "inset(0)"
-			}
-		}, 1000)
-		isHoveringHiddenText = false
+		console.log("out")
+		wrapperHiddenText.style.clipPath = "inset(0)"
 	})
 })

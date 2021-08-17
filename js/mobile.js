@@ -2,7 +2,11 @@ let isMobile = isMobileDevice()
 
 window.addEventListener("resize", () => {
 	isMobile = isMobileDevice()
-	nextPage()
+	try {
+		nextPage()
+	} catch (error) {
+		
+	}	
 })
 
 function isMobileDevice() {

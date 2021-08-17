@@ -1,5 +1,5 @@
 #cursor {
-	position: absolute;
+	position: fixed;
 
 	pointer-events: none;
 
@@ -15,7 +15,7 @@
 
 	opacity: 0.2;
 
-	z-index: 10;
+	z-index: 1000;
 
 	transition: opacity 200ms var(--custom-bezier-curve),
 		transform 200ms var(--custom-bezier-curve),

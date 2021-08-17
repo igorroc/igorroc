@@ -17,6 +17,12 @@
 	top: 0;
 	right: 0;
 	left: 0;
+
+	transition: opacity 2s var(--custom-bezier-curve);
+}
+
+.particles.hideParticle{
+	opacity: 0;
 }
 
 .particles li {
@@ -56,6 +62,14 @@
 	opacity: 0.02;
 
 	z-index: -10;
+
+	transition: transform 2s var(--custom-bezier-curve),
+		opacity 2s var(--custom-bezier-curve);
+}
+
+.ripple.hideRipple {
+	transform: scale(0);
+	opacity: 0;
 }
 
 .circle {

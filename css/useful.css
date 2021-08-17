@@ -135,17 +135,17 @@ i {
 .wrapperHiddenText {
 	position: absolute;
 	margin: 0;
-	left: 20%;
-	bottom: 30%;
+	left: calc(20% - 50px);
+	bottom: calc(30% - 50px);
 
+	padding: 50px;
 	width: max-content;
 	height: max-content;
 
 	max-width: 370px;
 
 	opacity: 0;
-
-	transition: opacity 300ms var(--custom-bezier-curve);
+	z-index: 4;
 }
 
 .wrapperHiddenText:hover {
@@ -198,14 +198,14 @@ i {
 	}
 
 	.wrapperHiddenText {
-		left: 5%;
-		bottom: 35%;
+		left: calc(5% - 50px);
+		bottom: calc(35% - 50px);
 	}
 }
 
 @media (max-width: 800px) {
 	.wrapperHiddenText {
-		left: 10%;
-		bottom: 25%;
+		left: calc(10% - 50px);
+		bottom: calc(15% - 50px);
 	}
 }

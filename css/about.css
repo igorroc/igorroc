@@ -6,7 +6,7 @@
 
 html,
 body {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 body {
@@ -20,15 +20,10 @@ body {
 
 	flex-direction: column;
 
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
-#wrapperPages {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+#wrapperPage {
 	transition: transform 1000ms var(--custom-bezier-curve);
 }
 
@@ -141,26 +136,6 @@ main > div {
 	object-fit: cover;
 }
 
-.card > div:before,
-.card > div:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-.card > div:before {
-	background-color: #299299;
-
-	transition: all 750ms 750ms var(--custom-bezier-curve);
-}
-
-.card > div:after {
-	background-color: #1fc575;
-
-	transition: all 750ms 500ms var(--custom-bezier-curve);
-}
-
 .pageActive .card > div:before,
 .pageActive .card > div:after {
 	width: 0%;
@@ -170,18 +145,43 @@ main > div {
 	margin-left: 100%;
 }
 
+.accessPage .title {
+	margin-left: 7%;
+}
+
+.accessPage .card {
+	width: 50vw;
+	height: 100vh;
+	margin-left: 0;
+	opacity: 1;
+	transform: translate(100%, -50%);
+}
+.accessPage .card.isClickable:hover {
+	opacity: 1;
+	transform: translate(100%, -50%);
+}
+
+.accessPage .card > div {
+	border: none;
+}
+
+.content{
+	width: 100%;
+	height: 1000px;
+	background-color: #ebe6e6;
+}
+
+body #formID{
+	transform: translateX(-100%);
+
+}
 
 @media (max-width: 1200px) {
 	body {
 		font-size: 12px;
 	}
 
-	main {
-		position: absolute;
-		top: 0;
-		left: 0;
-		transform: translateX(calc(100vw * var(--page)));
-	}
+	
 
 	.title {
 		margin-left: 5%;

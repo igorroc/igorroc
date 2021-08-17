@@ -22,21 +22,6 @@
 	left: 50%;
 	transform: translateX(-50%) scale(0);
 	transform-origin: bottom center;
-
-	padding: 5px 10px;
-	border-radius: 3px;
-
-	font-size: 1em;
-
-	color: white;
-	opacity: 0;
-
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(5px);
-	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
-
-	transition: opacity 300ms var(--custom-bezier-curve),
-		transform 300ms var(--custom-bezier-curve);
 }
 
 #scrollMore:hover span {
@@ -58,6 +43,8 @@
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+
+	transition: left 1s var(--custom-bezier-curve);
 }
 
 #timeline span {
@@ -75,6 +62,59 @@
 #timeline .timelineActive {
 	width: 60px;
 	background-color: white;
+}
+
+#timeline.timelineHidden {
+	left: -50%;
+}
+
+#goBack {
+	position: fixed;
+	top: 150px;
+	left: 40px;
+	z-index: 2;
+
+	font-size: 3em;
+	color: #fff;
+
+	transition: left .5s .5s var(--custom-bezier-curve);
+}
+
+#goBack.goBackHidden{
+	left: -50%;
+}
+
+#goBack span {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%) translateX(-10%) scale(0);
+	transform-origin: left center;
+
+	transition: opacity .5s var(--custom-bezier-curve),
+		transform .5s var(--custom-bezier-curve);
+}
+
+#goBack:hover span {
+	opacity: 0.8;
+	transform: translateY(-50%) translateX(10%) scale(1);
+}
+
+.indicator {
+	padding: 5px 10px;
+	border-radius: 3px;
+
+	font-size: 1em;
+
+	color: white;
+	/* opacity: 0; */
+
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+
+	transition: opacity 300ms var(--custom-bezier-curve),
+		transform 300ms var(--custom-bezier-curve);
 }
 
 @media (max-width: 1200px) {
