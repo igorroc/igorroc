@@ -9,6 +9,12 @@ link.addEventListener("click", () => {
 	menu.classList.remove("menuShow")
 	hambMenu.classList.remove("headerMenuActive")
 })
+
+formClose.addEventListener("click", () => {
+    console.log("close form")
+    form.classList.remove("formShow")
+})
+
 try {
 	sendEmail.addEventListener("click", () => {
 		form.classList.add("formShow")
@@ -19,7 +25,3 @@ try {
     console.error(error)
 }
 
-formClose.addEventListener("click", () => {
-	console.log("close form")
-	form.classList.remove("formShow")
-})
