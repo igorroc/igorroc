@@ -75,6 +75,11 @@ document.addEventListener("mousemove", (event) => {
 			(event.clientY - document.body.clientHeight / 2) / 30
 		}deg)`
 	})
+	document.querySelectorAll(".parallaxMouse2d").forEach((element) => {
+		element.style.transform = `translateX(${
+			event.clientX / 30
+		}px) translateY(${event.clientY / 30}px)`
+	})
 })
 
 window.addEventListener("resize", () => {
