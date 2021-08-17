@@ -1,0 +1,151 @@
+#formID {
+	height: 100vh;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	z-index: 8;
+
+	transform: translateY(100%);
+
+	font-size: 1.5em;
+	padding: 0 50px;
+	overflow: hidden;
+	background: linear-gradient(to right, #141414, #252525);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: transform 750ms var(--custom-bezier-curve);
+}
+
+#formID.formShow {
+	transform: translateY(0%) translateX(0%);
+}
+
+#formID > div {
+	padding: 60px 40px;
+	border-radius: 3px;
+
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	transform: scale(0);
+	transition: transform 500ms 500ms var(--custom-bezier-curve);
+}
+
+#formID.formShow > div {
+	transform: scale(1);
+}
+
+#formTitle h3 {
+	font-family: "Merriweather", serif;
+
+	color: #ffffff;
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	max-width: 120px;
+}
+
+#formTitle h3 b {
+	color: #5cff77;
+}
+
+#formTitle p {
+	color: #97999b;
+	font-size: 1em;
+
+	max-width: 470px;
+}
+
+#formContent {
+	width: 100%;
+	margin-top: 40px;
+}
+
+#formContent form{
+	display: flex;
+	flex-direction: column;
+}
+.question {
+	width: 100%;
+
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	color: #727d91;
+}
+
+.checkQuestion {
+	flex-direction: row;
+}
+
+.checkQuestion a {
+	color: #5cb0ff;
+}
+
+.question input,
+.question textarea {
+	font-size: 0.8em;
+	padding: 10px;
+
+	border: none;
+	border: 1px solid #fff2;
+	outline: none;
+
+	resize: none;
+
+	color: white;
+	background-color: #252525;
+}
+
+#closeForm {
+	font-size: 2em;
+
+	color: white;
+	background: none;
+	border: none;
+	opacity: 0.5;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	transition: all 300ms var(--custom-bezier-curve);
+}
+
+#closeForm:hover {
+	opacity: 0.8;
+	transform: rotate(90deg);
+}
+
+button[type="submit"] {
+	font-family: "Merriweather", serif;
+	font-size: 1.2em;
+}
+
+@media (max-width: 1200px) {
+	#formID {
+		padding: 0 5px;
+	}
+
+	#formID > div {
+		padding: 50px;
+		margin-bottom: 100px;
+	}
+
+	#formTitle h3 {
+		max-width: max-content;
+	}
+}

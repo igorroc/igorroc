@@ -1,0 +1,116 @@
+#scrollMore {
+	position: fixed;
+
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding: 20px;
+
+	font-size: 2em;
+	color: white;
+
+	animation: floatingVertical 2s infinite ease;
+
+	transition: animation-duration 2s ease-in,
+		bottom 500ms var(--custom-bezier-curve);
+}
+
+#scrollMore span {
+	position: absolute;
+	top: -1em;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	transform-origin: bottom center;
+
+	padding: 5px 10px;
+	border-radius: 3px;
+
+	font-size: 1em;
+
+	color: white;
+	opacity: 0;
+
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+
+	transition: opacity 300ms var(--custom-bezier-curve),
+		transform 300ms var(--custom-bezier-curve);
+}
+
+#scrollMore:hover span {
+	opacity: 0.8;
+	transform: translateX(-50%) scale(1);
+}
+
+#scrollMore.scrollMoreHidden {
+	bottom: -50%;
+}
+
+#timeline {
+	position: fixed;
+
+	left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+#timeline span {
+	width: 30px;
+	height: 3px;
+
+	border-radius: 0 2px 2px 0;
+
+	background-color: rgba(255, 255, 255, 0.473);
+
+	transition: width 200ms var(--custom-bezier-curve),
+		background-color 200ms var(--custom-bezier-curve);
+}
+
+#timeline .timelineActive {
+	width: 60px;
+	background-color: white;
+}
+
+@media (max-width: 1200px) {
+	#timeline {
+		top: 10px;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	#timeline span {
+		width: 3px;
+		height: 30px;
+		transition: height 200ms var(--custom-bezier-curve),
+			background-color 200ms var(--custom-bezier-curve);
+	}
+
+	#timeline span.timelineActive {
+		width: 3px;
+		height: 60px;
+	}
+
+	#scrollMore {
+		left: auto;
+		bottom: 50%;
+		right: 10px;
+		animation: floatingHorizontal 2s infinite ease;
+		transition: animation-duration 2s ease-in,
+			right 500ms var(--custom-bezier-curve);
+	}
+
+	#scrollMore.scrollMoreHidden {
+		bottom: 50%;
+		right: -50%;
+	}
+}

@@ -79,12 +79,12 @@ main > div {
 	margin-left: 50%;
 }
 
-#sendEmail{
+#sendEmail {
 	width: max-content;
-	font-size: .8em;
+	font-size: 0.8em;
 	display: flex;
 	align-items: center;
-	gap: .5em;
+	gap: 0.5em;
 }
 
 .pageActive .title h1,
@@ -102,7 +102,7 @@ main > div {
 
 	opacity: 0;
 
-	/* transform-style: preserve-3d; */
+	transform-style: preserve-3d;
 	transform: translate(100%, -50%) scale(0.7);
 
 	transition: opacity 1s ease, transform 2s ease;
@@ -129,7 +129,7 @@ main > div {
 	transform: translate(60%, -50%) scale(1.05);
 }
 
-.card >div > img {
+.card > div > img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -164,246 +164,6 @@ main > div {
 	margin-left: 100%;
 }
 
-#scrollMore {
-	position: fixed;
-
-	bottom: 10px;
-	left: 50%;
-	transform: translateX(-50%);
-
-	padding: 20px;
-
-	font-size: 2em;
-	color: white;
-
-	animation: floatingVertical 2s infinite ease;
-
-	transition: animation-duration 2s ease-in,
-		bottom 500ms var(--custom-bezier-curve);
-}
-
-#scrollMore span {
-	position: absolute;
-	top: -1em;
-	left: 50%;
-	transform: translateX(-50%) scale(0);
-	transform-origin: bottom center;
-
-	padding: 5px 10px;
-	border-radius: 3px;
-
-	font-size: 1em;
-
-	color: white;
-	opacity: 0;
-
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(5px);
-	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
-
-	transition: opacity 300ms var(--custom-bezier-curve),
-		transform 300ms var(--custom-bezier-curve);
-}
-
-#scrollMore:hover span {
-	opacity: 0.8;
-	transform: translateX(-50%) scale(1);
-}
-
-#scrollMore.scrollMoreHidden {
-	bottom: -50%;
-}
-
-#timeline {
-	position: fixed;
-
-	left: 50px;
-	top: 50%;
-	transform: translateY(-50%);
-
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-}
-
-#timeline span {
-	width: 30px;
-	height: 3px;
-
-	border-radius: 0 2px 2px 0;
-
-	background-color: rgba(255, 255, 255, 0.473);
-
-	transition: width 200ms var(--custom-bezier-curve),
-		background-color 200ms var(--custom-bezier-curve);
-}
-
-#timeline .timelineActive {
-	width: 60px;
-	background-color: white;
-}
-
-#formID {
-	height: 100vh;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-
-	z-index: 8;
-
-	transform: translateY(100%);
-
-	font-size: 1.5em;
-	padding: 0 50px;
-	overflow: hidden;
-	background: linear-gradient(to right, #141414, #252525);
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	transition: transform 750ms var(--custom-bezier-curve);
-}
-
-#formID.formShow {
-	transform: translateY(0%) translateX(0%);
-}
-
-#formID > div {
-	padding: 60px 40px;
-	border-radius: 3px;
-
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(5px);
-	box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	transform: scale(0);
-	transition: transform 500ms 500ms var(--custom-bezier-curve);
-}
-
-#formID.formShow > div {
-	transform: scale(1);
-}
-
-#formTitle h3 {
-	font-family: "Merriweather", serif;
-
-	color: #ffffff;
-	font-size: 1.5em;
-	margin-bottom: 0.5em;
-	max-width: 120px;
-}
-
-#formTitle h3 b {
-	color: #5cff77;
-}
-
-#formTitle p {
-	color: #97999b;
-	font-size: 1em;
-
-	max-width: 470px;
-}
-
-#formContent {
-	width: 100%;
-	margin-top: 40px;
-}
-
-#formContent form{
-	display: flex;
-	flex-direction: column;
-}
-.question {
-	width: 100%;
-
-	margin-bottom: 20px;
-
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-
-	color: #727d91;
-}
-
-.checkQuestion {
-	flex-direction: row;
-}
-
-.checkQuestion a {
-	color: #5cb0ff;
-}
-
-.question input,
-.question textarea {
-	font-size: 0.8em;
-	padding: 10px;
-
-	border: none;
-	border: 1px solid #fff2;
-	outline: none;
-
-	resize: none;
-
-	color: white;
-	background-color: #252525;
-}
-
-#closeForm {
-	font-size: 2em;
-
-	color: white;
-	background: none;
-	border: none;
-	opacity: 0.5;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-
-	transition: all 300ms var(--custom-bezier-curve);
-}
-
-#closeForm:hover {
-	opacity: 0.8;
-	transform: rotate(90deg);
-}
-
-button[type="submit"] {
-	font-family: "Merriweather", serif;
-	font-size: 1.2em;
-}
-
-@keyframes floatingVertical {
-	0% {
-		transform: translateY(-10px);
-	}
-	50% {
-		transform: translateY(10px);
-	}
-	100% {
-		transform: translateY(-10px);
-	}
-}
-
-@keyframes floatingHorizontal {
-	0% {
-		transform: rotate(-90deg) translateY(-10px);
-	}
-	50% {
-		transform: rotate(-90deg) translateY(10px);
-	}
-	100% {
-		transform: rotate(-90deg) translateY(-10px);
-	}
-}
-
 @media (max-width: 1200px) {
 	body {
 		font-size: 12px;
@@ -416,58 +176,9 @@ button[type="submit"] {
 		transform: translateX(calc(100vw * var(--page)));
 	}
 
-	#timeline {
-		top: 10px;
-		bottom: auto;
-		left: 50%;
-		transform: translateX(-50%);
-
-		flex-direction: row;
-		align-items: flex-start;
-	}
-
-	#timeline span {
-		width: 3px;
-		height: 30px;
-		transition: height 200ms var(--custom-bezier-curve),
-			background-color 200ms var(--custom-bezier-curve);
-	}
-
-	#timeline span.timelineActive {
-		width: 3px;
-		height: 60px;
-	}
-
 	.title {
 		margin-left: 5%;
 		margin-right: 5%;
-	}
-
-	#scrollMore {
-		left: auto;
-		bottom: 50%;
-		right: 10px;
-		animation: floatingHorizontal 2s infinite ease;
-		transition: animation-duration 2s ease-in,
-			right 500ms var(--custom-bezier-curve);
-	}
-
-	#scrollMore.scrollMoreHidden {
-		bottom: 50%;
-		right: -50%;
-	}
-
-	#formID {
-		padding: 0 5px;
-	}
-
-	#formID > div {
-		padding: 50px;
-		margin-bottom: 100px;
-	}
-
-	#formTitle h3 {
-		max-width: max-content;
 	}
 }
 
@@ -481,13 +192,13 @@ button[type="submit"] {
 	.title h1 {
 		font-size: 4em;
 	}
-	
-	#introduction .title{
+
+	#introduction .title {
 		margin: auto 5%;
 		font-size: 1em;
 	}
 
-	#introduction .title h1{
+	#introduction .title h1 {
 		font-size: 5em;
 	}
 

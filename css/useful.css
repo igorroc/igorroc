@@ -108,24 +108,6 @@ code {
 	display: block;
 }
 
-@media (max-width: 1200px) {
-	.mobileOnly {
-		display: block;
-	}
-	.desktopOnly {
-		display: none;
-	}
-}
-
-@keyframes textGradientAnimation {
-	from {
-		background-position: 100%;
-	}
-	to {
-		background-position: -100%;
-	}
-}
-
 #noScript {
 	position: absolute;
 	z-index: 100;
@@ -167,4 +149,46 @@ code {
 	max-width: 300px;
 	font-size: 3em;
 	filter: drop-shadow(0 0 5px #000);
+}
+
+@keyframes floatingVertical {
+	0% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes floatingHorizontal {
+	0% {
+		transform: rotate(-90deg) translateY(-10px);
+	}
+	50% {
+		transform: rotate(-90deg) translateY(10px);
+	}
+	100% {
+		transform: rotate(-90deg) translateY(-10px);
+	}
+}
+
+@keyframes textGradientAnimation {
+	from {
+		background-position: 100%;
+	}
+	to {
+		background-position: -100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.mobileOnly {
+		display: block;
+	}
+	.desktopOnly {
+		display: none;
+	}
 }
