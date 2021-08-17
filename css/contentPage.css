@@ -48,7 +48,11 @@ main > div {
 	overflow: hidden;
 	max-width: 600px;
 
-	transition: margin-left 2s var(--custom-bezier-curve);
+	transition: margin-top 2s var(--custom-bezier-curve),
+		margin-bottom 2s var(--custom-bezier-curve),
+		margin-left 2s var(--custom-bezier-curve),
+		margin-right 2s var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
 }
 
 .title h1 {
@@ -165,15 +169,14 @@ main > div {
 	border: none;
 }
 
-.content{
+.content {
 	width: 100%;
 	height: 1000px;
-	background-color: #ebe6e6;
+	background-color: #0a1516;
 }
 
-body #formID{
+body #formID {
 	transform: translateX(-100%);
-
 }
 
 @media (max-width: 1200px) {
@@ -181,11 +184,45 @@ body #formID{
 		font-size: 12px;
 	}
 
-	
+	body header {
+		transform: translateY(0);
+	}
 
-	.title {
+	.title{
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+
+	main.accessPage > .card {
+		margin: 0;
+	}
+
+	main > .card{
+		margin-left: 20%;
+	}
+
+	body #scrollMore {
+		bottom: 10px;
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+
+		animation: floatingVertical 2s infinite ease;
+
+		transition: animation-duration 2s ease-in,
+			bottom 500ms var(--custom-bezier-curve);
+	}
+
+	#scrollMore span {
+		position: absolute;
+		top: -1em;
+		left: 50%;
+		transform: translateX(-50%) scale(0);
+		transform-origin: bottom center;
+	}
+
+	body #scrollMore.scrollMoreHidden {
+		bottom: -10%;
 	}
 }
 
@@ -196,31 +233,22 @@ body #formID{
 		font-size: 0.9em;
 	}
 
-	.title h1 {
+	.title h1{
 		font-size: 4em;
 	}
 
-	#introduction .title {
-		margin: auto 5%;
+	.accessPage .title {
 		font-size: 1em;
+		margin: auto;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
-	#introduction .title h1 {
+	.accessPage .title h1{
 		font-size: 5em;
 	}
 
-	.card {
-		margin-left: 0;
-		width: 80vw;
-		height: 40vh;
-		transform: translate(10vw, -160%) scale(0.7);
-	}
-
-	.pageActive .card {
-		transform: translate(10vw, -95%) scale(1);
-	}
-
-	.pageActive .card.isClickable:hover {
-		transform: translate(10vw, -90%) scale(1.05);
+	main > .card {
+		margin: 0;
 	}
 }

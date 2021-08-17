@@ -6,12 +6,16 @@ let transitioningPages = false
 links.forEach((link) => {
 	if (link.classList.contains("card")) {
 		link.addEventListener("click", () => {
+			if(transitioningPages){
+				return 
+			}
 			transitioningPages = true
 
 			header.classList.add("headerDark")
+			header.classList.add("headerTop")
 
 			timeline.classList.add("timelineHidden")
-			scrollMore.classList.remove("scrollMoreHidden")
+			// scrollMore.classList.remove("scrollMoreHidden")
 			returnButton.classList.remove("goBackHidden")
 
 			particles.forEach((particle) =>
@@ -19,6 +23,7 @@ links.forEach((link) => {
 			)
 			ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
 
+			link.classList.remove("isClickable")
 			link.children[0].classList.remove("parallaxMouse")
 			link.children[0].style = ""
 			link.parentNode.classList.add("accessPage")
@@ -34,11 +39,18 @@ links.forEach((link) => {
 })
 
 returnButton?.addEventListener("click", () => {
-	window.scroll(0, -200)
+	if(transitioningPages){
+		return 
+	}
+	transitioningPages = true
+
+	let top = document.querySelector("#top")
+	top.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
 
 	header.classList.remove("headerDark")
+	header.classList.add("headerBottom")
 
-	timeline.classList.add("timelineHidden")
+	timeline.classList.remove("timelineHidden")
 	scrollMore.classList.add("scrollMoreHidden")
 	returnButton.classList.add("goBackHidden")
 

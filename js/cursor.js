@@ -13,7 +13,7 @@ let mouseHold = false
 if (isMobile) {
 	cursor.classList.add("cursorMobile")
 } else {
-	// root.style.setProperty("cursor", "none")
+	root.style.setProperty("cursor", "none")
 }
 
 // ! FOLLOW CURSOR
@@ -53,9 +53,6 @@ wrapperHiddenTexts.forEach((wrapper) => {
 
 // ! MOUSE CLICK
 window.addEventListener("mousedown", (event) => {
-	console.log(event.clientY)
-	console.log(event.pageY)
-
 	cursor.classList.add("cursorClick")
 	cursorClicking = true
 })
@@ -70,7 +67,6 @@ window.addEventListener("mouseup", () => {
 // ! REVEAL HIDDEN TEXTS
 wrapperHiddenTexts.forEach((wrapperHiddenText) => {
 	wrapperHiddenText.addEventListener("mousemove", (e) => {
-		console.log("in")
 		wrapperHiddenText.style.clipPath = `inset(${
 			e.offsetY - cursorSize / 2
 		}px ${wrapperHiddenText.offsetWidth - e.offsetX - cursorSize / 2}px ${
@@ -78,7 +74,6 @@ wrapperHiddenTexts.forEach((wrapperHiddenText) => {
 		}px ${e.offsetX - cursorSize / 2}px)`
 	})
 	wrapperHiddenText.addEventListener("mouseout", () => {
-		console.log("out")
 		wrapperHiddenText.style.clipPath = "inset(0)"
 	})
 })

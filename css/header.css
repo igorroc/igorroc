@@ -13,6 +13,7 @@ header {
 
 	transition: border 1s var(--custom-bezier-curve),
 		background-color 1s var(--custom-bezier-curve),
+		transform 1s var(--custom-bezier-curve),
 		box-shadow 1s var(--custom-bezier-curve);
 }
 
@@ -24,6 +25,14 @@ header.headerDark {
 	box-shadow: 0px 5px 5px #0003;
 
 	backdrop-filter: blur(10px);
+}
+
+header.headerTop{
+	transform: translateY(0);
+}
+
+header.headerBottom{
+	transform: translateY(calc(100vh - 92px));
 }
 
 #headerLogo {
@@ -206,10 +215,10 @@ header.headerDark {
 }
 
 @media (max-width: 1200px) {
-	header {
-		bottom: 0;
-		top: auto;
+	header{
+		transform: translateY(calc(100vh - 92px));
 	}
+	
 	#menu .menuItem {
 		font-size: 3em;
 	}

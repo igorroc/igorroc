@@ -32,6 +32,10 @@ body {
 	transition: transform 1000ms var(--custom-bezier-curve);
 }
 
+#wrapperPages.noTransition {
+	transition: none;
+}
+
 main {
 	position: relative;
 	width: 100vw;
@@ -53,7 +57,15 @@ main > div {
 	overflow: hidden;
 	max-width: 600px;
 
-	transition: margin-left 2s var(--custom-bezier-curve);
+	transition: margin-top 2s var(--custom-bezier-curve),
+		margin-bottom 2s var(--custom-bezier-curve),
+		margin-left 2s var(--custom-bezier-curve),
+		margin-right 2s var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
+}
+
+.noTransition .title {
+	transition: none;
 }
 
 .title h1 {
@@ -61,17 +73,24 @@ main > div {
 
 	font-size: 5em;
 	transform: translateX(-100%);
-	transition: transform 1s 250ms var(--custom-bezier-curve);
+	transition: transform 1s var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
 	filter: drop-shadow(0 0 5px #000);
 }
 
+.noTransition .title h1 {
+	transition: none;
+}
 .title h2 {
 	font-size: 2em;
 	margin-top: 10px;
 	transform: translateX(-100%);
-	transition: transform 1s 750ms var(--custom-bezier-curve);
+	transition: transform 1s 750ms var(--custom-bezier-curve),
+		font-size 1s var(--custom-bezier-curve);
 }
-
+.noTransition .title h2 {
+	transition: none;
+}
 .title h1:hover ~ .mainDivision {
 	width: 100%;
 }
@@ -113,7 +132,9 @@ main > div {
 		width 1s var(--custom-bezier-curve),
 		height 1s var(--custom-bezier-curve);
 }
-
+.noTransition .card {
+	transition: none;
+}
 .card > div {
 	position: absolute;
 	width: 100%;
@@ -149,6 +170,12 @@ main > div {
 	height: 100%;
 }
 
+.noTransition .card > div:before,
+.noTransition .card > div:after {
+	width: 0%;
+	transition: none;
+}
+
 .card > div:before {
 	background-color: #299299;
 
@@ -170,7 +197,6 @@ main > div {
 	margin-left: 100%;
 }
 
-
 @media (max-width: 1200px) {
 	body {
 		font-size: 12px;
@@ -191,13 +217,24 @@ main > div {
 
 @media (max-width: 800px) {
 	.title {
-		margin: 0 10vw;
+		margin: auto 10vw;
 		margin-top: 55vh;
 		font-size: 0.9em;
 	}
 
 	.title h1 {
 		font-size: 4em;
+	}
+
+	.accessPage .title {
+		font-size: 1em;
+		margin: auto;
+		margin-left: 7%;
+		margin-right: 5%;
+	}
+
+	.accessPage .title h1 {
+		font-size: 5em;
 	}
 
 	#introduction .title {

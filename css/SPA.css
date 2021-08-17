@@ -9,11 +9,22 @@
 	opacity: 1;
 	transform: translate(100%, -50%);
 }
-.accessPage .card.isClickable:hover {
-	opacity: 1;
-	transform: translate(100%, -50%);
-}
 
 .accessPage .card > div {
 	border: none;
+}
+
+@media (max-width: 800px) {
+	.pageActive .card {
+		width: 80vw;
+		height: 40vh;
+		transform: translate(10vw, -95%) scale(1);
+	}
+	
+	.accessPage .card {
+		margin-left: 0;
+		width: 100vw;
+		height: 35vh;
+		transform: translate(0, -50vh) scale(1);
+	}
 }

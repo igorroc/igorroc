@@ -5,7 +5,7 @@ let timeline = document.querySelector("#timeline")
 let currentPage = page || 0
 let transitioning = false
 
-nextPage()
+nextPage(page)
 
 document.addEventListener("wheel", (event) => {
 	if (!transitioning && !transitioningPages) {
@@ -29,7 +29,7 @@ document.addEventListener("wheel", (event) => {
 	}, 1000)
 })
 
-function nextPage() {
+function nextPage(first) {
 	window.history.pushState("", `page ${currentPage}`, `?page=${currentPage}`)
 
 	if (!timeline.children[currentPage]) {
@@ -46,6 +46,15 @@ function nextPage() {
 			"style",
 			`transform: translateX(${-100 * currentPage}vw)`
 		)
+	}
+
+	if(first){
+		console.log("first")
+		wrapperPages.classList.add("noTransition")
+		setTimeout(() => {
+			wrapperPages.classList.remove("noTransition")
+			console.log("removed")
+		}, 300)
 	}
 
 	timeline

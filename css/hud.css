@@ -55,7 +55,7 @@
 
 	background-color: rgba(255, 255, 255, 0.473);
 
-	transition: width 200ms var(--custom-bezier-curve),
+	transition: width 500ms var(--custom-bezier-curve),
 		background-color 200ms var(--custom-bezier-curve);
 }
 
@@ -64,8 +64,8 @@
 	background-color: white;
 }
 
-#timeline.timelineHidden {
-	left: -50%;
+#timeline.timelineHidden span {
+	width: 0;
 }
 
 #goBack {
@@ -138,6 +138,11 @@
 	#timeline span.timelineActive {
 		width: 3px;
 		height: 60px;
+	}
+
+	#timeline.timelineHidden span {
+		width: 3px;
+		height: 0px;
 	}
 
 	#scrollMore {
