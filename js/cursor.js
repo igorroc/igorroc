@@ -5,7 +5,7 @@ let links = document.querySelectorAll("a")
 let buttons = document.querySelectorAll("button")
 let textInputs = document.querySelectorAll("input")
 let textAreas = document.querySelectorAll("textarea")
-let cards = document.querySelectorAll(".card > div > img")
+let cards = document.querySelectorAll(".card")
 
 console.log(cards)
 let mouseHold = false
@@ -40,14 +40,17 @@ buttons.forEach((button) => {
 })
 
 cards.forEach((card) => {
-	card.addEventListener("mouseenter", () => {
-		console.log("enter")
-		cursor.classList.add("cursorOnLink")
-	})
-	card.addEventListener("mouseout", () => {
-		console.log("leave")
-		cursor.classList.remove("cursorOnLink")
-	})
+	if(card.classList.contains("isClickable")){
+		card = card.querySelector("div > img")
+		card.addEventListener("mouseenter", () => {
+			console.log("enter")
+			cursor.classList.add("cursorOnLink")
+		})
+		card.addEventListener("mouseout", () => {
+			console.log("leave")
+			cursor.classList.remove("cursorOnLink")
+		})
+	}
 })
 
 textInputs.forEach((input) => {
