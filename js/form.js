@@ -9,13 +9,17 @@ link.addEventListener("click", () => {
 	menu.classList.remove("menuShow")
 	hambMenu.classList.remove("headerMenuActive")
 })
-sendEmail.addEventListener("click", () => {
-	form.classList.add("formShow")
-	menu.classList.remove("menuShow")
-	hambMenu.classList.remove("headerMenuActive")
-})
+try {
+	sendEmail.addEventListener("click", () => {
+		form.classList.add("formShow")
+		menu.classList.remove("menuShow")
+		hambMenu.classList.remove("headerMenuActive")
+	})
+} catch (error) {
+    console.error(error)
+}
 
 formClose.addEventListener("click", () => {
-    console.log("close form")
+	console.log("close form")
 	form.classList.remove("formShow")
 })
