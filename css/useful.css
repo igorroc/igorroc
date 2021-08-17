@@ -80,6 +80,27 @@ code {
 	background-color: #13974a56;
 }
 
+.semiTransparentButton {
+	padding: 10px 20px;
+
+	border-radius: 5px;
+	border: 1px solid #13974a;
+
+	background-color: #13974a1a;
+	color: white;
+
+	font-weight: bold;
+	text-decoration: none;
+
+	transition: all 500ms var(--custom-bezier-curve);
+}
+
+.semiTransparentButton:hover,
+.semiTransparentButton:focus {
+	letter-spacing: 0.1em;
+	background-color: #13974a56;
+}
+
 .mobileOnly {
 	display: none;
 }
