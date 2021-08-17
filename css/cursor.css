@@ -37,6 +37,12 @@
 	animation: blink 0.5s 300ms infinite var(--custom-bezier-curve);
 }
 
+#cursor.cursorOnHidden {
+	opacity: 1;
+
+	animation: blink 1s .5s infinite var(--custom-bezier-curve);
+}
+
 #cursor.cursorClick {
 	transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
 	opacity: 0.7;

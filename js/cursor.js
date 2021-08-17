@@ -6,6 +6,8 @@ const cursorSize = cursor.offsetWidth
 
 let links = document.querySelectorAll(".isClickable")
 let textInputs = document.querySelectorAll(".isTextInput")
+let wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
+let isHoveringHiddenText = false
 
 let mouseHold = false
 
@@ -15,11 +17,13 @@ if (isMobile) {
 	root.style.setProperty("cursor", "none")
 }
 
+// ! FOLLOW CURSOR
 window.addEventListener("mousemove", (event) => {
 	cursor.style.left = event.pageX + "px"
 	cursor.style.top = event.pageY + "px"
 })
 
+// ! CURSOR HOVER EFFECTS
 links.forEach((link) => {
 	if (link.classList.contains("card")) {
 		link = link.querySelector("div > img")
@@ -31,7 +35,6 @@ links.forEach((link) => {
 		cursor.classList.remove("cursorOnLink")
 	})
 })
-
 textInputs.forEach((input) => {
 	input.addEventListener("mouseenter", () => {
 		cursor.classList.add("cursorOnInput")
@@ -40,7 +43,16 @@ textInputs.forEach((input) => {
 		cursor.classList.remove("cursorOnInput")
 	})
 })
+wrapperHiddenTexts.forEach((wrapper) => {
+	wrapper.addEventListener("mousemove", () => {
+		cursor.classList.add("cursorOnHidden")
+	})
+	wrapper.addEventListener("mouseout", () => {
+		cursor.classList.remove("cursorOnHidden")
+	})
+})
 
+// ! MOUSE CLICK
 window.addEventListener("mousedown", () => {
 	cursor.classList.add("cursorClick")
 })
@@ -51,9 +63,7 @@ window.addEventListener("mouseup", () => {
 	}, 200)
 })
 
-let wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
-let isHoveringHiddenText = false
-
+// ! REVEAL HIDDEN TEXTS
 wrapperHiddenTexts.forEach((wrapperHiddenText) => {
 	wrapperHiddenText.addEventListener("mousemove", (e) => {
 		isHoveringHiddenText = true

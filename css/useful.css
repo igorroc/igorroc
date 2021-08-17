@@ -132,11 +132,12 @@ code {
 	position: absolute;
 	margin: 0;
 	left: 20%;
-	bottom: 20%;
+	bottom: 30%;
+
 	width: max-content;
 	height: max-content;
 
-	max-width: 300px;
+	max-width: 370px;
 
 	opacity: 0;
 
@@ -190,5 +191,17 @@ code {
 	}
 	.desktopOnly {
 		display: none;
+	}
+
+	.wrapperHiddenText{
+		left: 5%;
+		bottom: 35%;
+	}
+}
+
+@media (max-width: 800px){
+	.wrapperHiddenText{
+		left: 10%;
+		bottom: 25%;
 	}
 }
