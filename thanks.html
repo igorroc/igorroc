@@ -24,11 +24,13 @@
 		<meta property="twitter:title" content="Portfolio - Igor Rocha" />
 		<meta property="twitter:description" content="My personal website!" />
 
-		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/thanks.css" />
 		<link rel="stylesheet" href="./css/header.css" />
 		<link rel="stylesheet" href="./css/useful.css" />
 		<link rel="stylesheet" href="./css/cursor.css" />
 		<link rel="stylesheet" href="./css/font.css" />
+		<link rel="stylesheet" href="./css/hud.css" />
+		<link rel="stylesheet" href="./css/form.css" />
 		<link rel="stylesheet" href="./css/particles.css" />
 
 		<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
@@ -47,108 +49,49 @@
 		</noscript>
 
 		<header>
-			<div id="headerLogo">
+			<div id="headerLogo" class="isClickable">
 				<a href="./index.html">
 					<img src="./img/logo.png" />
 				</a>
 			</div>
-			<div id="headerCTA">
+			<div id="headerCTA" class="isClickable">
 				<button class="semiTransparentButton">HIRE ME</button>
 			</div>
-			<div id="hamburguerMenu"></div>
+			<div id="hamburguerMenu" class="isClickable"></div>
 		</header>
 
 		<div id="menu">
-			<a class="menuItem" href="./">HOME</a>
-			<a class="menuItem" href="./projects">PROJECTS</a>
-			<a class="menuItem" href="./links.html">LINKS</a>
-			<a class="menuItem" href="./curriculum.pdf">
+			<a class="menuItem isClickable" href="./">HOME</a>
+			<a class="menuItem isClickable" href="./projects">PROJECTS</a>
+			<a class="menuItem isClickable" href="./links.html">LINKS</a>
+			<a class="menuItem isClickable" href="./curriculum.pdf">
 				CURRICULUM <i class="fas fa-file-download"></i>
 			</a>
 		</div>
 
-		<div id="wrapperPages">
-			<main id="introduction" style="--page: 0" page="0">
+		<main id="wrapperMessage">
+			<div>
 				<div class="title">
-					<h1>
-						Igor<br />
-						Rocha
-					</h1>
+					<h1>Thank you for contacting me!</h1>
 					<div class="mainDivision"></div>
 					<h2>
-						frontend developer + <br />
-						web designer + <br />
-						UI & UX
+						<a
+							class="semiTransparentButton isClickable"
+							href="./index.html"
+						>
+							<i class="fas fa-home"></i>
+							Return home
+						</a>
 					</h2>
 				</div>
-			</main>
-
-			<main id="info" style="--page: 1" page="1">
-				<div class="title">
-					<h1>Aqui vai ter uma página</h1>
-					<div class="mainDivision"></div>
-					<h2>Provavelmente o meu projeto mais recente</h2>
-				</div>
-				<div class="card isClickable">
-					<div class="parallaxMouse">
-						<img src="./img/page2.jfif" />
-					</div>
-				</div>
-			</main>
-
-			<main id="about" style="--page: 2" page="2">
-				<div class="title">
-					<h1>More about me</h1>
-					<div class="mainDivision"></div>
-					<h2>Um dia vai ter mesmo!</h2>
-				</div>
-				<div class="card isClickable">
-					<div class="parallaxMouse">
-						<img src="./img/page3.jfif" />
-					</div>
-				</div>
-			</main>
-
-			<main id="funny" style="--page: 3" page="3">
-				<div class="title">
-					<h1>
-						My projects
-					</h1>
-					<div class="mainDivision"></div>
-					<h2>
-						Sim, eu fiz isso tudo por nada<br />
-						<span class="hiddenText">texto escondido</span>
-					</h2>
-				</div>
-				<div class="card isClickable">
-					<div class="parallaxMouse">
-						<img src="./img/page4.jfif" />
-					</div>
-				</div>
-			</main>
-
-			<main id="contact" style="--page: 4" page="4">
-				<div class="title">
-					<h1>Contact me</h1>
-					<div class="mainDivision"></div>
-					<h2>
-						<button id="sendEmail" class="semiTransparentButton">
-							<i class="fa fa-envelope"></i>
-							Send an email
-						</button>
-					</h2>
-				</div>
-				<div class="card">
-					<div class="parallaxMouse">
-						<img src="./img/contact.png" />
-					</div>
-				</div>
-			</main>
-		</div>
+			</div>
+		</main>
 
 		<div id="formID">
 			<div>
-				<button id="closeForm"><i class="fas fa-times"></i></button>
+				<button id="closeForm">
+					<i class="fas fa-times isClickable"></i>
+				</button>
 				<div id="formTitle">
 					<h3>Get in <b>touch</b></h3>
 					<p>
@@ -168,6 +111,7 @@
 								id="name"
 								name="name"
 								min="3"
+								class="isTextInput"
 								required
 							/>
 						</div>
@@ -177,6 +121,7 @@
 								type="email"
 								id="email"
 								name="name"
+								class="isTextInput"
 								required
 							/>
 						</div>
@@ -192,9 +137,14 @@
 								id="message"
 								cols="30"
 								rows="5"
+								class="isTextInput"
 							></textarea>
 						</div>
-						<button class="semiTransparentButton"type="submit" id="submit">
+						<button
+							class="semiTransparentButton isClickable"
+							type="submit"
+							id="submit"
+						>
 							<i class="fas fa-envelope"></i> Let's go!
 						</button>
 					</form>
@@ -227,25 +177,13 @@
 		</ul>
 
 		<!-- HUD -->
-		<div id="timeline">
-			<span class="timelineActive"></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<div id="scrollMore" class="scrollNext">
-			<i class="fas fa-chevron-down"></i>
-			<span class="indicator desktopOnly">Scroll</span>
-			<span class="indicator mobileOnly">Swipe</span>
-		</div>
 		<div id="cursor"></div>
 
-		<script src="./js/index.js"></script>
+		<script src="./js/mobile.js"></script>
 		<script src="./js/header.js"></script>
+		<script src="./js/parallax.js"></script>
+		<script src="./js/form.js"></script>
 		<script src="./js/cursor.js"></script>
 		<script src="./js/particles.js"></script>
-
-		<noscript> </noscript>
 	</body>
 </html>

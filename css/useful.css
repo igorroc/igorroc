@@ -9,6 +9,10 @@ code {
 	border-radius: 5px;
 }
 
+i{
+	pointer-events: none;
+}
+
 .gradientOverText {
 	-webkit-background-clip: text;
 	background-clip: text;
