@@ -211,6 +211,10 @@ main > div {
 }
 
 @media (max-width: 800px) {
+	body{
+		height: calc(var(--vh, 1vh) * 100);
+	}
+
 	.title {
 		margin: auto 10vw;
 		margin-top: 55vh;
