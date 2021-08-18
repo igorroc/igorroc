@@ -208,7 +208,7 @@ body #formID {
 
 	body #scrollMore {
 		bottom: 10px;
-		left: calc(50% - 48px);
+		left: calc(50% - 30px);
 		right: auto;
 		transform: translateX(-50%);
 
