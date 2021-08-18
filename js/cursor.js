@@ -10,7 +10,9 @@ let wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
 
 let mouseHold = false
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
+	await sleep(1000)
+
 	root = document.documentElement
 
 	cursor = document.querySelector("#cursor")

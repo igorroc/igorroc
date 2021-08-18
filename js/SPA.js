@@ -10,100 +10,105 @@ let localPath = "."
 
 let correctPath = gitPath
 
-links.forEach((link) => {
-	let isCard = link.classList.contains("card")
-	let isButton = link.classList.contains("showDetailsButton")
-	if (isCard || isButton) {
-		link.addEventListener("click", () => {
-			if (transitioningPages) {
-				return
-			}
-			transitioningPages = true
+window.addEventListener("load", async () => {
+	await sleep(1000)
 
-			header.classList.add("headerDark")
-			header.classList.add("headerTop")
+	links.forEach((link) => {
+		let isCard = link.classList.contains("card")
+		let isButton = link.classList.contains("showDetailsButton")
+		if (isCard || isButton) {
+			link.addEventListener("click", () => {
+				if (transitioningPages) {
+					return
+				}
+				transitioningPages = true
 
-			timeline.classList.add("timelineHidden")
-			returnButton.classList.remove("goBackHidden")
+				header.classList.add("headerDark")
+				header.classList.add("headerTop")
 
-			particles.forEach((particle) =>
-				particle.classList.add("hideParticle")
-			)
-			ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
+				timeline.classList.add("timelineHidden")
+				returnButton.classList.remove("goBackHidden")
 
-			let newUrl
-			let card
-			let main
+				particles.forEach((particle) =>
+					particle.classList.add("hideParticle")
+				)
+				ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
 
-			if (isCard) {
-				card = link.children[0]
-				main = link.parentNode
-				newUrl = `${correctPath}/${
-					link.parentNode.id
-				}.html?page=${link.parentNode.getAttribute("page")}`
-			} else {
-				card =
-					link.parentNode.parentNode.parentNode.querySelector(".card")
-						.children[0]
-				main = link.parentNode.parentNode.parentNode
+				let newUrl
+				let card
+				let main
 
-				newUrl = `${correctPath}/${
-					link.parentNode.parentNode.parentNode.id
-				}.html?page=${link.parentNode.parentNode.parentNode.getAttribute(
-					"page"
-				)}`
-			}
+				if (isCard) {
+					card = link.children[0]
+					main = link.parentNode
+					newUrl = `${correctPath}/${
+						link.parentNode.id
+					}.html?page=${link.parentNode.getAttribute("page")}`
+				} else {
+					card =
+						link.parentNode.parentNode.parentNode.querySelector(
+							".card"
+						).children[0]
+					main = link.parentNode.parentNode.parentNode
 
-			card.classList.remove("parallaxMouse")
-			card.style = ""
-			card.parentNode.classList.remove("isClickable")
-			console.log(card)
-			main.classList.add("accessPage")
+					newUrl = `${correctPath}/${
+						link.parentNode.parentNode.parentNode.id
+					}.html?page=${link.parentNode.parentNode.parentNode.getAttribute(
+						"page"
+					)}`
+				}
 
-			setTimeout(() => {
-				console.log("MUDANDO")
-				loader.classList.add("showLoader")
-				window.location = newUrl
-			}, 2000)
-		})
-	}
-})
+				card.classList.remove("parallaxMouse")
+				card.style = ""
+				card.parentNode.classList.remove("isClickable")
+				console.log(card)
+				main.classList.add("accessPage")
 
-returnButton?.addEventListener("click", () => {
-	if (transitioningPages) {
-		return
-	}
-	transitioningPages = true
-
-	let top = document.querySelector("#top")
-	top.scrollIntoView({
-		behavior: "smooth",
-		block: "start",
-		inline: "nearest",
+				setTimeout(() => {
+					console.log("MUDANDO")
+					loader.classList.add("showLoader")
+					window.location = newUrl
+				}, 2000)
+			})
+		}
 	})
 
-	document.body.style = "overflow: hidden;"
-	header.classList.remove("headerDark")
-	header.classList.add("headerBottom")
+	returnButton?.addEventListener("click", () => {
+		if (transitioningPages) {
+			return
+		}
+		transitioningPages = true
 
-	timeline.classList.remove("timelineHidden")
-	scrollMore.classList.add("scrollMoreHidden")
-	returnButton.classList.add("goBackHidden")
-	contentCtaButton?.classList.remove("showButton")
+		let top = document.querySelector("#top")
+		top.scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+			inline: "nearest",
+		})
 
-	particles.forEach((particle) => particle.classList.add("hideParticle"))
-	ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
+		document.body.style = "overflow: hidden;"
+		header.classList.remove("headerDark")
+		header.classList.add("headerBottom")
 
-	let wrapperPage = document.querySelector("#wrapperPage")
+		timeline.classList.remove("timelineHidden")
+		scrollMore.classList.add("scrollMoreHidden")
+		returnButton.classList.add("goBackHidden")
+		contentCtaButton?.classList.remove("showButton")
 
-	wrapperPage.children[0].children[0].classList.remove("parallaxMouse")
-	wrapperPage.children[0].children[0].style = ""
-	wrapperPage.children[0].classList.toggle("accessPage")
-	wrapperPage.children[0].classList.remove("showLess")
+		particles.forEach((particle) => particle.classList.add("hideParticle"))
+		ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
 
-	setTimeout(() => {
-		console.log("MUDANDO")
-		loader.classList.add("showLoader")
-		window.location = `${correctPath}/index.html?page=${page}`
-	}, 2000)
+		let wrapperPage = document.querySelector("#wrapperPage")
+
+		wrapperPage.children[0].children[0].classList.remove("parallaxMouse")
+		wrapperPage.children[0].children[0].style = ""
+		wrapperPage.children[0].classList.toggle("accessPage")
+		wrapperPage.children[0].classList.remove("showLess")
+
+		setTimeout(() => {
+			console.log("MUDANDO")
+			loader.classList.add("showLoader")
+			window.location = `${correctPath}/index.html?page=${page}`
+		}, 2000)
+	})
 })

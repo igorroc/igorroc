@@ -53,26 +53,9 @@
 
 		<span id="top"></span>
 
-		<header class="headerDark">
-			<div id="headerLogo" class="isClickable">
-				<a href="./index.html">
-					<img src="./img/logo.png" />
-				</a>
-			</div>
-			<div id="headerCTA" class="isClickable">
-				<button class="semiTransparentButton">HIRE ME</button>
-			</div>
-			<div id="hamburguerMenu" class="isClickable"></div>
-		</header>
+		<div id="insertHeaderHere" class="headerDark"></div>
 
-		<div id="menu">
-			<a class="menuItem isClickable" href="./">HOME</a>
-			<a class="menuItem isClickable" href="./projects">PROJECTS</a>
-			<a class="menuItem isClickable" href="./links.html">LINKS</a>
-			<a class="menuItem isClickable" href="./curriculum.html">
-				CURRICULUM <i class="fas fa-file-download"></i>
-			</a>
-		</div>
+		<div id="insertMenuHere"></div>
 
 		<div id="wrapperPage">
 			<main
@@ -115,7 +98,6 @@
 		</div>
 
 		<div id="insertFormHere"></div>
-
 
 		<!-- PARTICLES -->
 		<div class="ripple parallaxMouse2d">
@@ -173,9 +155,11 @@
 		<script async>
 			;(async function () {
 				await insertHTML("form.html")
+				await insertHTML("header.html")
+				await insertHTML("menu.html")
 			})()
 		</script>
-		
+
 		<script src="./js/url.js"></script>
 		<script src="./js/mobile.js"></script>
 		<script src="./js/header.js"></script>

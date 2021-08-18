@@ -1,6 +1,14 @@
-function insertHTML(component) {
-	console.log(component)
-	fetch(`../components/${component}`)
+function insertHTML(component, is404) {
+	console.log(component, is404);
+	let linkFetch = ""
+
+	if (is404) {
+		linkFetch = `https://igorroc.github.io/igorroc/components/${component}`
+	} else {
+		linkFetch = `../components/${component}`
+	}
+
+	fetch(linkFetch)
 		.then((response) => response.text())
 		.then((responseText) => {
 			let parser = new DOMParser()
@@ -12,6 +20,9 @@ function insertHTML(component) {
 			)
 
 			if (link_to) {
+				link_to.classList.forEach((className) => {
+					element.classList.add(className)
+				})
 				link_to.parentNode.insertBefore(element, link_to.nextSibling)
 				link_to.remove()
 			}
