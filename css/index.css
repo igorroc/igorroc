@@ -97,6 +97,13 @@ main > div {
 	display: flex;
 	align-items: center;
 	gap: 0.5em;
+	transform: translateY(100%);
+	transition: transform 0.5s 1s var(--custom-bezier-curve),
+		letter-spacing 500ms var(--custom-bezier-curve),
+		background-color 500ms var(--custom-bezier-curve);
+}
+.pageActive #sendEmail {
+	transform: translateY(0%);
 }
 
 .pageActive .title h1,
@@ -109,7 +116,7 @@ main > div {
 	width: max-content;
 }
 
-.title button {
+.title .showDetails button {
 	margin-top: 1em;
 	font-size: 2em;
 	transform: translateY(100%);
@@ -122,7 +129,7 @@ main > div {
 	transform: translateY(0%);
 }
 
-.accessPage .showDetails button{
+.accessPage .showDetails button {
 	transform: translateY(100%);
 }
 
