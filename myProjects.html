@@ -86,11 +86,12 @@
 					<h2>Sim, eu fiz isso tudo por nada</h2>
 					<div id="ctaButton">
 						<a
-							href="https://igorroc.github.io/pebl-web"
-							target="_blank"
+							onclick="document.querySelector('#content2').scrollIntoView({behavior: 'smooth',block: 'start',inline: 'nearest',})"
 							class="semiTransparentButton isClickable"
-							><i class="fas fa-globe"></i>Visit site</a
 						>
+							<i class="fas fa-location-arrow"></i>
+							See more
+						</a>
 					</div>
 				</div>
 				<div class="card">
@@ -108,6 +109,16 @@
 					MEUS PROJETOS<br />
 					MEUS PROJETOS<br />
 					MEUS PROJETOS
+				</p>
+			</div>
+			<div class="content">
+				<p>
+					CONTEUDO 1
+				</p>
+			</div>
+			<div class="content" id="content2">
+				<p>
+					CONTEUDO 2
 				</p>
 			</div>
 		</div>

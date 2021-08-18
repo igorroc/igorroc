@@ -86,11 +86,12 @@
 					<h2>Um dia vai ter mesmo!</h2>
 					<div id="ctaButton">
 						<a
-							href="https://igorroc.github.io/pebl-web"
-							target="_blank"
+							onclick="document.querySelector('#content2').scrollIntoView({behavior: 'smooth',block: 'start',inline: 'nearest',})"
 							class="semiTransparentButton isClickable"
-							><i class="fas fa-globe"></i>Visit site</a
 						>
+							<i class="fas fa-chevron-down"></i>
+							Read more
+						</a>
 					</div>
 				</div>
 				<div class="card">
@@ -109,6 +110,9 @@
 					SOBRE MIM<br />
 					SOBRE MIM
 				</p>
+			</div>
+			<div class="content" id="content2">
+				<p>CONTEUDO 2</p>
 			</div>
 		</div>
 
@@ -239,6 +243,5 @@
 		<script src="./js/particles.js"></script>
 		<script src="./js/SPA.js"></script>
 		<script src="./js/contentPage.js"></script>
-
 	</body>
 </html>
