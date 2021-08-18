@@ -3,7 +3,7 @@ let ripples = document.querySelectorAll(".ripple")
 
 let transitioningPages = false
 
-let gitPath = "https://igorroc.github.io/igor"
+let gitPath = "https://igorroc.github.io/igorroc"
 let localPath = "."
 
 let correctPath = gitPath
