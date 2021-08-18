@@ -79,4 +79,9 @@ window.addEventListener("resize", () => {
 	let vh = window.innerHeight * 0.01
 	document.documentElement.style.setProperty("--vh", `${vh}px`)
 	console.log(vh)
+	if(isMobile){
+		header.style = "transform: translateY(calc((var(--vh, 1vh) * 98) - 92px));"
+	}else{
+		header.style = "transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));"
+	}
 })
