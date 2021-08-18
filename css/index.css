@@ -36,6 +36,10 @@ body {
 	transition: none;
 }
 
+#wrapperPages.noTransition {
+
+}
+
 main {
 	position: relative;
 	width: 100vw;
@@ -117,6 +121,10 @@ main > div {
 }
 
 .title .showDetails button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .5em;
 	margin-top: 1em;
 	font-size: 2em;
 	transform: translateY(100%);
@@ -130,7 +138,7 @@ main > div {
 }
 
 .accessPage .showDetails button {
-	transform: translateY(100%);
+	transform: translateY(110%);
 }
 
 .card {
@@ -220,7 +228,7 @@ main > div {
 
 .accessPage .title {
 	margin-left: 7%;
-	transform: translateY(17%);
+	transform: translateY(-5%);
 }
 
 @media (max-width: 1200px) {

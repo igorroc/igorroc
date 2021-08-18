@@ -127,6 +127,7 @@
 @media (max-width: 700px) {
 	.circle {
 		animation: ripple-mob 6s infinite ease-in-out;
+		animation-delay: calc(0.4s * var(--tam));
 	}
 }
 

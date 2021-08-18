@@ -33,11 +33,12 @@ main {
 	height: 100vh;
 
 	display: flex;
+	flex-direction: column;
 
 	transition: height 1s var(--custom-bezier-curve);
 }
 
-main > div {
+main > .title {
 	position: relative;
 	margin: auto;
 	margin-left: 20%;
@@ -50,7 +51,7 @@ main > div {
 	overflow: hidden;
 	max-width: 600px;
 
-	transform: translateY(-26%);
+	transform: translateY(5%);
 }
 
 .title h1 {
@@ -77,12 +78,33 @@ main > div {
 	margin-left: 50%;
 }
 
-#sendEmail {
+#ctaButton {
 	width: max-content;
-	font-size: 0.8em;
+
+	margin-top: 2em;
+	font-size: 2em;
+
 	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	overflow: hidden;
+}
+
+#ctaButton a {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 0.5em;
+
+	transform: translateY(100%);
+	transition: transform 1s var(--custom-bezier-curve),
+		letter-spacing 500ms var(--custom-bezier-curve),
+		background-color 500ms var(--custom-bezier-curve);
+}
+
+#ctaButton.showButton a {
+	transform: translateY(0%);
 }
 
 .pageActive .title h1,
@@ -97,6 +119,8 @@ main > div {
 
 	width: 45vw;
 	height: 80vh;
+
+	margin-left: 20%;
 
 	opacity: 0;
 
@@ -198,7 +222,7 @@ body #formID {
 		transform: translateY(0);
 	}
 
-	.title {
+	main > .title {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
@@ -237,7 +261,7 @@ body #formID {
 }
 
 @media (max-width: 800px) {
-	.title {
+	main > .title {
 		margin: auto 10vw;
 		transform: translateY(0%);
 		margin-top: 55vh;
@@ -265,10 +289,10 @@ body #formID {
 	}
 
 	main.accessPage.showLess {
-		height: 70vh;
+		height: 85vh;
 	}
 
 	main.accessPage.showLess > .card {
-		height: 50vh;
+		height: 45vh;
 	}
 }

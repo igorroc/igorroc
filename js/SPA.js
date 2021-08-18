@@ -3,6 +3,8 @@ let ripples = document.querySelectorAll(".ripple")
 
 let transitioningPages = false
 
+let loader = document.querySelector("#loadingSlowInternet")
+
 let gitPath = "https://igorroc.github.io/igorroc"
 let localPath = "."
 
@@ -22,7 +24,6 @@ links.forEach((link) => {
 			header.classList.add("headerTop")
 
 			timeline.classList.add("timelineHidden")
-			// scrollMore.classList.remove("scrollMoreHidden")
 			returnButton.classList.remove("goBackHidden")
 
 			particles.forEach((particle) =>
@@ -61,6 +62,7 @@ links.forEach((link) => {
 
 			setTimeout(() => {
 				console.log("MUDANDO")
+				loader.classList.add("showLoader")
 				window.location = newUrl
 			}, 2000)
 		})
@@ -87,6 +89,7 @@ returnButton?.addEventListener("click", () => {
 	timeline.classList.remove("timelineHidden")
 	scrollMore.classList.add("scrollMoreHidden")
 	returnButton.classList.add("goBackHidden")
+	contentCtaButton?.classList.remove("showButton")
 
 	particles.forEach((particle) => particle.classList.add("hideParticle"))
 	ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
@@ -100,6 +103,7 @@ returnButton?.addEventListener("click", () => {
 
 	setTimeout(() => {
 		console.log("MUDANDO")
+		loader.classList.add("showLoader")
 		window.location = `${correctPath}/index.html?page=${page}`
 	}, 2000)
 })

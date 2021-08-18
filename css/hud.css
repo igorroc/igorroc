@@ -183,3 +183,90 @@
 		right: -50%;
 	}
 }
+
+
+/* LOADING */
+
+#loadingSlowInternet {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	z-index: 20;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: rgba(0, 0, 0, 0.8);
+	filter: contrast(20);
+
+	opacity: 0;
+
+	pointer-events: none;
+
+	transition: opacity 2s 2s var(--custom-bezier-curve);
+}
+
+#loadingSlowInternet.showLoader {
+	display: flex;
+	opacity: 1;
+}
+
+.gooey {
+	position: relative;
+
+	margin-top: 120%;
+	width: 142px;
+	height: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dot {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 12px;
+	left: 15px;
+	filter: blur(4px);
+	background: rgb(255, 255, 255);
+	border-radius: 50%;
+	transform: translateX(0);
+	animation: dot 3s infinite;
+	opacity: 1;
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	animation: dots 3s infinite;
+}
+.dots span {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	filter: blur(4px);
+	background: rgb(255, 255, 255);
+	border-radius: 50%;
+}
+
+@keyframes dot {
+	50% {
+		transform: translateX(96px);
+	}
+}
+@keyframes dots {
+	0%,
+	100% {
+		transform: translateX(10%);
+	}
+	50% {
+		transform: translateX(-10%);
+	}
+}
