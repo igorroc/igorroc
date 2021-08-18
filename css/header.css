@@ -220,7 +220,7 @@ header.headerBottom {
 	}
 
 	header.headerBottom {
-		transform: translateY(calc(100vh - 92px));
+		transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));
 	}
 
 	#menu .menuItem {
