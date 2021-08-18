@@ -51,6 +51,7 @@ returnButton?.addEventListener("click", () => {
 		inline: "nearest",
 	})
 
+	document.body.style = "overflow: hidden;"
 	header.classList.remove("headerDark")
 	header.classList.add("headerBottom")
 
