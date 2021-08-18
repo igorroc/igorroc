@@ -16,7 +16,7 @@ hambMenu.addEventListener("mouseout", () => {
 })
 
 if (isMobile) {
-	header.style = "transform: translateY(calc((var(--vh, 1vh) * 98) - 92px));"
+	header.style = "transform: translateY(calc((var(--vh, 1vh) * 99) - 92px));"
 } else {
 	header.style = "transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));"
 }
@@ -24,7 +24,7 @@ if (isMobile) {
 window.addEventListener("resize", () => {
 	if (isMobile) {
 		header.style =
-			"transform: translateY(calc((var(--vh, 1vh) * 98) - 92px));"
+			"transform: translateY(calc((var(--vh, 1vh) * 99) - 92px));"
 	} else {
 		header.style =
 			"transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));"
