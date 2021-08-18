@@ -4,23 +4,33 @@ let sendEmail = document.querySelector("#sendEmail")
 var form = document.querySelector("#formID")
 var formClose = document.querySelector("#closeForm")
 
-link.addEventListener("click", () => {
-	form.classList.add("formShow")
-	menu.classList.remove("menuShow")
-	hambMenu.classList.remove("headerMenuActive")
-	header.classList.remove("headerDark")
-})
+window.addEventListener("load", async () => {
+	await sleep(1000)
+	
+	form = document.querySelector("#formID")
+	formClose = document.querySelector("#closeForm")
 
-formClose.addEventListener("click", () => {
-	console.log("close form")
-	form.classList.remove("formShow")
-	header.classList.add("headerDark")
-})
+	link = document.querySelector("#headerCTA")
+	sendEmail = document.querySelector("#sendEmail")
 
-if (sendEmail) {
-	sendEmail.addEventListener("click", () => {
+	link.addEventListener("click", () => {
 		form.classList.add("formShow")
 		menu.classList.remove("menuShow")
 		hambMenu.classList.remove("headerMenuActive")
+		header.classList.remove("headerDark")
 	})
-}
+
+	formClose.addEventListener("click", () => {
+		console.log("close form")
+		form.classList.remove("formShow")
+		header.classList.add("headerDark")
+	})
+
+	if (sendEmail) {
+		sendEmail.addEventListener("click", () => {
+			form.classList.add("formShow")
+			menu.classList.remove("menuShow")
+			hambMenu.classList.remove("headerMenuActive")
+		})
+	}
+})
