@@ -14,3 +14,19 @@ hambMenu.addEventListener("mouseenter", () => {
 hambMenu.addEventListener("mouseout", () => {
 	cursor.classList.remove("cursorOnLink")
 })
+
+if (isMobile) {
+	header.style = "transform: translateY(calc((var(--vh, 1vh) * 98) - 92px));"
+} else {
+	header.style = "transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));"
+}
+
+window.addEventListener("resize", () => {
+	if (isMobile) {
+		header.style =
+			"transform: translateY(calc((var(--vh, 1vh) * 98) - 92px));"
+	} else {
+		header.style =
+			"transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));"
+	}
+})
