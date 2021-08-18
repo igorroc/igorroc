@@ -3,6 +3,11 @@ let ripples = document.querySelectorAll(".ripple")
 
 let transitioningPages = false
 
+let gitPath = "https://igorroc.github.io/igor"
+let localPath = "."
+
+let correctPath = gitPath
+
 links.forEach((link) => {
 	let isCard = link.classList.contains("card")
 	let isButton = link.classList.contains("showDetailsButton")
@@ -25,26 +30,34 @@ links.forEach((link) => {
 			)
 			ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
 
-			link.classList.remove("isClickable")
-
 			let newUrl
+			let card
+			let main
 
 			if (isCard) {
-				link.children[0].classList.remove("parallaxMouse")
-				link.children[0].style = ""
-				link.parentNode.classList.add("accessPage")
-				newUrl = `https://igorroc.github.io/igorroc/${
+				card = link.children[0]
+				main = link.parentNode
+				newUrl = `${correctPath}/${
 					link.parentNode.id
 				}.html?page=${link.parentNode.getAttribute("page")}`
 			} else {
-				link.parentNode.parentNode.parentNode.classList.add("accessPage")
-				newUrl = `https://igorroc.github.io/igorroc/${
+				card =
+					link.parentNode.parentNode.parentNode.querySelector(".card")
+						.children[0]
+				main = link.parentNode.parentNode.parentNode
+
+				newUrl = `${correctPath}/${
 					link.parentNode.parentNode.parentNode.id
-				}.html?page=${link.parentNode.parentNode.parentNode.getAttribute("page")}`
-				console.log(link)
-				console.log(link.parentNode)
-				console.log(link.parentNode.parentNode)
+				}.html?page=${link.parentNode.parentNode.parentNode.getAttribute(
+					"page"
+				)}`
 			}
+
+			card.classList.remove("parallaxMouse")
+			card.style = ""
+			card.parentNode.classList.remove("isClickable")
+			console.log(card)
+			main.classList.add("accessPage")
 
 			setTimeout(() => {
 				console.log("MUDANDO")
@@ -83,9 +96,10 @@ returnButton?.addEventListener("click", () => {
 	wrapperPage.children[0].children[0].classList.remove("parallaxMouse")
 	wrapperPage.children[0].children[0].style = ""
 	wrapperPage.children[0].classList.toggle("accessPage")
+	wrapperPage.children[0].classList.remove("showLess")
 
 	setTimeout(() => {
 		console.log("MUDANDO")
-		window.location = `https://igorroc.github.io/igorroc/index.html?page=${page}`
+		window.location = `${correctPath}/index.html?page=${page}`
 	}, 2000)
 })

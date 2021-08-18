@@ -207,6 +207,6 @@ i {
 @media (max-width: 800px) {
 	.wrapperHiddenText {
 		left: calc(10vw - 50px);
-		bottom: calc(15vh - 50px);
+		bottom: calc(10vh - 50px);
 	}
 }

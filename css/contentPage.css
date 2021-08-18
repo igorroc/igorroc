@@ -33,6 +33,8 @@ main {
 	height: 100vh;
 
 	display: flex;
+
+	transition: height 1s var(--custom-bezier-curve);
 }
 
 main > div {
@@ -173,7 +175,7 @@ main > div {
 	justify-content: center;
 	align-items: center;
 
-	background-color: #0a1516;
+	background-color: #152729;
 	color: white;
 
 	font-size: 3em;
@@ -258,7 +260,15 @@ body #formID {
 		font-size: 5em;
 	}
 
-	main > .card {
+	main.pageActive > .card {
 		margin: 0;
+	}
+
+	main.accessPage.showLess {
+		height: 70vh;
+	}
+
+	main.accessPage.showLess > .card {
+		height: 50vh;
 	}
 }
