@@ -40,6 +40,7 @@
 			src="https://kit.fontawesome.com/e07fba0c03.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/insertHTML.js"></script>
 	</head>
 	<body>
 		<noscript>
@@ -113,70 +114,8 @@
 			</div>
 		</div>
 
-		<div id="formID">
-			<div>
-				<button id="closeForm" class="isClickable">
-					<i class="fas fa-times"></i>
-				</button>
-				<div id="formTitle">
-					<h3>Get in <b>touch</b></h3>
-					<p>
-						Send me a message on email, so we can make your
-						<b>dream project</b> come true!
-					</p>
-				</div>
-				<div id="formContent">
-					<form
-						action="https://formsubmit.co/643e7a33d18dbb4d90b3084670b81bd3"
-						method="POST"
-					>
-						<div class="question">
-							<label for="name">1. First name:</label>
-							<input
-								type="text"
-								id="name"
-								name="name"
-								min="3"
-								class="isTextInput"
-								required
-							/>
-						</div>
-						<div class="question">
-							<label for="email">2. Your email:</label>
-							<input
-								type="email"
-								id="email"
-								name="email"
-								class="isTextInput"
-								required
-							/>
-						</div>
-						<div class="question">
-							<label for="message">3. Type your message:</label>
-							<textarea
-								name="message"
-								id="message"
-								cols="30"
-								rows="5"
-								class="isTextInput"
-							></textarea>
-						</div>
-						<input
-							type="hidden"
-							name="_next"
-							value="https://igorroc.github.io/igorroc/thanks.html"
-						/>
-						<button
-							class="semiTransparentButton isClickable"
-							type="submit"
-							id="submit"
-						>
-							<i class="fas fa-envelope"></i> Let's go!
-						</button>
-					</form>
-				</div>
-			</div>
-		</div>
+		<div id="insertFormHere"></div>
+
 
 		<!-- PARTICLES -->
 		<div class="ripple parallaxMouse2d">
@@ -231,6 +170,12 @@
 		</div>
 		<div id="cursor"></div>
 
+		<script async>
+			;(async function () {
+				await insertHTML("form.html")
+			})()
+		</script>
+		
 		<script src="./js/url.js"></script>
 		<script src="./js/mobile.js"></script>
 		<script src="./js/header.js"></script>
