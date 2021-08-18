@@ -73,7 +73,8 @@ i {
 	font-weight: bold;
 	text-decoration: none;
 
-	transition: all 500ms var(--custom-bezier-curve);
+	transition: letter-spacing 500ms var(--custom-bezier-curve),
+		background-color 500ms var(--custom-bezier-curve);
 }
 
 .semiTransparentButton:hover,
@@ -135,8 +136,8 @@ i {
 .wrapperHiddenText {
 	position: absolute;
 	margin: 0;
-	left: calc(20% - 50px);
-	bottom: calc(30% - 50px);
+	left: calc(20vw - 50px);
+	bottom: calc(10vh - 50px);
 
 	padding: 50px;
 	width: max-content;
@@ -198,14 +199,14 @@ i {
 	}
 
 	.wrapperHiddenText {
-		left: calc(5% - 50px);
-		bottom: calc(35% - 50px);
+		left: calc(5vw - 50px);
+		bottom: calc(10vh - 50px);
 	}
 }
 
 @media (max-width: 800px) {
 	.wrapperHiddenText {
-		left: calc(10% - 50px);
-		bottom: calc(15% - 50px);
+		left: calc(10vw - 50px);
+		bottom: calc(15vh - 50px);
 	}
 }

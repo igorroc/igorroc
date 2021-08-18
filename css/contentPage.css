@@ -47,6 +47,8 @@ main > div {
 
 	overflow: hidden;
 	max-width: 600px;
+
+	transform: translateY(-26%);
 }
 
 .title h1 {
@@ -144,6 +146,7 @@ main > div {
 
 .accessPage .title {
 	margin-left: 7%;
+	transform: translateY(0%);
 }
 
 .accessPage .card {
@@ -234,6 +237,7 @@ body #formID {
 @media (max-width: 800px) {
 	.title {
 		margin: auto 10vw;
+		transform: translateY(0%);
 		margin-top: 55vh;
 		font-size: 0.9em;
 	}

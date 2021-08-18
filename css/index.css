@@ -103,6 +103,29 @@ main > div {
 .pageActive .title h2 {
 	transform: translateX(0%);
 }
+
+.title .showDetails {
+	overflow: hidden;
+	width: max-content;
+}
+
+.title button {
+	margin-top: 1em;
+	font-size: 2em;
+	transform: translateY(100%);
+	transition: transform 0.5s 1s var(--custom-bezier-curve),
+		letter-spacing 500ms var(--custom-bezier-curve),
+		background-color 500ms var(--custom-bezier-curve);
+}
+
+.pageActive .showDetails button {
+	transform: translateY(0%);
+}
+
+.accessPage .showDetails button{
+	transform: translateY(100%);
+}
+
 .card {
 	position: absolute;
 	top: 50%;
@@ -190,6 +213,7 @@ main > div {
 
 .accessPage .title {
 	margin-left: 7%;
+	transform: translateY(17%);
 }
 
 @media (max-width: 1200px) {
@@ -211,7 +235,7 @@ main > div {
 }
 
 @media (max-width: 800px) {
-	body{
+	body {
 		height: calc(var(--vh, 1vh) * 100);
 	}
 
@@ -231,6 +255,7 @@ main > div {
 		margin-bottom: auto;
 		margin-left: 5%;
 		margin-right: 5%;
+		transform: translateY(0%);
 	}
 
 	.accessPage .title h1 {

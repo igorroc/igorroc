@@ -4,7 +4,9 @@ let ripples = document.querySelectorAll(".ripple")
 let transitioningPages = false
 
 links.forEach((link) => {
-	if (link.classList.contains("card")) {
+	let isCard = link.classList.contains("card")
+	let isButton = link.classList.contains("showDetailsButton")
+	if (isCard || isButton) {
 		link.addEventListener("click", () => {
 			if (transitioningPages) {
 				return
@@ -24,15 +26,29 @@ links.forEach((link) => {
 			ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
 
 			link.classList.remove("isClickable")
-			link.children[0].classList.remove("parallaxMouse")
-			link.children[0].style = ""
-			link.parentNode.classList.add("accessPage")
+
+			let newUrl
+
+			if (isCard) {
+				link.children[0].classList.remove("parallaxMouse")
+				link.children[0].style = ""
+				link.parentNode.classList.add("accessPage")
+				newUrl = `https://igorroc.github.io/igorroc/${
+					link.parentNode.id
+				}.html?page=${link.parentNode.getAttribute("page")}`
+			} else {
+				link.parentNode.parentNode.parentNode.classList.add("accessPage")
+				newUrl = `https://igorroc.github.io/igorroc/${
+					link.parentNode.parentNode.parentNode.id
+				}.html?page=${link.parentNode.parentNode.parentNode.getAttribute("page")}`
+				console.log(link)
+				console.log(link.parentNode)
+				console.log(link.parentNode.parentNode)
+			}
 
 			setTimeout(() => {
 				console.log("MUDANDO")
-				window.location = `https://igorroc.github.io/igorroc/${
-					link.parentNode.id
-				}.html?page=${link.parentNode.getAttribute("page")}`
+				window.location = newUrl
 			}, 2000)
 		})
 	}
