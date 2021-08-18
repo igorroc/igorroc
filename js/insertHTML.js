@@ -5,7 +5,7 @@ function insertHTML(component, is404) {
 	if (is404) {
 		linkFetch = `https://igorroc.github.io/igorroc/components/${component}`
 	} else {
-		linkFetch = `../components/${component}`
+		linkFetch = `./components/${component}`
 	}
 
 	fetch(linkFetch)
