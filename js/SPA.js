@@ -112,3 +112,13 @@ window.addEventListener("load", async () => {
 		}, 2000)
 	})
 })
+
+const initialTitle = document.title
+
+document.addEventListener("visibilitychange", (event) => {
+	if (document.visibilityState == "visible") {
+		document.title = initialTitle
+	} else {
+		document.title = "Come back here!"
+	}
+})
