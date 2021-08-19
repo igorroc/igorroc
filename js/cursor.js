@@ -24,10 +24,14 @@ window.addEventListener("load", async () => {
 	wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
 
 	if (isMobile) {
-		cursor.classList.add("cursorMobile")
-	} else {
 		root.style.setProperty("cursor", "none")
+		cursor.remove()
+		return
+	} else {
+		cursor.classList.add("cursorMobile")
 	}
+
+	console.log(isMobile)
 
 	// ! FOLLOW CURSOR
 	window.addEventListener("mousemove", (event) => {

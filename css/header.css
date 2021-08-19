@@ -3,7 +3,8 @@ header {
 	z-index: 10;
 	left: 0;
 	right: 0;
-	width: calc(100% - 40px);
+	top: 0;
+	/* width: calc(100% - 40px); */
 
 	padding: 20px 30px;
 
@@ -216,11 +217,11 @@ header.headerBottom {
 
 @media (max-width: 1200px) {
 	header {
-		transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));
+		/* transform: translateY(calc((var(--vh, 1vh) * 100) - 92px)); */
 	}
 
 	header.headerBottom {
-		transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));
+		/* transform: translateY(calc((var(--vh, 1vh) * 100) - 92px)); */
 	}
 
 	#menu .menuItem {

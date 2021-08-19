@@ -1,5 +1,4 @@
 function insertHTML(component, is404) {
-	console.log(component, is404);
 	let linkFetch = ""
 
 	if (is404) {
