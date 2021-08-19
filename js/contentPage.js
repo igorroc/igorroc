@@ -21,10 +21,8 @@ timelineButtons.forEach((button) => {
 
 window.addEventListener("scroll", (ev) => {
 	if (window.scrollY > 0) {
-		console.log("remover")
         scrollMore.classList.add("scrollMoreHidden")
 	} else {
-        console.log("colocar")
         scrollMore.classList.remove("scrollMoreHidden")
 	}
 }, false)

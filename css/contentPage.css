@@ -394,6 +394,55 @@ body #formID {
 	body #scrollMore.scrollMoreHidden {
 		bottom: -10%;
 	}
+
+	.wrapperContent{
+		flex-direction: column;
+	}
+
+	.contentLeft{
+		width: 100%;
+		align-items: center;
+	}
+
+	.contentLeft > div{
+		margin: 0;
+		max-width: 600px;
+	}
+
+	.contentLeft > div > #timelineButtons{
+		flex-direction: row;
+	}
+
+	.contentLeft > div > #timelineButtons > button{
+		flex-grow: 1;
+	}
+
+	.contentLeft > div > #timelineButtons > button > i{
+		transform: rotate(0deg)
+	}
+	.contentLeft > div > #timelineButtons > button > i::after{
+		transform: rotate(0deg) translateX(-110%);
+	}
+
+	.contentLeft > div > #timelineButtons > button:hover > i{
+		transform: rotate(45deg)
+	}
+
+	.contentLeft > div > #timelineButtons > button:hover > i::after{
+		transform: rotate(-45deg)
+	}
+
+	.contentLeft > div > #timelineButtons > button.buttonContentActive > i{
+		transform: rotate(90deg)
+	}
+
+	.contentLeft > div > #timelineButtons > button.buttonContentActive > i::after{
+		transform: rotate(0deg)
+	}
+
+	.contentRight > div{
+		margin: 0;
+	}
 }
 
 @media (max-width: 800px) {
@@ -430,5 +479,22 @@ body #formID {
 
 	main.accessPage.showLess > .card {
 		height: 45vh;
+	}
+
+	.contentLeft > div{
+		max-width: 80%;
+	}
+	
+	.contentLeft > div > #timelineButtons{
+		flex-wrap: wrap;
+	}
+
+	.contentLeft > div > #timelineButtons > button{
+		gap: 15px;
+		min-width: 150px;
+	}
+
+	.contentLeft > div > #timelineButtons > button > span{
+		font-size: 1em;
 	}
 }
