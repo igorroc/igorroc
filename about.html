@@ -26,6 +26,7 @@
 
 		<link rel="stylesheet" href="./css/contentPage.css" />
 		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="stylesheet" href="./css/useful.css" />
 		<link rel="stylesheet" href="./css/cursor.css" />
 		<link rel="stylesheet" href="./css/font.css" />
@@ -55,9 +56,6 @@
 
 		<div id="insertHeaderHere" class="headerDark"></div>
 
-		<div id="insertMenuHere"></div>
-
-
 		<div id="wrapperPage">
 			<main
 				id="about"
@@ -71,7 +69,7 @@
 					<h2>Um dia vai ter mesmo!</h2>
 					<div id="ctaButton">
 						<a
-							onclick="document.querySelector('#content2').scrollIntoView({behavior: 'smooth',block: 'start',inline: 'nearest',})"
+							onclick="document.querySelector('#first-content').scrollIntoView({behavior: 'smooth',block: 'start',inline: 'nearest',})"
 							class="semiTransparentButton isClickable"
 						>
 							<i class="fas fa-chevron-down"></i>
@@ -85,24 +83,96 @@
 					</div>
 				</div>
 			</main>
-			<div class="content">
-				<p>
-					SOBRE MIM<br />
-					SOBRE MIM<br />
-					SOBRE MIM<br />
-					SOBRE MIM<br />
-					SOBRE MIM<br />
-					SOBRE MIM<br />
-					SOBRE MIM
-				</p>
-			</div>
-			<div class="content" id="content2">
-				<p>CONTEUDO 2</p>
+			<div id="first-content" class="wrapperContent">
+				<div class="contentLeft">
+					<div>
+						<h3>Who am I?</h3>
+						<h4>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Lorem, ipsum dolor sit amet consectetur
+							adipisicing elit.
+						</h4>
+						<div id="timelineButtons">
+							<button class="buttonContentActive isClickable">
+								<i class="fas fa-arrow-right"></i>
+								<span>Past</span>
+							</button>
+							<button class="isClickable">
+								<i class="fas fa-arrow-right"></i>
+								<span>Present</span>
+							</button>
+							<button class="isClickable">
+								<i class="fas fa-arrow-right"></i>
+								<span>Future</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="contentRight">
+					<div>
+						<p>asdadd</p>
+						<p>asdadd</p>
+						<p>asdadd</p>
+						<p>asdadd</p>
+						<p>asdadd</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div id="insertFormHere"></div>
+		<footer>
+			<div class="footerSeparator"></div>
+			<div id="footerInfo">
+				<div id="footerLeft">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Porro. Lorem ipsum dolor sit, amet consectetur
+						adipisicing elit. Porro.
+					</p>
+					<p>&copy; 2021 all rights reserved</p>
+				</div>
+				<a href="./index.html" id="footerCenter">
+					<img src="./img/logo.png" />
+				</a>
+				<div id="footerRight">
+					<div id="footerContact">
+						<a class="isClickable" href="tel:5573988089810">
+							+55 (73) 9 8808-9810 <i class="fas fa-phone"></i>
+						</a>
+						<a class="isClickable" href="mailto:igor_roc@hotmail.com.br">
+							igor_roc@hotmail.com.br <i class="fa fa-envelope"></i>
+						</a>
+					</div>
+					<div id="footerWrapperSocial">
+						<a
+							href="http://instagram.com/igor.roc"
+							target="_blank"
+							class="footerSocial isClickable"
+						>
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a
+							href="http://github.com.com/igorroc"
+							target="_blank"
+							class="footerSocial isClickable"
+						>
+							<i class="fab fa-github"></i>
+						</a>
+						<a
+							href="https://codepen.io/igorroc"
+							target="_blank"
+							class="footerSocial isClickable"
+						>
+							<i class="fab fa-codepen"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 
+		<div id="insertMenuHere"></div>
+
+		<div id="insertFormHere"></div>
 
 		<!-- PARTICLES -->
 		<div class="ripple parallaxMouse2d">

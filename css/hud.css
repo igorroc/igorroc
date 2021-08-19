@@ -77,7 +77,8 @@
 	font-size: 3em;
 	color: #fff;
 
-	transition: left 0.5s 0.5s var(--custom-bezier-curve);
+	transition: left 0.5s 0.5s var(--custom-bezier-curve),
+		transform 300ms var(--custom-bezier-curve);
 }
 
 #goBack.goBackHidden {
@@ -95,6 +96,9 @@
 		transform 0.5s var(--custom-bezier-curve);
 }
 
+#goBack:hover {
+	transform: translateX(10px);
+}
 #goBack:hover span {
 	opacity: 0.8;
 	transform: translateY(-50%) translateX(10%) scale(1);
@@ -123,10 +127,10 @@
 	width: 0%;
 	height: 5px;
 	background: linear-gradient(90deg, #08acae, #3ff51b, #08acae);
-	
+
 	background-size: 200%;
 	background-position: 0%;
-	
+
 	animation: textGradientAnimation 2s linear infinite;
 }
 
@@ -183,7 +187,6 @@
 		right: -50%;
 	}
 }
-
 
 /* LOADING */
 
