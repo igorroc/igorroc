@@ -1,0 +1,218 @@
+#second-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 100px 50px;
+
+	background: linear-gradient(#0a1516, #132922);
+}
+
+#second-content > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#second-content > div > .contentTitle {
+	color: white;
+	text-align: center;
+
+	margin-bottom: 50px;
+}
+
+#second-content > div > .contentTitle h3 {
+	font-family: "Merriweather", serif;
+
+	font-size: 1.3em;
+	font-weight: 200;
+	color: rgba(255, 255, 255, 0.397);
+	margin-bottom: 25px;
+}
+
+#second-content > div > .contentTitle h4 {
+	font-size: 2em;
+	letter-spacing: 0.05em;
+}
+
+#second-content > div > .wrapperRecentWorks {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard {
+	--work-card-scale: 1;
+	position: relative;
+	width: 800px;
+	height: 400px;
+
+	transform: scale(var(--work-card-scale));
+
+	overflow: hidden;
+
+	background-color: rgb(31, 56, 44);
+	box-shadow: 0px 10px 20px #0003;
+
+	transition: transform 300ms var(--custom-bezier-curve),
+		box-shadow 300ms var(--custom-bezier-curve);
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: #36972d25;
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard > .sliderMask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	transform: translateX(-110%);
+	background: linear-gradient(90deg, #011813ee, #02886d8a);
+
+	pointer-events: none;
+
+	transition: transform 300ms var(--custom-bezier-curve);
+}
+#second-content > div > .wrapperRecentWorks > .workCard > .workCardTitle {
+	position: absolute;
+	bottom: 90px;
+	left: 90px;
+	font-size: 3em;
+	color: white;
+
+	pointer-events: none;
+
+	filter: drop-shadow(0px 0px 3px #000a);
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard:hover {
+	--work-card-scale: 1.1;
+	box-shadow: 0px 10px 20px #000a;
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard:hover > .sliderMask {
+	transform: translateX(0);
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard:nth-child(odd) {
+	transform: scale(var(--work-card-scale)) translateX(-50px);
+}
+
+#second-content > div > .wrapperRecentWorks > .workCard:nth-child(even) {
+	transform: scale(var(--work-card-scale)) translateX(50px);
+}
+
+#second-content
+	> div
+	> .wrapperRecentWorks
+	> .workCard:nth-child(even)
+	> .workCardTitle {
+	right: 90px;
+	left: unset;
+}
+
+#second-content
+	> div
+	> .wrapperRecentWorks
+	> .workCard:nth-child(even)
+	> .sliderMask {
+	transform: translateX(110%);
+	background: linear-gradient(-90deg, #011813ee, #02886d8a);
+}
+
+#second-content
+	> div
+	> .wrapperRecentWorks
+	> .workCard:nth-child(even):hover
+	> .sliderMask {
+	transform: translateX(0%);
+}
+#contact-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+
+	padding: 100px;
+
+	background: linear-gradient(90deg, #0a1516, #0c1a13);
+}
+
+#contact-me h4 {
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#contact-me button {
+	font-size: 3em;
+}
+
+@media (max-width: 1200px) {
+	#second-content > div > .wrapperRecentWorks {
+		gap: 50px;
+	}
+	#second-content > div > .wrapperRecentWorks > .workCard {
+		width: 700px;
+		height: 350px;
+	}
+	#second-content > div > .wrapperRecentWorks > .workCard:nth-child(odd) {
+		transform: scale(var(--work-card-scale)) translateX(-25px);
+	}
+
+	#second-content > div > .wrapperRecentWorks > .workCard:nth-child(even) {
+		transform: scale(var(--work-card-scale)) translateX(25px);
+	}
+}
+
+@media (max-width: 800px) {
+	#second-content > div > .wrapperRecentWorks {
+		gap: 25px;
+	}
+	#second-content > div > .wrapperRecentWorks > .workCard {
+		width: 100%;
+		max-width: 600px;
+		height: 300px;
+	}
+	#second-content > div > .wrapperRecentWorks > .workCard:nth-child(odd) {
+		transform: scale(var(--work-card-scale)) translateX(0px);
+	}
+
+	#second-content > div > .wrapperRecentWorks > .workCard:nth-child(even) {
+		transform: scale(var(--work-card-scale)) translateX(0px);
+	}
+
+	#second-content
+		> div
+		> .wrapperRecentWorks
+		> .workCard:nth-child(odd)
+		> .workCardTitle,
+	#second-content
+		> div
+		> .wrapperRecentWorks
+		> .workCard:nth-child(even)
+		> .workCardTitle {
+		bottom: 10%;
+		right: unset;
+		left: 50%;
+        transform: translateX(-50%);
+	}
+}

@@ -106,7 +106,7 @@ main > .title {
 .pageActive .title h2 {
 	transform: translateX(0%);
 }
-.card {
+.pageActive .card {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -150,7 +150,7 @@ main > .title {
 	transform: translate(60%, -50%) scale(1.05);
 }
 
-.card > div > img {
+.pageActive .card > div > img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -186,7 +186,7 @@ main > .title {
 	border: none;
 }
 
-.content {
+.pageActive .content {
 	width: 100%;
 	height: 1000px;
 
