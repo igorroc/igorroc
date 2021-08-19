@@ -232,10 +232,6 @@ main > div {
 }
 
 @media (max-width: 1200px) {
-	body {
-		font-size: 12px;
-	}
-
 	main {
 		position: absolute;
 		top: 0;
@@ -256,12 +252,20 @@ main > div {
 
 	.title {
 		margin: auto 10vw;
-		margin-top: 55vh;
+		margin-top: 50vh;
 		font-size: 0.9em;
 	}
 
 	.title h1 {
 		font-size: 4em;
+	}
+
+	.title h2 {
+		font-size: 1.5em;
+	}
+
+	.pageActive .showDetails button{
+		margin-top: 10px;
 	}
 
 	.accessPage .title {
@@ -286,11 +290,12 @@ main > div {
 		font-size: 5em;
 	}
 
+
 	.card {
 		margin-left: 0;
 		width: 80vw;
 		height: 40vh;
-		transform: translate(10vw, -160%) scale(0.7);
+		transform: translate(10vw, -280%) scale(0.7);
 	}
 
 	.pageActive .card {

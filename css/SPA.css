@@ -33,7 +33,7 @@
 	.pageActive .card {
 		width: 80vw;
 		height: 40vh;
-		transform: translate(10vw, -95%) scale(1);
+		transform: translate(10vw, -105%) scale(1);
 	}
 
 	.accessPage .card {

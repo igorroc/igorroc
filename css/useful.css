@@ -206,10 +206,6 @@ i {
 
 @media (max-width: 800px) {
 	.wrapperHiddenText {
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: calc(10vh - 50px);
-
-		text-align: center;
+		display: none;
 	}
 }

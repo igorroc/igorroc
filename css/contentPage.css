@@ -350,10 +350,6 @@ body #formID {
 }
 
 @media (max-width: 1200px) {
-	body {
-		font-size: 12px;
-	}
-
 	body header {
 		transform: translateY(0);
 	}
@@ -415,6 +411,8 @@ body #formID {
 
 	.contentLeft > div > #timelineButtons > button{
 		flex-grow: 1;
+		min-width: 170px;
+		gap: 20px;
 	}
 
 	.contentLeft > div > #timelineButtons > button > i{
@@ -446,17 +444,27 @@ body #formID {
 }
 
 @media (max-width: 800px) {
+	
 	main > .title {
 		margin: auto 10vw;
 		transform: translateY(0%);
-		margin-top: 55vh;
+		margin-top: 50vh;
 		font-size: 0.9em;
 	}
 
 	.title h1 {
 		font-size: 4em;
 	}
-
+	.title h2 {
+		font-size: 1.5em;
+	}
+	#ctaButton{
+		margin-top: 15px;
+		font-size: 1.5em;
+	}
+	.pageActive .showDetails button{
+		margin-top: 10px;
+	}
 	.accessPage .title {
 		font-size: 1em;
 		margin-top: 37vh;
@@ -473,8 +481,8 @@ body #formID {
 		margin: 0;
 	}
 
-	main.accessPage.showLess {
-		height: 85vh;
+	main.accessPage.showLess .title {
+		margin-bottom: 50px;
 	}
 
 	main.accessPage.showLess > .card {
