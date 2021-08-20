@@ -24,7 +24,6 @@ window.addEventListener("load", async () => {
 	wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
 
 	if (isMobile) {
-		root.style.setProperty("cursor", "none")
 		cursor.remove()
 		return
 	} else {

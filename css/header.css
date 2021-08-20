@@ -217,7 +217,7 @@ header.headerBottom {
 
 @media (max-width: 1200px) {
 	header {
-		/* transform: translateY(calc((var(--vh, 1vh) * 100) - 92px)); */
+		transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));
 	}
 
 	header.headerBottom {
