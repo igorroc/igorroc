@@ -6,6 +6,16 @@
   <a href="https://igorroc.github.io/igorroc"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Website"></a>
 </p>
 
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
+
+[![Visits Badge](https://badges.pufler.dev/visits/IgorRoc/IgorRoc)](https://igorroc.github.io/igorroc)
+
+[![Repos Badge](https://badges.pufler.dev/repos/IgorRoc)](https://igorroc.github.io/igorroc)
+
+[![Commits Badge](https://badges.pufler.dev/commits/monthly/IgorRoc)](https://igorroc.github.io/igorroc)
+
+</div>
+
 ## I am a programmer that tries to learn about everything!
 
 -   Python
@@ -37,7 +47,7 @@
 
 ## 🎭 UI & UX Clones
 
-<div style="display: flex; gap: 20px;">
+<div style="display: flex; gap: 20px; flex-wrap: wrap">
 
 [![Netflix](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=netflix-clone)](https://github.com/IgorRoc/netflix-clone)
 
