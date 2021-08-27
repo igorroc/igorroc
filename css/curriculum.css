@@ -361,6 +361,18 @@ li {
 		font-weight: 400;
 		font-size: 0.8rem;
 	}
+
+	body #left-side > div{
+		gap: 30px;
+	}
+
+	body #left-side.mobile-active {
+		max-width: 100%;
+	}
+
+	body #left-side.mobile-active ~ #right-side {
+		max-width: 100%;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
