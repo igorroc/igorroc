@@ -4,9 +4,9 @@
 	--right-background-color: #fefefe;
 	--right-text-color: #131313;
 	--right-highlight-color: #045231;
-	
+
 	--left-background-color: #045231;
-	--left-highlight-color: #71FDAB;
+	--left-highlight-color: #71fdab;
 	--left-text-color: #fafafa;
 }
 
@@ -24,6 +24,7 @@ body {
 	width: 100%;
 	display: flex;
 
+	background-color: var(--right-background-color);
 	font-size: 16px;
 }
 
@@ -55,12 +56,13 @@ li {
 	top: 0;
 	width: 100%;
 	max-width: 40%;
-	height: 100vh;
+	height: calc(100vh - 100px);
 	padding: 50px 0;
 	background-color: #045231;
 
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 
 	transition: max-width 0.5s ease-in-out;
 }
@@ -244,14 +246,16 @@ li {
 	font-weight: 400;
 }
 
-.section #interests {
+.section #interests,
+.section #knowledge {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.section #interests li {
+.section #interests li,
+.section #knowledge li {
 	padding: 5px 10px;
 	border-radius: 20px;
 
@@ -259,6 +263,15 @@ li {
 	color: var(--right-background-color);
 
 	font-weight: 600;
+
+	cursor: default;
+
+	transition: transform 0.3s ease;
+}
+
+.section #interests li:hover,
+.section #knowledge li:hover {
+	transform: scale(1.1);
 }
 
 /* SCROLL BAR */
@@ -310,11 +323,43 @@ li {
 }
 
 @media print {
+	:root {
+		--right-background-color: #fefefe !important;
+		--right-text-color: #131313 !important;
+		--right-highlight-color: #045231 !important;
+
+		--left-background-color: #045231 !important;
+		--left-highlight-color: #71fdab !important;
+		--left-text-color: #fafafa !important;
+	}
+
 	* {
 		-webkit-print-color-adjust: exact;
 	}
-	#hamburguer-menu {
+
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	body #left-side {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	body #right-side {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	body #hamburguer-menu {
 		display: none;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+		font-weight: 400;
+		font-size: 0.8rem;
 	}
 }
 
@@ -357,7 +402,6 @@ li {
 	#left-side {
 		overflow: hidden;
 		max-width: 0%;
-		height: 100vh;
 	}
 	#right-side {
 		overflow: hidden;
