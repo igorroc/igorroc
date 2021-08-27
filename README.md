@@ -6,7 +6,7 @@
   <a href="https://igorroc.github.io/igorroc"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Website"></a>
 </p>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
+<p style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
 
 [![Visits Badge](https://badges.pufler.dev/visits/IgorRoc/IgorRoc)](https://igorroc.github.io/igorroc)
 
@@ -14,7 +14,7 @@
 
 [![Commits Badge](https://badges.pufler.dev/commits/monthly/IgorRoc)](https://igorroc.github.io/igorroc)
 
-</div>
+</p>
 
 ## I am a programmer that tries to learn about everything!
 
