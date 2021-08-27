@@ -32,16 +32,38 @@ li {
 	list-style: none;
 }
 
+#hamburguer-menu {
+	position: fixed;
+	top: 0.6em;
+	right: 0.6em;
+	font-size: 1.5em;
+	width: 2em;
+	height: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	color: #000;
+
+	display: none;
+
+	transition: color .5s ease-in-out;
+}
+
 #left-side {
 	position: sticky;
 	top: 0;
-	width: 40%;
+	width: 100%;
+	max-width: 40%;
 	height: 100vh;
 	padding: 50px 0;
 	background-color: #045231;
 
 	display: flex;
 	justify-content: flex-end;
+
+	transition: max-width 0.5s ease-in-out;
 }
 
 #left-side > div {
@@ -64,6 +86,12 @@ li {
 
 	border-radius: 50%;
 	overflow: hidden;
+}
+
+#myself #my-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 #myself #title {
@@ -133,8 +161,10 @@ li {
 }
 
 #right-side {
-	width: 60%;
+	width: 100%;
+	max-width: 60%;
 	background-color: #fefefe;
+	transition: width 0.5s ease-in-out, max-width 0.5s ease-in-out;
 }
 
 #right-side > div {
@@ -182,6 +212,18 @@ li {
 	gap: 5px;
 }
 
+.section ul li a {
+	width: max-content;
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #131313;
+	text-decoration: none;
+}
+
+.section ul li a:hover {
+	color: #045231;
+}
+
 .section ul li h5 {
 	font-size: 1.2em;
 	font-weight: 700;
@@ -201,6 +243,23 @@ li {
 	margin-top: 10px;
 	font-size: 1em;
 	font-weight: 400;
+}
+
+.section #interests {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.section #interests li {
+	padding: 5px 10px;
+	border-radius: 20px;
+
+	background-color: #045231;
+	color: #fff;
+
+	font-weight: 600;
 }
 
 /* SCROLL BAR */
@@ -254,5 +313,53 @@ li {
 @media print {
 	* {
 		-webkit-print-color-adjust: exact;
+	}
+	body{
+		flex-direction: column;
+	}
+	#hamburguer-menu {
+		display: none;
+	}
+}
+
+@media (max-width: 1100px) {
+	#left-side {
+		justify-content: center;
+	}
+	#left-side > div {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	#hamburguer-menu {
+		display: flex;
+	}
+
+	#myself #my-image {
+		width: 150px;
+		height: 150px;
+	}
+	#myself #title {
+		margin-top: 0;
+	}
+	#left-side {
+		overflow: hidden;
+		max-width: 0%;
+		height: 100vh;
+	}
+	#right-side {
+		overflow: hidden;
+		max-width: 100%;
+	}
+
+	#left-side.mobile-active {
+		max-width: 100%;
+	}
+	#left-side.mobile-active ~ #right-side {
+		max-width: 0%;
+	}
+	#left-side.mobile-active ~ #hamburguer-menu {
+		color: #fff;
 	}
 }

@@ -45,23 +45,23 @@
 							</div>
 							Personal Website
 						</a>
-						<a href="">
+						<a href="https://www.linkedin.com/in/igorroc/">
 							<div class="icon">
 								<i class="fab fa-linkedin"></i>
 							</div>
 							Linkedin
 						</a>
-						<a href="">
+						<a href="https://github.com/IgorRoc">
 							<div class="icon">
 								<i class="fab fa-github"></i>
 							</div>
 							Github
 						</a>
-						<a href="">
+						<a>
 							<div class="icon">
 								<i class="fas fa-map-marker-alt"></i>
 							</div>
-							Local
+							Ilhéus - BA - Brasil
 						</a>
 					</ul>
 				</div>
@@ -92,6 +92,9 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+		<div id="hamburguer-menu">
+			<i class="fas fa-bars"></i>
 		</div>
 		<div id="right-side">
 			<div>
@@ -171,8 +174,9 @@
 								<a
 									href="https://github.com/IgorRoc/ProcrastinaNao"
 									target="_blank"
-									>ProcrastinaNão</a
-								>
+									>ProcrastinaNão
+									<i class="fas fa-external-link-alt"></i
+								></a>
 								<p>
 									Lorem ipsum dolor sit amet consectetur,
 									adipisicing elit. Iusto commodi ea ex ipsa
@@ -186,8 +190,9 @@
 								<a
 									href="https://github.com/IgorRoc/DisCalculus"
 									target="_blank"
-									>DisCalculus</a
-								>
+									>DisCalculus
+									<i class="fas fa-external-link-alt"></i
+								></a>
 								<p>
 									Lorem ipsum dolor sit amet consectetur,
 									adipisicing elit. Iusto commodi ea ex ipsa
@@ -201,8 +206,9 @@
 								<a
 									href="https://igorroc.github.io/pebl-web/"
 									target="_blank"
-									>PEBL Web</a
-								>
+									>PEBL Web
+									<i class="fas fa-external-link-alt"></i
+								></a>
 								<h6>UESC</h6>
 								<p>
 									Lorem ipsum dolor sit amet consectetur,
@@ -235,32 +241,64 @@
 
 				<div class="section">
 					<div class="section-title">
+						<h3>UI & UX Clones</h3>
+						<div class="separator"></div>
+					</div>
+					<div class="section-content">
+						<ul id="projects">
+							<li>
+								<a
+									href="https://igorroc.github.io/netflix-clone"
+									target="_blank"
+									>Netflix
+									<i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://igorroc.github.io/whatsapp-clone"
+									target="_blank"
+									>WhatsApp
+									<i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+							<li>
+								<a
+									href="https://igorroc.github.io/discord-clone/"
+									target="_blank"
+									>Discord
+									<i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-title">
 						<h3>Interests</h3>
 						<div class="separator"></div>
 					</div>
 					<div class="section-content">
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Minima sit error consectetur velit voluptatem,
-							doloribus saepe corrupti! Eos debitis error porro
-							totam voluptatem. Incidunt dolorem corrupti
-							voluptate exercitationem nesciunt ea?
-						</p>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Architecto voluptate perspiciatis modi
-							inventore quae impedit recusandae voluptatum dolores
-							molestias veritatis. Est mollitia aliquid explicabo
-							sed animi amet cupiditate adipisci nulla. Debitis
-							corporis corrupti provident repellendus tempore,
-							odit esse aliquid magni amet commodi consequuntur
-							rerum obcaecati vel vitae nihil repudiandae eveniet
-							tempora ad rem atque. Similique dolores aspernatur
-							sequi officia magni!
-						</p>
+						<ul id="interests">
+							<li>Frontend</li>
+							<li>Backend</li>
+							<li>Design</li>
+							<li>UI & UX</li>
+							<li>Mobile</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script>
+			let menu = document.querySelector("#hamburguer-menu")
+			let leftSide = document.querySelector("#left-side")
+
+			menu.addEventListener("click", () => {
+				leftSide.classList.toggle("mobile-active")
+			})
+		</script>
 	</body>
 </html>
