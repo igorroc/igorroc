@@ -8,9 +8,9 @@
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
 
-<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/visits/igorroc/igorroc"></a>
+<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/visits/igorroc/igorroc"></a>  &#xa0; 
 
-<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/repos/igorroc"></a>
+<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/repos/igorroc"></a>  &#xa0; 
 
 <a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/commits/monthly/igorroc"></a>
 
