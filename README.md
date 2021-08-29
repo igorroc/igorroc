@@ -6,22 +6,27 @@
   <a href="https://igorroc.github.io/igorroc"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Website"></a>
 </p>
 
-<p style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
 
-[![Visits Badge](https://badges.pufler.dev/visits/IgorRoc/IgorRoc)](https://igorroc.github.io/igorroc)
+[![Repos Badge](https://badges.pufler.dev/visits/IgorRoc/IgorRoc)](https://igorroc.github.io/igorroc)
 
 [![Repos Badge](https://badges.pufler.dev/repos/IgorRoc)](https://igorroc.github.io/igorroc)
 
 [![Commits Badge](https://badges.pufler.dev/commits/monthly/IgorRoc)](https://igorroc.github.io/igorroc)
 
-</p>
+</div>
 
 ## I am a programmer that tries to learn about everything!
 
--   Python
--   JavaScript
--   HTML & CSS
--   Git
+<div style="display: inline_block"><br>
+  <img align="center" alt="Igor-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Igor-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Igor-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Igor-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="Igor-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+</div>
+
+#
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
@@ -56,3 +61,6 @@
 [![WhatsApp](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=whatsapp-clone)](https://github.com/IgorRoc/whatsapp-clone)
 
 </div>
+
+
+![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
