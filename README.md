@@ -8,11 +8,11 @@
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
 
-[![Repos Badge](https://badges.pufler.dev/visits/IgorRoc/IgorRoc)](https://igorroc.github.io/igorroc)
+[![Repos Badge](https://badges.pufler.dev/visits/igorroc/igorroc)](https://igorroc.github.io/igorroc)
 
-[![Repos Badge](https://badges.pufler.dev/repos/IgorRoc)](https://igorroc.github.io/igorroc)
+[![Repos Badge](https://badges.pufler.dev/repos/igorroc)](https://igorroc.github.io/igorroc)
 
-[![Commits Badge](https://badges.pufler.dev/commits/monthly/IgorRoc)](https://igorroc.github.io/igorroc)
+[![Commits Badge](https://badges.pufler.dev/commits/monthly/igorroc)](https://igorroc.github.io/igorroc)
 
 </div>
 
@@ -30,9 +30,9 @@
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
-![IgorRoc github stats](https://github-readme-stats.vercel.app/api?username=IgorRoc&theme=gotham&show_icons=true)
+![igorroc github stats](https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IgorRoc&layout=compact&theme=gotham)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham)](https://github.com/anuraghazra/github-readme-stats)
 
 </div>
 
@@ -40,13 +40,13 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-[![DisCalculus](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=DisCalculus)](https://github.com/IgorRoc/DisCalculus)
+[![DisCalculus](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=DisCalculus)](https://github.com/igorroc/DisCalculus)
 
-[![PEBL-Web (UESC)](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=pebl-web)](https://github.com/IgorRoc/pebl-web)
+[![PEBL-Web (UESC)](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=pebl-web)](https://github.com/igorroc/pebl-web)
 
-[![Escape From UESC](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=escape-from-uesc)](https://github.com/IgorRoc/escape-from-uesc)
+[![Escape From UESC](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=escape-from-uesc)](https://github.com/igorroc/escape-from-uesc)
 
-[![ProcrastinaNão](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=ProcrastinaNão)](https://github.com/IgorRoc/ProcrastinaNao)
+[![ProcrastinaNão](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=ProcrastinaNão)](https://github.com/igorroc/ProcrastinaNao)
 
 </div>
 
@@ -54,11 +54,11 @@
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap">
 
-[![Netflix](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=netflix-clone)](https://github.com/IgorRoc/netflix-clone)
+[![Netflix](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=netflix-clone)](https://github.com/igorroc/netflix-clone)
 
-[![Discord](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=discord-clone)](https://github.com/IgorRoc/discord-clone)
+[![Discord](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=discord-clone)](https://github.com/igorroc/discord-clone)
 
-[![WhatsApp](https://github-readme-stats.vercel.app/api/pin/?username=IgorRoc&repo=whatsapp-clone)](https://github.com/IgorRoc/whatsapp-clone)
+[![WhatsApp](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=whatsapp-clone)](https://github.com/igorroc/whatsapp-clone)
 
 </div>
 
