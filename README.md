@@ -8,22 +8,22 @@
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px;" >
 
-[![Repos Badge](https://badges.pufler.dev/visits/igorroc/igorroc)](https://igorroc.github.io/igorroc)
+<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/visits/igorroc/igorroc"></a>
 
-[![Repos Badge](https://badges.pufler.dev/repos/igorroc)](https://igorroc.github.io/igorroc)
+<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/repos/igorroc"></a>
 
-[![Commits Badge](https://badges.pufler.dev/commits/monthly/igorroc)](https://igorroc.github.io/igorroc)
+<a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/commits/monthly/igorroc"></a>
 
 </div>
 
 ## I am a programmer that tries to learn about everything!
 
-<div style="display: inline_block"><br>
-  <img align="center" alt="Igor-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Igor-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Igor-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Igor-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="Igor-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+<div style="display: inline_block">
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
 </div>
 
 #
@@ -61,6 +61,5 @@
 [![WhatsApp](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=whatsapp-clone)](https://github.com/igorroc/whatsapp-clone)
 
 </div>
-
 
 ![Snake animation](https://github.com/igorroc/igorroc/blob/output/github-contribution-grid-snake.svg)
