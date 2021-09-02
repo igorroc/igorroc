@@ -23,7 +23,7 @@
   <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
 </div>
 
-<div style="height: 40px"></div>
+<div style="height: 80px"></div>
 
 ## 🚀 Top Projects
 
@@ -42,7 +42,7 @@
   </a>
 </div>
 
-<div style="height: 40px"></div>
+<div style="height: 80px"></div>
 
 ## 🎭 UI & UX Clones
 
@@ -60,6 +60,6 @@
   </a>
 </div>
 
-<div style="height: 40px"></div>
+<div style="height: 80px"></div>
 
 ![Snake animation](https://github.com/igorroc/igorroc/blob/output/github-contribution-grid-snake.svg)
