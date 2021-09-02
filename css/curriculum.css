@@ -357,14 +357,22 @@ code{
 	}
 
 	body #left-side {
+		position: relative;
+		width: 100%;
+		max-width: 100%;
+		justify-content: center;
+	}
+
+	body #right-side {
+		display: flex;
+		
+		justify-content: center;
+		align-items: center;
+		
 		width: 100%;
 		max-width: 100%;
 	}
 
-	body #right-side {
-		width: 100%;
-		max-width: 100%;
-	}
 
 	body #hamburguer-menu {
 		display: none;
