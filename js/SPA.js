@@ -119,6 +119,6 @@ document.addEventListener("visibilitychange", (event) => {
 	if (document.visibilityState == "visible") {
 		document.title = initialTitle
 	} else {
-		document.title = "Come back here!"
+		document.title = "❗ Volta aqui! ❗"
 	}
 })
