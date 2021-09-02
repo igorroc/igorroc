@@ -1,4 +1,6 @@
-# <h1 align="center">Hi! <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px"> I'm Igor Rocha</h1>
+<h1 align="center">Hi! <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px"> I'm Igor Rocha</h1>
+
+<h2 align="center">A programmer that tries to make the web better!</h2>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/igorroc/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn"></a>  &#xa0; 
@@ -12,41 +14,48 @@
   <a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/commits/monthly/igorroc"></a>
 </p>
 
-## I am a programmer that tries to learn about everything!
-
 <div style="display: flex; align-items: center; gap: 20px;">
-
-<img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true&hide=prs,issues,contribs">
-<img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
-
+  <img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true&hide=prs,issues,contribs">
+  <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
 </div>
 
 #
 
 ## 🚀 Top Projects
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-
-[![DisCalculus](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=DisCalculus&theme=gotham)](https://github.com/igorroc/DisCalculus)
-
-[![PEBL-Web (UESC)](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=pebl-web&theme=gotham)](https://github.com/igorroc/pebl-web)
-
-[![Escape From UESC](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=escape-from-uesc&theme=gotham)](https://github.com/igorroc/escape-from-uesc)
-
-[![ProcrastinaNão](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=ProcrastinaNão&theme=gotham)](https://github.com/igorroc/ProcrastinaNao)
-
+<div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
+  <a href="https://github.com/igorroc/ProcrastinaNao">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=ProcrastinaNão&theme=gotham">
+  </a>
+  <a href="https://github.com/igorroc/DisCalculus">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=DisCalculus&theme=gotham">
+  </a>
+  <a href="https://github.com/igorroc/pebl-web">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=pebl-web&theme=gotham">
+  </a>
+  <a href="https://github.com/igorroc/escape-from-uesc">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=escape-from-uesc&theme=gotham">
+  </a>
 </div>
+
+#
 
 ## 🎭 UI & UX Clones
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap">
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <a href="https://github.com/igorroc/netflix-clone">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=netflix-clone&theme=gotham">
+  </a>
 
-[![Netflix](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=netflix-clone&theme=gotham)](https://github.com/igorroc/netflix-clone)
+  <a href="https://github.com/igorroc/discord-clone">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=discord-clone&theme=gotham">
+  </a>
 
-[![Discord](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=discord-clone&theme=gotham)](https://github.com/igorroc/discord-clone)
-
-[![WhatsApp](https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=whatsapp-clone&theme=gotham)](https://github.com/igorroc/whatsapp-clone)
-
+  <a href="https://github.com/igorroc/whatsapp-clone">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=whatsapp-clone&theme=gotham">
+  </a>
 </div>
+
+#
 
 ![Snake animation](https://github.com/igorroc/igorroc/blob/output/github-contribution-grid-snake.svg)
