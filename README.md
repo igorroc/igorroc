@@ -1,4 +1,4 @@
-<h1 align="center">Hi! <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px"> I'm Igor</h1>
+<h1 align="center">Hi! I'm Igor <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px"></h1>
 
 <h2 align="center">A programmer who tries to make the web better!</h2>
 
