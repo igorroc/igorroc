@@ -65,16 +65,16 @@
 				class="pageActive accessPage"
 			>
 				<div class="title">
-					<h1>More about me</h1>
+					<h1>Sobre mim</h1>
 					<div class="mainDivision"></div>
-					<h2>Um dia vai ter mesmo!</h2>
+					<h2>Conheça um pouco mais sobre quem sou eu!</h2>
 					<div id="ctaButton">
 						<a
 							onclick="document.querySelector('#first-content').scrollIntoView({behavior: 'smooth',block: 'start',inline: 'nearest',})"
 							class="semiTransparentButton isClickable"
 						>
 							<i class="fas fa-chevron-down"></i>
-							Read more
+							Leia mais
 						</a>
 					</div>
 				</div>
@@ -88,32 +88,47 @@
 				<div class="contentLeft">
 					<div>
 						<h3>Who am I?</h3>
-						<h4>
-							Select a period to know more about me!
-						</h4>
+						<h4>Select a period to know more about me!</h4>
 						<div id="timelineButtons">
-							<button class="buttonContentActive isClickable">
+							<button
+								class="buttonContentActive isClickable"
+								timelink="past"
+							>
 								<i class="fas fa-arrow-right"></i>
 								<span>Past</span>
 							</button>
-							<button class="isClickable">
+							<button class="isClickable" timelink="present">
 								<i class="fas fa-arrow-right"></i>
 								<span>Present</span>
 							</button>
-							<button class="isClickable">
+							<button class="isClickable" timelink="future">
 								<i class="fas fa-arrow-right"></i>
 								<span>Future</span>
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="contentRight">
-					<div>
-						<p>CONTEUDO</p>
-						<p>CONTEUDO</p>
-						<p>CONTEUDO</p>
-						<p>CONTEUDO</p>
-						<p>CONTEUDO</p>
+				<div class="contentRight active-past">
+					<div id="past">
+						<p>CONTEUDO passado</p>
+						<p>CONTEUDO passado</p>
+						<p>CONTEUDO passado</p>
+						<p>CONTEUDO passado</p>
+						<p>CONTEUDO passado</p>
+					</div>
+					<div id="present">
+						<p>CONTEUDO atual</p>
+						<p>CONTEUDO atual</p>
+						<p>CONTEUDO atual</p>
+						<p>CONTEUDO atual</p>
+						<p>CONTEUDO atual</p>
+					</div>
+					<div id="future">
+						<p>CONTEUDO futuro</p>
+						<p>CONTEUDO futuro</p>
+						<p>CONTEUDO futuro</p>
+						<p>CONTEUDO futuro</p>
+						<p>CONTEUDO futuro</p>
 					</div>
 				</div>
 			</div>
@@ -125,28 +140,28 @@
 					</div>
 					<div class="wrapperRecentWorks">
 						<div class="workCard isClickable">
-							<img src="./img/coffee.jfif">
+							<img src="./img/coffee.jfif" />
 							<div class="sliderMask"></div>
 							<div class="workCardTitle">
 								<h4>IMaltes</h4>
 							</div>
 						</div>
 						<div class="workCard isClickable">
-							<img src="./img/page2.jfif" alt="">
+							<img src="./img/page2.jfif" alt="" />
 							<div class="sliderMask"></div>
 							<div class="workCardTitle">
 								<h4>PEBL</h4>
 							</div>
 						</div>
 						<div class="workCard isClickable">
-							<img src="./img/page3.jfif" alt="">
+							<img src="./img/page3.jfif" alt="" />
 							<div class="sliderMask"></div>
 							<div class="workCardTitle">
 								<h4>TecnoJR</h4>
 							</div>
 						</div>
 						<div class="workCard isClickable">
-							<img src="./img/page4.jfif" alt="">
+							<img src="./img/page4.jfif" alt="" />
 							<div class="sliderMask"></div>
 							<div class="workCardTitle">
 								<h4>Outro</h4>
@@ -157,7 +172,9 @@
 			</div>
 			<div id="contact-me">
 				<h4>Did you like anything here?</h4>
-				<button class="isClickable semiTransparentButton">Contact Me</button>
+				<button class="isClickable semiTransparentButton">
+					Contact Me
+				</button>
 			</div>
 		</div>
 
@@ -180,8 +197,12 @@
 						<a class="isClickable" href="tel:5573988089810">
 							+55 (73) 9 8808-9810 <i class="fas fa-phone"></i>
 						</a>
-						<a class="isClickable" href="mailto:igor_roc@hotmail.com.br">
-							igor_roc@hotmail.com.br <i class="fa fa-envelope"></i>
+						<a
+							class="isClickable"
+							href="mailto:igor_roc@hotmail.com.br"
+						>
+							igor_roc@hotmail.com.br
+							<i class="fa fa-envelope"></i>
 						</a>
 					</div>
 					<div id="footerWrapperSocial">
@@ -261,5 +282,6 @@
 		<script src="./js/particles.js"></script>
 		<script src="./js/SPA.js"></script>
 		<script src="./js/contentPage.js"></script>
+		<script src="./js/about.js"></script>
 	</body>
 </html>
