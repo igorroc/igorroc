@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 
 :root {
 	--right-background-color: #fefefe;
@@ -10,6 +9,9 @@
 	--left-background-color: #045231;
 	--left-highlight-color: #71fdab;
 	--left-text-color: #fafafa;
+
+	--code-background-color: #0000002d;
+	--code-text-color: #000000;
 }
 
 * {
@@ -34,13 +36,14 @@ li {
 	list-style: none;
 }
 
-code{
+code {
 	padding: 3px 5px;
-	
-	font-size: .9em;
-	font-family: 'Fira Mono', monospace;
 
-	background-color: #ffffff42;
+	font-size: 0.9em;
+	font-family: "Fira Mono", monospace;
+
+	background-color: var(--code-background-color);
+	color: var(--code-text-color);
 	border-radius: 5px;
 }
 
@@ -365,14 +368,13 @@ code{
 
 	body #right-side {
 		display: flex;
-		
+
 		justify-content: center;
 		align-items: center;
-		
+
 		width: 100%;
 		max-width: 100%;
 	}
-
 
 	body #hamburguer-menu {
 		display: none;
@@ -384,7 +386,7 @@ code{
 		font-size: 0.8rem;
 	}
 
-	body #left-side > div{
+	body #left-side > div {
 		gap: 30px;
 	}
 
@@ -405,6 +407,9 @@ code{
 
 		--left-background-color: #045231;
 		--left-text-color: #fafafa;
+
+		--code-background-color: #ffffff2a;
+		--code-text-color: #ffffff;
 	}
 }
 
