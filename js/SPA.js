@@ -90,20 +90,20 @@ window.addEventListener("load", async () => {
 		header.classList.remove("headerDark")
 		header.classList.add("headerBottom")
 
-		timeline.classList.remove("timelineHidden")
-		scrollMore.classList.add("scrollMoreHidden")
-		returnButton.classList.add("goBackHidden")
+		timeline?.classList.remove("timelineHidden")
+		scrollMore?.classList.add("scrollMoreHidden")
+		returnButton?.classList.add("goBackHidden")
 		contentCtaButton?.classList.remove("showButton")
 
-		particles.forEach((particle) => particle.classList.add("hideParticle"))
-		ripples.forEach((ripple) => ripple.classList.add("hideRipple"))
+		particles?.forEach((particle) => particle.classList.add("hideParticle"))
+		ripples?.forEach((ripple) => ripple.classList.add("hideRipple"))
 
 		let wrapperPage = document.querySelector("#wrapperPage")
 
-		wrapperPage.children[0].children[0].classList.remove("parallaxMouse")
-		wrapperPage.children[0].children[0].style = ""
-		wrapperPage.children[0].classList.toggle("accessPage")
-		wrapperPage.children[0].classList.remove("showLess")
+		wrapperPage?.children[0].children[0].classList.remove("parallaxMouse")
+		wrapperPage?.children[0].children[0].style = ""
+		wrapperPage?.children[0].classList.toggle("accessPage")
+		wrapperPage?.children[0].classList.remove("showLess")
 
 		setTimeout(() => {
 			console.log("MUDANDO")
