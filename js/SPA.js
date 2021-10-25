@@ -12,11 +12,13 @@ let correctPath = gitPath
 
 window.addEventListener("load", async () => {
 	await sleep(1000)
+	console.log("load")
 
 	links.forEach((link) => {
 		let isCard = link.classList.contains("card")
 		let isButton = link.classList.contains("showDetailsButton")
 		if (isCard || isButton) {
+			console.log("CLIQUE")
 			link.addEventListener("click", () => {
 				if (transitioningPages) {
 					return
@@ -90,10 +92,19 @@ window.addEventListener("load", async () => {
 		header.classList.remove("headerDark")
 		header.classList.add("headerBottom")
 
-		timeline?.classList.remove("timelineHidden")
-		scrollMore?.classList.add("scrollMoreHidden")
-		returnButton?.classList.add("goBackHidden")
-		contentCtaButton?.classList.remove("showButton")
+		// if (timeline) {
+		// 	console.log(timeline)
+		// 	timeline.classList.remove("timelineHidden")
+		// }
+		if (scrollMore) {
+			scrollMore.classList.add("scrollMoreHidden")
+		}
+		if (returnButton) {
+			returnButton.classList.add("goBackHidden")
+		}
+		if (contentCtaButton) {
+			contentCtaButton.classList.remove("showButton")
+		}
 
 		particles?.forEach((particle) => particle.classList.add("hideParticle"))
 		ripples?.forEach((ripple) => ripple.classList.add("hideRipple"))
@@ -101,7 +112,7 @@ window.addEventListener("load", async () => {
 		let wrapperPage = document.querySelector("#wrapperPage")
 
 		wrapperPage?.children[0].children[0].classList.remove("parallaxMouse")
-		wrapperPage?.children[0].children[0].style = ""
+		// wrapperPage?.children[0].children[0].style = ""
 		wrapperPage?.children[0].classList.toggle("accessPage")
 		wrapperPage?.children[0].classList.remove("showLess")
 

@@ -5,6 +5,8 @@ let timeline = document.querySelector("#timeline")
 let currentPage = page || 0
 let transitioning = false
 
+// let transitioningPages = false
+
 nextPage(page)
 
 document.addEventListener("wheel", (event) => {

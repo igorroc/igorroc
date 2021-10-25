@@ -23,7 +23,6 @@ window.addEventListener("load", async () => {
 	textInputs = document.querySelectorAll(".isTextInput")
 	wrapperHiddenTexts = document.querySelectorAll(".wrapperHiddenText")
 
-	console.log(isMobile)
 	if (isMobile) {
 		cursor.classList.add("cursorMobile")
 		return
