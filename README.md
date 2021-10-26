@@ -33,7 +33,9 @@ const User = {
 }
 ```
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)
+![-----------------------------------------------------](/assets/Rectangle.svg)
+
+<img src="/assets/Rectangle.svg"></img>
 
 <div style="height: 20px"></div>
 
@@ -42,7 +44,7 @@ const User = {
   <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
 </div>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)
+![-----------------------------------------------------](/assets/Rectangle.svg)
 
 <div style="height: 80px"></div>
 
@@ -81,7 +83,7 @@ const User = {
   </a>
 </div>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)
+![-----------------------------------------------------](/assets/Rectangle.svg)
 
 <div style="height: 80px"></div>
 
