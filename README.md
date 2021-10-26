@@ -30,14 +30,8 @@ const User = {
 }
 ```
 
-<p style="width: 100%; background-color:#0C0E12; padding: 1rem">
-  <a href="https://igorroc.github.io/igorroc/links" style="font-family: 'Fira Code', monospace;" >
-    <span style="color: #79C0FF">User</span>.<span style="color: #D2A8FF">getImportantLinks</span><span style="color: #5ADD5B">()</span>
-  </a>
-</p>
-
-<big><pre>
-User.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
+<big style="color: #FFA657"><pre style="color: #FFA657">
+**User**.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
 </pre></big>
 
 <div style="height: 20px"></div>
