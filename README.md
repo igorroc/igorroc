@@ -16,12 +16,33 @@
   <a href="https://igorroc.github.io/igorroc"> <img src="https://badges.pufler.dev/commits/monthly/igorroc"></a>
 </p>
 
+```js
+const User = {
+	name: "Igor Lima Rocha",
+	pronouns: ["He", "Him"],
+	role: "FrontEnd",
+	hobbies: [
+      "Watch anime",
+      "Play/Watch RPG"
+    ],
+	currentCompany: "TecnoJr",
+	currentChallenges: [
+      "Daily Logo Challenge", 
+      "Daily UI Challenge"
+    ]
+}
+```
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)
+
 <div style="height: 20px"></div>
 
 <div style="display: flex; align-items: center; gap: 20px;">
   <img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true&hide=prs,issues,contribs">
   <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
 </div>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)
 
 <div style="height: 80px"></div>
 
@@ -59,6 +80,8 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=whatsapp-clone&theme=gotham">
   </a>
 </div>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)
 
 <div style="height: 80px"></div>
 
