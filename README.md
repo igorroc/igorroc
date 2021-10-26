@@ -21,21 +21,24 @@ const User = {
 	name: "Igor Lima Rocha",
 	pronouns: ["He", "Him"],
 	role: "FrontEnd",
-	hobbies: [
-      "Watch anime",
-      "Play/Watch RPG"
-    ],
+	hobbies: ["Watch anime", "Play/Watch RPG"],
 	currentCompany: "TecnoJr",
-	currentChallenges: [
-      "Daily Logo Challenge", 
-      "Daily UI Challenge"
-    ]
+	currentChallenges: ["Daily Logo Challenge", "Daily UI Challenge"],
+	getImportantLinks: () => {
+		return ImportantLinks
+	},
 }
 ```
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#installation)
+<p style="width: 100%; background-color:#0C0E12; padding: 1rem">
+  <a href="https://igorroc.github.io/igorroc/links" style="font-family: 'Fira Code', monospace;" >
+    <span style="color: #79C0FF">User</span>.<span style="color: #D2A8FF">getImportantLinks</span><span style="color: #5ADD5B">()</span>
+  </a>
+</p>
 
-<img src="/assets/Rectangle.png"></img>
+<div style="height: 20px"></div>
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
 
 <div style="height: 20px"></div>
 
@@ -44,9 +47,11 @@ const User = {
   <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
 </div>
 
-![-----------------------------------------------------](/assets/Rectangle.svg)
+<div style="height: 20px"></div>
 
-<div style="height: 80px"></div>
+[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
+
+<div style="height: 20px"></div>
 
 ## 🚀 Top Projects
 
@@ -65,7 +70,7 @@ const User = {
   </a>
 </div>
 
-<div style="height: 80px"></div>
+<div style="height: 40px"></div>
 
 ## 🎭 UI & UX Clones
 
@@ -83,8 +88,10 @@ const User = {
   </a>
 </div>
 
-![-----------------------------------------------------](/assets/Rectangle.svg)
+<div style="height: 20px"></div>
 
-<div style="height: 80px"></div>
+[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
+
+<div style="height: 20px"></div>
 
 ![Snake animation](https://github.com/igorroc/igorroc/blob/output/github-contribution-grid-snake.svg)
