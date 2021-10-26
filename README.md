@@ -33,7 +33,7 @@ const User = {
 }
 ```
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/fcsouza/fcsouza/master/.github/colored.png)](#installation)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)](#installation)
 
 <img src="/assets/Rectangle.svg"></img>
 
