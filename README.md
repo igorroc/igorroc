@@ -1,4 +1,6 @@
-<h1 align="center">Hi! I'm Igor <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px"></h1>
+[![Banner Igor](/assets/banner.gif)](https://igorroc.github.io/igorroc)
+
+[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
 
 <h2 align="center">A programmer who tries to make the web better!</h2>
 
@@ -37,7 +39,7 @@ const User = {
 
 <div style="height: 20px"></div>
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
+[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
 
 <div style="height: 20px"></div>
 
@@ -52,7 +54,7 @@ const User = {
   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
 </div>
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
+[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
 
 <div style="height: 20px"></div>
 
@@ -93,7 +95,7 @@ const User = {
 
 <div style="height: 20px"></div>
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
+[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
 
 <div style="height: 20px"></div>
 
