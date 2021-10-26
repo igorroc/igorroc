@@ -33,9 +33,9 @@ const User = {
 }
 ```
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.svg)](#installation)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#installation)
 
-<img src="/assets/Rectangle.svg"></img>
+<img src="/assets/Rectangle.png"></img>
 
 <div style="height: 20px"></div>
 
