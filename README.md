@@ -36,6 +36,10 @@ const User = {
   </a>
 </p>
 
+<big><pre>
+User.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
+</pre></big>
+
 <div style="height: 20px"></div>
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/igorroc/igorroc/main/assets/Rectangle.png)](#div)
