@@ -34,7 +34,6 @@ const User = {
 
 <big style="color: #FFA657"><pre style="color: #FFA657">
 **User**.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
-
 </pre></big>
 
 <div style="height: 20px"></div>
@@ -51,7 +50,8 @@ const User = {
 
   <div style="height: 20px"></div>
 
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
+
 </div>
 
 [![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
