@@ -62,7 +62,7 @@ const User = {
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
   <a href="https://github.com/igorroc/ProcrastinaNao">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=ProcrastinaNão&theme=gotham">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=ProcrastinaNao&theme=gotham">
   </a>
   <a href="https://github.com/igorroc/DisCalculus">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=DisCalculus&theme=gotham">
