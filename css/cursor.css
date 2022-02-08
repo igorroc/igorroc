@@ -10,6 +10,10 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	background-color: hsla(160, 73%, 48%, 0.2);
 	border: 2px solid #21d69a;
 
@@ -21,6 +25,20 @@
 		transform 200ms var(--custom-bezier-curve),
 		border-radius 200ms var(--custom-bezier-curve),
 		width 200ms var(--custom-bezier-curve);
+}
+
+#cursor::before{
+	content: "";
+	width: 5px;
+	height: 5px;
+
+	opacity: 0.5;
+
+	display: block;
+	
+	background-color: white;
+
+	border-radius: 100%;
 }
 
 #cursor.cursorOnLink {
