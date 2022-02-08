@@ -16,6 +16,12 @@ header {
 		background-color 1s var(--custom-bezier-curve),
 		transform 1s var(--custom-bezier-curve),
 		box-shadow 1s var(--custom-bezier-curve);
+	
+	pointer-events: none;
+}
+
+header > div{
+	pointer-events: auto;
 }
 
 header.headerDark {
@@ -51,6 +57,17 @@ header.headerBottom {
 #headerLogo:hover img,
 #headerLogo:focus img {
 	opacity: 1;
+}
+
+#headerCTA{
+	opacity: 1;
+	transition: opacity 0.6s var(--custom-bezier-curve), transform 0.6s var(--custom-bezier-curve);
+	transform: scale(1);
+}
+
+#headerCTA.hideCTA{
+	opacity: 0;
+	transform: scale(0);
 }
 
 #hamburguerMenu {
@@ -220,9 +237,9 @@ header.headerBottom {
 		transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));
 	}
 
-	header.headerBottom {
-		/* transform: translateY(calc((var(--vh, 1vh) * 100) - 92px)); */
-	}
+	/* header.headerBottom {
+		transform: translateY(calc((var(--vh, 1vh) * 100) - 92px));
+	} */
 
 	#menu .menuItem {
 		font-size: 3em;

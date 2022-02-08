@@ -18,12 +18,15 @@ window.addEventListener("load", async () => {
 		menu.classList.remove("menuShow")
 		hambMenu.classList.remove("headerMenuActive")
 		header.classList.remove("headerDark")
+		console.log(link)
+		link.classList.add("hideCTA")
 	})
 
 	formClose.addEventListener("click", () => {
 		console.log("close form")
 		form.classList.remove("formShow")
 		header.classList.add("headerDark")
+		link.classList.remove("hideCTA")
 	})
 
 	if (sendEmail) {

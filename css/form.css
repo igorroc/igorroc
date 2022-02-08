@@ -11,7 +11,7 @@
 
 	transform: translateY(100%);
 
-	font-size: 1.5em;
+	font-size: 1em;
 	padding: 0 50px;
 	overflow: hidden;
 	background: linear-gradient(to right, #141414, #252525);
@@ -50,6 +50,7 @@
 
 #formID.formShow > div {
 	transform: scale(1);
+	z-index: 12;
 }
 
 #formTitle h3 {
@@ -133,6 +134,7 @@
 #closeForm:hover {
 	opacity: 0.8;
 	transform: rotate(90deg);
+	color: #f5253a;
 }
 
 button[type="submit"] {
@@ -147,7 +149,7 @@ button[type="submit"] {
 
 	#formID > div {
 		padding: 50px;
-		margin-bottom: 100px;
+		/* margin-bottom: 100px; */
 	}
 
 	#formTitle h3 {
