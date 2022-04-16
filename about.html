@@ -178,59 +178,7 @@
 			</div>
 		</div>
 
-		<footer>
-			<div class="footerSeparator"></div>
-			<div id="footerInfo">
-				<div id="footerLeft">
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit. Porro. Lorem ipsum dolor sit, amet consectetur
-						adipisicing elit. Porro.
-					</p>
-					<p>&copy; 2021 all rights reserved</p>
-				</div>
-				<a href="./index.html" id="footerCenter" class="isClickable">
-					<img src="./img/logo.png" />
-				</a>
-				<div id="footerRight">
-					<div id="footerContact">
-						<a class="isClickable" href="tel:5573988089810">
-							+55 (73) 9 8808-9810 <i class="fas fa-phone"></i>
-						</a>
-						<a
-							class="isClickable"
-							href="mailto:igor_roc@hotmail.com.br"
-						>
-							igor_roc@hotmail.com.br
-							<i class="fa fa-envelope"></i>
-						</a>
-					</div>
-					<div id="footerWrapperSocial">
-						<a
-							href="http://instagram.com/igor.roc"
-							target="_blank"
-							class="footerSocial isClickable"
-						>
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a
-							href="http://github.com.com/igorroc"
-							target="_blank"
-							class="footerSocial isClickable"
-						>
-							<i class="fab fa-github"></i>
-						</a>
-						<a
-							href="https://codepen.io/igorroc"
-							target="_blank"
-							class="footerSocial isClickable"
-						>
-							<i class="fab fa-codepen"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<div id="insertFooterHere"></div>
 
 		<div id="insertMenuHere"></div>
 
@@ -269,6 +217,7 @@
 			;(async function () {
 				await insertHTML("form.html")
 				await insertHTML("header.html")
+				await insertHTML("footer.html")
 				await insertHTML("menu.html")
 			})()
 		</script>
