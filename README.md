@@ -30,10 +30,12 @@ const User = {
 		return ImportantLinks
 	},
 }
+
+User igor
 ```
 
 <big style="color: #FFA657"><pre style="color: #FFA657">
-**User**.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
+**igor**.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
 </pre></big>
 
 <div style="height: 20px"></div>
@@ -43,14 +45,15 @@ const User = {
 <div style="height: 20px"></div>
 
 <div align="center">
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
+
   <div align="center" style="display: flex; align-items: center; gap: 20px;">
     <img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true&hide=prs,issues,contribs">
     <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
   </div>
 
   <div style="height: 20px"></div>
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
 
 </div>
 
