@@ -2,6 +2,10 @@
 	z-index: 2;
 }
 
+#first-content .contentLeft > div {
+	width: 280px;
+}
+
 #first-content .contentRight {
 	position: relative;
 	transform: translateX(0);
@@ -30,6 +34,24 @@
 #first-content .contentRight #future {
 	--variacao: 0%;
 	transform: translateX(calc(200% + var(--variacao)));
+}
+
+#past > div,
+#present > div,
+#future > div {
+	padding: 30px;
+}
+
+#past > div > p,
+#present > div > p,
+#future > div > p {
+	line-height: 1.5em;
+}
+
+#past .paragraphEnd,
+#present .paragraphEnd,
+#future .paragraphEnd{
+	height: 1em;
 }
 
 #first-content .contentRight.active-past #past,
@@ -196,6 +218,44 @@
 	> .sliderMask {
 	transform: translateX(0%);
 }
+
+#wrapperIcons .circleIcon:nth-child(1){
+	left: 20%;
+	width: 70px;
+	height: 70px;
+}
+#wrapperIcons .circleIcon:nth-child(2){
+	left: 50%;
+	top: 20%;
+}
+#wrapperIcons .circleIcon:nth-child(3){
+	left: 10%;
+	top: 70%;
+}
+#wrapperIcons .circleIcon:nth-child(4){
+	left: 50%;
+	top: 60%;
+}
+#wrapperIcons .circleIcon:nth-child(5){
+	width: 70px;
+	height: 70px;
+	left: 80%;
+	top: 30%;
+}
+
+.circleIcon{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #335d52;
+	transition: transform 300ms ease-in-out;
+}
+
+.circleIcon:hover{
+	transform: scale(1.5);
+}
+
 #contact-me {
 	display: flex;
 	flex-direction: column;
@@ -215,7 +275,7 @@
 }
 
 #contact-me button {
-	font-size: 3em;
+	font-size: 2em;
 }
 
 @media (max-width: 1200px) {
