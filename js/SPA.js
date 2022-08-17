@@ -5,7 +5,7 @@ let transitioningPages = false
 
 let loader = document.querySelector("#loadingSlowInternet")
 
-let gitPath = "https://igorroc.github.io/igorroc"
+let gitPath = "."
 let localPath = "."
 
 let correctPath = gitPath
