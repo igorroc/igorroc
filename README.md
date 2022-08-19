@@ -12,17 +12,12 @@
   <a href="https://ilrocha.com"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Link to Website"></a>
 </p>
 
-<p align="center">
-  <a href="https://ilrocha.com"> <img src="https://badges.pufler.dev/visits/igorroc/igorroc"></a> &#xa0;
-  <a href="https://ilrocha.com"> <img src="https://badges.pufler.dev/repos/igorroc"></a> &#xa0;
-  <a href="https://ilrocha.com"> <img src="https://badges.pufler.dev/commits/monthly/igorroc"></a>
-</p>
 
 ```js
 const User = {
 	name: "Igor Lima Rocha",
 	pronouns: ["He", "Him"],
-	role: "FrontEnd",
+	role: "FullStack",
 	hobbies: ["Watch anime", "Play/Watch RPG"],
 	currentCompany: "TecnoJr",
 	currentChallenges: ["Daily Logo Challenge", "Daily UI Challenge"],
@@ -83,16 +78,8 @@ const User = {
 ## 🎭 UI & UX Clones
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <a href="https://github.com/igorroc/netflix-clone">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=netflix-clone&theme=gotham">
-  </a>
-
-  <a href="https://github.com/igorroc/discord-clone">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=discord-clone&theme=gotham">
-  </a>
-
-  <a href="https://github.com/igorroc/whatsapp-clone">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=whatsapp-clone&theme=gotham">
+  <a href="https://github.com/igorroc/clone" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=clone&theme=gotham">
   </a>
 </div>
 
