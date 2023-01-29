@@ -44,7 +44,7 @@ const User = {
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
 
   <div align="center" style="display: flex; align-items: center; gap: 20px;">
-    <img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true&hide=prs,issues,contribs">
+    <img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true">
     <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
   </div>
 
