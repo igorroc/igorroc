@@ -34,7 +34,8 @@ const User = {
 
 <big style="color: #FFA657"><pre style="color: #FFA657">
 **User** igor
-**igor**.[**getImportantLinks**](https://igorroc.github.io/igorroc/links)()
+**igor**.[**getImportantLinks**](https://ilrocha.com/links)()
+
 </pre></big>
 
 <div style="height: 20px"></div>
