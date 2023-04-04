@@ -6,9 +6,10 @@ let transitioningPages = false
 let loader = document.querySelector("#loadingSlowInternet")
 
 let gitPath = "https://igorroc.github.io/igorroc"
+let deployPath = "https://ilrocha.com"
 let localPath = "."
 
-let correctPath = gitPath
+let correctPath = deployPath
 
 window.addEventListener("load", async () => {
 	await sleep(1000)
