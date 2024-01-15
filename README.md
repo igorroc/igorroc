@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/igorroc/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="Link to LinkedIn"></a>  &#xa0; 
   <a href="mailto:igor_roc@hotmail.com.br"><img src="https://img.shields.io/badge/-Gmail-D54B3D?style=flat-square&logo=Gmail&logoColor=white" alt="Link to Email"></a>  &#xa0; 
-  <a href="https://ilrocha.com"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Link to Website"></a>
+<!--   <a href="https://ilrocha.com"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Link to Website"></a> -->
 </p>
 
 
@@ -27,11 +27,13 @@ const User = {
 }
 ```
 
+<!---
 <big style="color: #FFA657"><pre style="color: #FFA657">
 **User** igor
 **igor**.[**getImportantLinks**](https://ilrocha.com/links)()
 
 </pre></big>
+-->
 
 <div style="height: 20px"></div>
 
