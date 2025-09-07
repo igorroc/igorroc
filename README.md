@@ -1,96 +1,89 @@
 [![Banner Igor](/assets/banner.gif)](https://ilrocha.com)
 
-[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
+---
 
-<h2 align="center">A programmer who tries to make the web better!</h2>
-
-<div style="height: 20px"></div>
+<h2 align="center">👋 Hey, I'm Igor Rocha</h2>
+<h4 align="center">CTO • FullStack Developer • Entrepreneur</h4>
+<p align="center">Apaixonado por tecnologia, design e inovação. Hoje lidero equipes de desenvolvimento, crio produtos digitais e ajudo empresas a escalar através de soluções modernas e seguras.</p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/igorroc/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="Link to LinkedIn"></a>  &#xa0; 
-  <a href="mailto:igor_roc@hotmail.com.br"><img src="https://img.shields.io/badge/-Gmail-D54B3D?style=flat-square&logo=Gmail&logoColor=white" alt="Link to Email"></a>  &#xa0; 
-<!--   <a href="https://ilrocha.com"><img src="https://img.shields.io/static/v1?label=%20&message=Website&color=05D462&logo=appveyor&logoColor=white&style=flat-square" alt="Link to Website"></a> -->
+  <a href="https://www.linkedin.com/in/igorroc/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:igor_roc@hotmail.com.br"><img src="https://img.shields.io/badge/-Email-D54B3D?style=flat-square&logo=Gmail&logoColor=white" alt="Email"></a>
+  <a href="https://ilrocha.com"><img src="https://img.shields.io/badge/-Website-05D462?style=flat-square&logo=vercel&logoColor=white" alt="Website"></a>
 </p>
 
+---
 
 ```js
-const User = {
-	name: "Igor Lima Rocha",
-	pronouns: ["He", "Him"],
-	role: "FullStack",
-	hobbies: ["Watch anime", "Play/Watch RPG"],
-	currentCompany: "TecnoJr",
-	currentChallenges: ["Daily Logo Challenge", "Daily UI Challenge"],
-	getImportantLinks: () => {
-		return ImportantLinks
-	},
+const Igor = {
+  name: "Igor Lima Rocha",
+  role: ["CTO", "FullStack Developer", "Entrepreneur"],
+  tech: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker", "Tailwind"],
+  passions: ["Pagamentos", "IA", "UI/UX Design", "Escalar Produtos"],
+  currentFocus: "Construindo soluções de pagamentos em larga escala",
 }
 ```
 
-<!---
-<big style="color: #FFA657"><pre style="color: #FFA657">
-**User** igor
-**igor**.[**getImportantLinks**](https://ilrocha.com/links)()
+---
 
-</pre></big>
--->
+## 🚀 Sobre Mim
+- 👨‍💻 CTO & Cofundador na **GatewayFy**, uma plataforma **white-label de pagamentos** processando milhões em transações.  
+- 💳 Experiência sólida em **gateways, adquirência, antifraude e compliance**.  
+- 🛠️ Mais de **6 anos desenvolvendo aplicações web** em escala com **Next.js, React e Node.js**.  
+- 🤝 Mentor e cofundador em startups de tecnologia, sempre buscando unir **estratégia + execução técnica**.  
 
-<div style="height: 20px"></div>
+---
 
-[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
+## 🛠️ Tech Stack
 
-<div style="height: 20px"></div>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,postgres,prisma,docker,tailwind,figma,git,github,aws" />
+</p>
 
-<div align="center">
+---
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true)](https://github.com/igorroc/)
+## 📈 GitHub Analytics
 
-  <div align="center" style="display: flex; align-items: center; gap: 20px;">
-    <img style="height: 10em" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true">
-    <img style="height: 10em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff">
-  </div>
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=igorroc&theme=gotham&show_icons=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorroc&layout=compact&theme=gotham&hide=assembly,tex,roff" />
+</p>
 
-  <div style="height: 20px"></div>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=igorroc&theme=soft-green&hide_border=true" />
+</p>
 
-</div>
+---
 
-[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
-
-<div style="height: 20px"></div>
-
-## 🚀 Top Projects
+## 📌 Projetos em Destaque  
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
-  <a href="https://github.com/igorroc/ProcrastinaNao">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=ProcrastinaNao&theme=gotham">
+  <a href="https://github.com/igorroc/vite-template">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=vite-template&theme=gotham">
   </a>
-  <a href="https://github.com/igorroc/DisCalculus">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=DisCalculus&theme=gotham">
+  <a href="https://github.com/igorroc/lab-manager">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=lab-manager&theme=gotham">
   </a>
-  <a href="https://github.com/igorroc/pebl-web">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=pebl-web&theme=gotham">
-  </a>
-  <a href="https://github.com/igorroc/escape-from-uesc">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=escape-from-uesc&theme=gotham">
+  <a href="https://github.com/igorroc/MeusPetz">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=MeusPetz&theme=gotham">
   </a>
 </div>
 
-<div style="height: 40px"></div>
+---
 
-## 🎭 UI & UX Clones
+## 🎶 Extras  
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <a href="https://github.com/igorroc/clone" target="_blank">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=igorroc&repo=clone&theme=gotham">
-  </a>
-</div>
+- 🐍 Contribuições:  
 
-<div style="height: 20px"></div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
 
-[![-----------------------------------------------------](/assets/Rectangle.png)](#separator)
+---
 
-<div style="height: 20px"></div>
-
-![Snake animation](https://github.com/igorroc/igorroc/blob/output/github-contribution-grid-snake.svg)
-
-![Spotify](https://spotify-recently-played-readme.vercel.app/api?user=224onbjsfriqa2w26q7lza7uq&count=3&width=900)
+## 📫 Onde me encontrar
+- 💼 [LinkedIn](https://www.linkedin.com/in/igorroc/)  
+- 📝 [TabNews](https://www.tabnews.com.br/rocha)  
+- 🌎 [Website](https://ilrocha.com)  
