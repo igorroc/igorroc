@@ -1,4 +1,4 @@
-[![Banner Igor](/assets/banner.gif)](https://ilrocha.com)
+<!-- [![Banner Igor](/assets/banner.gif)](https://ilrocha.com) -->
 
 ---
 
